@@ -12,6 +12,7 @@ Use this page as the main navigation point for reviewed wiki content.
 
 - [[sources/SRC-0001-karpathy-llm-knowledge-base]] - Source note introducing the LLM-maintained wiki pattern.
 - [[sources/SRC-0002-project-design-note]] - Project design note for local-first personal/work wiki organization, metadata, and privacy controls.
+- [[sources/SRC-0003-training-a-force-field-from-scratch]] - Paper on Garnet, a graph-neural-network force field trained from scratch.
 
 ## Concepts
 
@@ -25,7 +26,12 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[concepts/wiki-page-metadata]] - Metadata fields for areas, categories, tags, related pages, sources, sensitivity, and encryption.
 - [[concepts/optional-encryption-and-sensitivity-metadata]] - Selective privacy controls without mandatory repository-wide encryption.
 - [[concepts/reusable-codex-task-contracts]] - Shared Codex task constraints and report formats.
+- [[concepts/garnet-force-field]] - GNN-based force field for proteins and small molecules.
+- [[concepts/automated-force-field-training]] - Data-driven training of molecular mechanics force fields.
+- [[concepts/double-exponential-potential]] - Non-bonded potential used by Garnet instead of Lennard-Jones.
+- [[concepts/relative-binding-free-energy-benchmarking]] - Benchmarking ligand binding predictions against experimental data.
 
 ## Questions
 
 - [[questions/optional-tooling-for-llm-wiki]] - Whether to adopt optional tools or formats from SRC-0001 or SRC-0002 later.
+- [[questions/garnet-validation-scope]] - Validation gaps before treating Garnet as broadly transferable.

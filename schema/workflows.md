@@ -34,6 +34,23 @@ Short summary of what changed.
 - Remaining structural issues, open questions, or `None`.
 ```
 
+## Source Import Workflow
+
+Use this workflow when a source is provided from any local path, not only from `raw/sources/`:
+
+1. If the source is outside `raw/sources/`, copy it into `raw/sources/` before ingestion.
+2. Assign the next available source ID using the pattern `SRC-XXXX`.
+3. Preserve the original file extension.
+4. Normalize the imported filename as `SRC-XXXX-short-slug.ext`.
+5. Choose the slug using this priority: explicit `--slug`; explicit `--title`; inferred document title or first clear heading; first meaningful content line; original filename stem.
+6. Keep the slug lowercase, ASCII where practical, hyphen-separated, and short.
+7. Do not modify the original file.
+8. Do not modify the imported raw source after copying.
+9. Record the original path or filename, imported path, source ID, and hash where practical.
+10. Then continue with the normal one-source ingestion workflow.
+
+For simple imports, use `python3 tools/import_source.py /path/to/source.ext`, pass `--title` or `--slug` when a better name is known, or preview with `python3 tools/import_source.py --dry-run /path/to/source.ext`.
+
 ## Sensitive Material Handling
 
 - Do not store credentials, passwords, private keys, API tokens, recovery codes, or secrets in the repo.
@@ -46,7 +63,7 @@ Short summary of what changed.
 
 ## Single-Source Ingestion
 
-1. Place the source in `raw/sources/`.
+1. Place or import exactly one source into `raw/sources/`.
 2. Ask Codex to ingest only that source.
 3. Review new or changed wiki pages.
 4. Run `python3 tools/validate_wiki.py`.

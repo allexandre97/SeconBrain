@@ -66,6 +66,8 @@ The goal is not ordinary RAG. The goal is to compile source material into a pers
 
 For wiki-related work, apply the `Default wiki task contract` in `schema/workflows.md` unless the user explicitly overrides it. Use the `Default report format` from `schema/workflows.md` when reporting completion. Preserve provenance, sensitivity metadata, encryption metadata, and the narrow scope of the requested task.
 
+A request of the form `Ingest <path>` means: inspect the source enough to determine a human-readable title when practical, import the source if needed using the `Source import workflow` in `schema/workflows.md`, pass `--title` or `--slug` to the importer when appropriate, normalize it into `raw/sources/`, then ingest exactly that one source.
+
 
 ## Expected structure
 
@@ -97,6 +99,7 @@ schema/
 tools/
   validate_wiki.py
   search_wiki.py
+  import_source.py
 
 tests/
 ```
