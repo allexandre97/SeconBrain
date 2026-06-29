@@ -24,10 +24,12 @@ Source pages should also include:
 
 ```yaml
 ingestion_status: complete | partial | needs-review
-coverage_profile: minimal | standard | deep
+coverage_profile: minimal | standard | deep | math-standard | math-deep
+source_bundle: optional-bundle-slug
+bundle_role: main | supplement
 ```
 
-For source pages, `coverage_profile` defaults to `standard` unless there is a reason to choose `minimal` or `deep`.
+For source pages, `coverage_profile` defaults to `standard` unless there is a reason to choose `minimal`, `deep`, `math-standard`, or `math-deep`.
 
 ## Concept Page
 
@@ -65,6 +67,20 @@ encryption: none
 
 ```
 
+Mathematically important concept pages may also include:
+
+```md
+## Core equations
+
+## Variable glossary
+
+## Derivation sketch
+
+## Implementation consequences
+
+## Caveats
+```
+
 ## Source Page
 
 ```md
@@ -87,6 +103,8 @@ sensitivity: public
 encryption: none
 ingestion_status: complete
 coverage_profile: standard
+source_bundle: optional-bundle-slug
+bundle_role: main
 ---
 
 # SRC-0000: Source Title
@@ -98,6 +116,25 @@ coverage_profile: standard
 ## Links
 
 ## Open Questions
+
+## Metadata notes
+
+## Mathematical structure
+
+## Key equations
+
+## Equation inventory
+
+| Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
+| --- | --- | --- | --- | --- | --- |
+
+## Algorithmic recursions
+
+## Proof map
+
+## Implementation notes
+
+## Mathematical gaps
 
 ## Ingestion QA
 

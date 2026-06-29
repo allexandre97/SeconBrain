@@ -26,6 +26,7 @@ FRONTMATTER_EXEMPT = {
 }
 WIKILINK_RE = re.compile(r"!?\[\[([^\]]+)\]\]")
 SOURCE_QA_SECTION = "## Ingestion QA"
+EQUATION_INVENTORY_SECTION = "## Equation inventory"
 
 
 def has_frontmatter(path: Path) -> bool:
@@ -90,6 +91,15 @@ def main() -> int:
         text = path.read_text(encoding="utf-8")
         if "ingestion_status: complete" in text and SOURCE_QA_SECTION not in text:
             errors.append(f"Complete source page missing ingestion QA section: {path.relative_to(ROOT)}")
+        if (
+            path.parent == ROOT / "wiki" / "sources"
+            and (
+                "coverage_profile: math-standard" in text
+                or "coverage_profile: math-deep" in text
+            )
+            and EQUATION_INVENTORY_SECTION not in text
+        ):
+            errors.append(f"Math-heavy source page missing equation inventory section: {path.relative_to(ROOT)}")
 
     link_index = build_link_index(wiki_pages)
     for path in wiki_pages:

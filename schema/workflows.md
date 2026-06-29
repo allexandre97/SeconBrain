@@ -34,9 +34,41 @@ Short summary of what changed.
 - Remaining structural issues, open questions, or `None`.
 ```
 
+## Minimal ingestion prompts
+
+Detailed user-provided metadata is optional. Codex should accept minimal ingestion prompts and infer the needed metadata where practical. Examples:
+
+```text
+Ingest /path/to/source.pdf
+```
+
+```text
+Ingest these two files as one source bundle:
+Main paper: /path/to/main.pdf
+Supplement: /path/to/supplement.pdf
+```
+
+```text
+Ingest this folder as one source bundle: /path/to/project_docs/
+```
+
+When metadata is absent, infer title, slug, source type, bundle role, areas, categories, sensitivity, encryption, and coverage profile from filenames, document metadata, headings, source content, repository context, and user wording. Record meaningful uncertainty in the source page instead of forcing the user to specify everything upfront. Ask for clarification only when ambiguity blocks safe ingestion, such as unclear sensitivity for private material, unclear bundle boundaries, or conflicting source roles.
+
+## Ingestion mode inference
+
+Before creating wiki pages, Codex should infer the ingestion mode from the provided file or files:
+
+- Treat a single file as a single-source ingestion unless its content clearly refers to required supplementary material that has also been provided.
+- Treat multiple files as a source bundle when user wording, filenames, document titles, cross-references, or folder organization indicate that the files must be understood together.
+- Infer bundle roles such as `main`, `supplement`, `appendix`, `data`, `code`, or `notes` when practical.
+- Detect source type, including math-heavy, code-heavy, admin/personal, project-design, scientific paper, review, or ordinary prose.
+- Select the applicable workflow sections from this file, including math-heavy source ingestion, source bundle guidance, sensitive material handling, and source-specific retrieval QA.
+- If the source appears math-heavy, automatically apply the math-heavy source ingestion workflow.
+- If a folder is supplied as one source bundle, inspect the folder enough to identify likely source files and exclude obvious generated files, dependency folders, caches, and local environment artifacts unless the user explicitly asks to ingest them.
+
 ## Source Import Workflow
 
-Use this workflow when a source is provided from any local path, not only from `raw/sources/`:
+Use this workflow when a source is provided from any local path, not only from `raw/sources/`. User-provided title, slug, source type, and metadata are optional; infer them where practical and record uncertainty when inference is weak:
 
 1. If the source is outside `raw/sources/`, copy it into `raw/sources/` before ingestion.
 2. Assign the next available source ID using the pattern `SRC-XXXX`.
@@ -65,6 +97,8 @@ An ingestion is complete only when all of the following are true:
 - `wiki/log.md` records the ingestion.
 - `python3 tools/validate_wiki.py` passes.
 - Codex has run a source-specific retrieval QA check, recorded it in the source page, and verified that the wiki can answer the main questions a future user would naturally ask about the source.
+
+For math-heavy sources, `ingestion_status: complete` also requires that key equations are present in wiki pages using Markdown/LaTeX math, equations have source IDs and source equation numbers where available, variables are explained, implementation-relevant formulas are represented, long proofs are summarized as proof maps, and mathematical gaps are explicitly listed.
 
 If any item is missing, mark the source page with `ingestion_status: partial` or `ingestion_status: needs-review`, document the gap under `## Ingestion QA`, and do not report the ingestion as complete.
 
@@ -98,6 +132,58 @@ For an admin or personal document, likely questions include:
 
 Record the checked questions under the source page's `## Ingestion QA` section. The coverage decision must state whether the wiki representation is complete, partial, or needs review, and known gaps must be listed explicitly.
 
+## Math-heavy source ingestion
+
+Automatically use this workflow for sources containing substantial equations, derivations, proofs, algorithms, mathematical definitions, theorem statements, or implementation recursions. Math-heavy ingestion does not require full proof reproduction unless explicitly requested, but it must preserve enough mathematical structure for future retrieval and implementation-oriented review.
+
+For math-heavy sources, ingestion must include:
+
+- Central definitions.
+- Central equations.
+- Algorithmic recursions.
+- Theorem or proposition statements when important.
+- A proof map for long proofs.
+- Implementation-relevant formulas.
+- Variable definitions.
+- Equation dependencies.
+- Known omissions.
+
+Use `coverage_profile: math-standard` when the wiki captures the main mathematical structure well enough for retrieval and orientation. Use `coverage_profile: math-deep` when the wiki is detailed enough for close technical use, including important dependencies between equations and implementation-relevant formulas.
+
+### Equation inventory
+
+For math-heavy sources, the source page should include an equation inventory table with columns like:
+
+```md
+| Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
+| --- | --- | --- | --- | --- | --- |
+```
+
+Each inventory row should cite the source ID and source equation number, section, page, or local label when available. If an important equation is omitted from the wiki, list it under `## Mathematical gaps` and explain why it is omitted.
+
+## Source Bundles
+
+A source bundle is allowed when the user provides a main document plus supplementary material, appendices, data, code, notes, or a folder of related files that must be understood together. The user does not need to provide detailed bundle metadata; Codex should infer bundle membership and roles where practical.
+
+For source bundles:
+
+- Import each physical source file as its own `SRC-XXXX`.
+- Infer a stable `source_bundle` slug from the main title, folder name, or user wording.
+- Infer `bundle_role` values such as `main`, `supplement`, `appendix`, `data`, `code`, or `notes` from filenames, headings, metadata, and cross-references.
+- Link the sources using shared metadata such as:
+
+```yaml
+source_bundle: times-square-sampling-2024
+bundle_role: main | supplement | appendix | data | code | notes
+```
+
+- Judge ingestion completion on the combined bundle, while still giving each physical file its own source page.
+- The main source page should link to supplement, appendix, data, code, or notes source pages.
+- Non-main source pages should link back to the main source page when one can be inferred.
+- Record inferred metadata and uncertainty in the source pages, especially when bundle boundaries or roles are inferred rather than explicit.
+- Ask for clarification only when ambiguity blocks safe ingestion, such as when a folder contains unrelated documents or when it is unclear which files should be treated as source material.
+- Record bundle-level known gaps on the main source page when any bundled file is not fully represented.
+
 ## Sensitive Material Handling
 
 - Do not store credentials, passwords, private keys, API tokens, recovery codes, or secrets in the repo.
@@ -117,5 +203,6 @@ Record the checked questions under the source page's `## Ingestion QA` section. 
 5. Run source-specific retrieval QA and record the checked questions, coverage decision, and known gaps in the source page.
 6. Apply the ingestion completion contract before reporting the ingestion as complete.
 7. Review new or changed wiki pages.
-8. Run `python3 tools/validate_wiki.py`.
-9. Commit the reviewed changes.
+8. If the source is math-heavy, confirm the equation inventory, proof map, implementation notes, and mathematical gaps before marking the source complete.
+9. Run `python3 tools/validate_wiki.py`.
+10. Commit the reviewed changes.
