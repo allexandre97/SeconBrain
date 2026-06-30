@@ -21,7 +21,7 @@ graph_exclude: true | false
 ---
 ```
 
-Use `graph_exclude: true` for navigation-heavy pages that should be filterable out of Obsidian Graph view, including generated category pages, dashboards, README index pages, `wiki/index.md`, and `wiki/log.md`. Omit the field or use `false` for normal content pages.
+Use `graph_exclude: true` for navigation-heavy pages that should be filterable out of Obsidian Graph view, including dashboards, most README index pages, `wiki/index.md`, and `wiki/log.md`. Category pages under `wiki/categories/` should use `graph_exclude: false` so they can act as useful grouping nodes in Obsidian Graph view. Omit the field or use `false` for normal content pages.
 
 Source pages should also include:
 
@@ -49,7 +49,7 @@ categories:
 tags:
   - concept
 related:
-  - "[[concepts/related-page]]"
+  - "[[wiki/concepts/related-page]]"
 sources:
   - SRC-0000
 sensitivity: public
@@ -105,15 +105,17 @@ aliases:
   - "SRC-0000"
   - "Short Source Title"
   - "Source Title"
-source_path: raw/sources/example.md
-imported_path: raw/sources/example.md
-original_filename: "example.md"
+source_path: raw/sources/SRC-0000-example.md
+imported_path: raw/sources/SRC-0000-example.md
+original_filename: "SRC-0000-example.md"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: optional-sha256-when-available
 areas: []
 categories: []
 tags: []
-related: []
+related:
+  - "[[wiki/concepts/related-page]]"
+  - "[[wiki/sources/SRC-0000-example]]"
 sources:
   - SRC-0000
 sensitivity: public
@@ -130,8 +132,8 @@ Source ID: `SRC-0000`
 
 ## Raw source
 
-- Repository path: `raw/sources/example.md`
-- Local relative link: [Open raw source](../../raw/sources/example.md)
+- Repository path: `raw/sources/SRC-0000-example.md`
+- Open raw source: [raw/sources/SRC-0000-example.md](../../raw/sources/SRC-0000-example.md)
 
 ## Summary
 

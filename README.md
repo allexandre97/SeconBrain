@@ -92,4 +92,4 @@ python3 tools/import_source.py /path/to/source.pdf --slug garnet-force-field
 python3 tools/import_source.py --dry-run /path/to/source.pdf
 ```
 
-The importer assigns the next `SRC-XXXX` ID, creates a normalized filename, copies the file without modifying the original, and prints the imported path, slug source, and SHA256 hash. Future prompts can use `Ingest /path/to/file.ext`; Codex should inspect the file for a human-readable title and import it first if it is not already in `raw/sources/`.
+The importer assigns the next `SRC-XXXX` ID, creates a normalized filename, copies the file without modifying the original, and prints the original filename, metadata omission note, imported path, slug source, and SHA256 hash. Use `--show-original-path` only when local debugging requires printing the absolute original path. Future prompts can use `Ingest /path/to/file.ext`; Codex should inspect the file for a human-readable title and import it first if it is not already in `raw/sources/`.

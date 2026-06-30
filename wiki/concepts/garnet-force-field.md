@@ -43,3 +43,5 @@ Garnet is a graph-neural-network force field that predicts molecular mechanics p
 - [[wiki/concepts/automated-force-field-training]]
 - [[wiki/concepts/double-exponential-potential]]
 - [[wiki/questions/garnet-validation-scope]]
+- [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and]]
+

@@ -13,7 +13,7 @@ related:
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: true
+graph_exclude: false
 generated: true
 category_path: research/machine-learning
 ---
@@ -30,8 +30,8 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Subcategories
 
-- [[wiki/categories/research/machine-learning/molecular-modeling|research/machine-learning/molecular-modeling]] - 15 direct, 15 total pages in branch.
-- [[wiki/categories/research/machine-learning/scientific-modeling|research/machine-learning/scientific-modeling]] - 22 direct, 22 total pages in branch.
+- [[wiki/categories/research/machine-learning/molecular-modeling|research/machine-learning/molecular-modeling]] - 19 direct, 19 total pages in branch.
+- [[wiki/categories/research/machine-learning/scientific-modeling|research/machine-learning/scientific-modeling]] - 24 direct, 24 total pages in branch.
 - [[wiki/categories/research/machine-learning/statistical-modeling|research/machine-learning/statistical-modeling]] - 2 direct, 2 total pages in branch.
 
 ## Direct members

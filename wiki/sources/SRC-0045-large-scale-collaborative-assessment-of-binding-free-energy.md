@@ -27,6 +27,8 @@ tags:
   - benchmarking
   - drug-discovery
 related:
+  - "[[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version]]"
+  - "[[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information]]"
   - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
   - "[[wiki/concepts/free-energy-estimation]]"
 sources:
@@ -49,6 +51,8 @@ Source ID: `SRC-0045`
 ## Summary
 
 This ChemRxiv preprint benchmarks the OpenFE relative binding free energy protocol across a large public/private drug-discovery corpus. The study evaluates public systems selected from the Ross et al. benchmark and blinded private industry datasets, reporting lower accuracy on private real-world datasets than on curated public datasets. [SRC-0045]
+
+The later journal version and supporting information are ingested separately as [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version]] and [[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information]]. [SRC-0061] [SRC-0062]
 
 ## Key Points
 
@@ -98,6 +102,8 @@ Here $w_i$ is the number of ligands in system $i$ for the all-to-all pairwise be
 
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]]
 - [[wiki/concepts/free-energy-estimation]]
+- [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version]]
+- [[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information]]
 
 ## Ingestion QA
 

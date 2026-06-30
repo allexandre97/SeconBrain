@@ -159,6 +159,11 @@ def main() -> int:
         action="store_true",
         help="Print the planned import details without copying the file.",
     )
+    parser.add_argument(
+        "--show-original-path",
+        action="store_true",
+        help="Include the absolute original path in output for local debugging.",
+    )
     args = parser.parse_args()
 
     source = Path(args.path).expanduser().resolve()
@@ -177,7 +182,10 @@ def main() -> int:
         file_hash = sha256(destination)
 
     print(f"source_id: {source_id}")
-    print(f"original_path: {source}")
+    print(f"original_filename: {source.name}")
+    print("original_path_note: Original local path omitted from wiki metadata.")
+    if args.show_original_path:
+        print(f"original_path: {source}")
     print(f"imported_path: {destination.relative_to(ROOT).as_posix()}")
     print(f"slug_source: {slug_source}")
     print(f"sha256: {file_hash}")

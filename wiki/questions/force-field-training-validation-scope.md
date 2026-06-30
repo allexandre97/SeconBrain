@@ -25,6 +25,7 @@ sources:
   - SRC-0024
   - SRC-0025
   - SRC-0027
+  - SRC-0060
 sensitivity: public
 encryption: none
 ---
@@ -53,6 +54,7 @@ The recurring pattern is that improved training loss is not enough. The stronges
 - Downstream trajectory stability matters for MLFFs: low static energy/force error is not sufficient if MD enters unphysical regions. [SRC-0024]
 - Reproducibility of optimization matters: SRC-0025 uses convergence from multiple initial parameter sets as evidence for robust fitting in the explored parameter region. [SRC-0025]
 - Physical construction criteria matter: SRC-0027 validates a multipole-first water model on liquid and hydration properties, but fixed-charge transfer remains limited by nonpolarizability. [SRC-0027]
+- Foundation-model MLFF validation should be stratified by biomolecular class and timescale: SRC-0060 reports strong protein-focused gains and short MD observable tests, but also identifies DNA regression, limited nucleic-acid top-down sampling, and longer/larger validation as future work. [SRC-0060, sections 2-3]
 
 ## Links
 
@@ -61,3 +63,4 @@ The recurring pattern is that improved training loss is not enough. The stronges
 - [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
 - [[wiki/concepts/symbolic-regression-interatomic-potentials]]
 - [[wiki/concepts/ensemble-and-force-field-refinement]]
+- [[wiki/concepts/ubio-molfm-biological-molecular-foundation-model]]

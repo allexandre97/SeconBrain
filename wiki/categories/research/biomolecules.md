@@ -13,7 +13,7 @@ related:
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: true
+graph_exclude: false
 generated: true
 category_path: research/biomolecules
 ---
@@ -31,8 +31,8 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 ## Subcategories
 
 - [[wiki/categories/research/biomolecules/lipids|research/biomolecules/lipids]] - 5 direct, 5 total pages in branch.
-- [[wiki/categories/research/biomolecules/proteins|research/biomolecules/proteins]] - 12 direct, 12 total pages in branch.
-- [[wiki/categories/research/biomolecules/rna|research/biomolecules/rna]] - 4 direct, 4 total pages in branch.
+- [[wiki/categories/research/biomolecules/proteins|research/biomolecules/proteins]] - 16 direct, 16 total pages in branch.
+- [[wiki/categories/research/biomolecules/rna|research/biomolecules/rna]] - 6 direct, 6 total pages in branch.
 
 ## Direct members
 

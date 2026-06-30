@@ -44,3 +44,9 @@ graph_exclude: true
 - 2026-06-30: Hardened source-page navigation and raw-source links, added category registry and deterministic category index/audit tooling, and removed unused generic scaffold directories.
 - 2026-06-30: Adopted the repository root as the Obsidian vault, normalized repo-root wikilinks and raw-source links, added deterministic category suggestions, repaired obvious multi-facet categories, and generated dashboard indexes without ingesting sources.
 - 2026-06-30: Added `graph_exclude: true` metadata to navigation-heavy pages and documented the Obsidian Graph view filter.
+- 2026-06-30: Added deterministic hygiene validation for skill frontmatter, source paths, local absolute path leakage, and graph-exclusion metadata; updated source import output to omit absolute original paths by default.
+- 2026-06-30: Added an answer note comparing TSS with AWH and OPES as adaptive free-energy methods and updated the adaptive enhanced sampling concept.
+- 2026-06-30: Imported and ingested SRC-0059, an arXiv perspective on six open questions for machine-learned interatomic potential foundation models.
+- 2026-06-30: Updated category-page graph policy so `wiki/categories/` pages remain visible as Obsidian Graph grouping nodes.
+- 2026-06-30: Imported and ingested SRC-0060, the UBio-MolFM technical report on a biology-focused molecular foundation model, UBio-Mol26, E2Former-V2, and short downstream biomolecular MD validations.
+- 2026-06-30: Imported and ingested SRC-0061/SRC-0062 as the OpenFE RBFE benchmark journal-version bundle, adding the main JCIM article and supporting information with protocol-difference, outlier, and convergence diagnostics.

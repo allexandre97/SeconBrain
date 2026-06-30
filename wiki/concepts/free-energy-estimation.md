@@ -35,6 +35,7 @@ related:
   - "[[wiki/concepts/transferable-and-scalable-boltzmann-generators]]"
   - "[[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]"
   - "[[wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]"
+  - "[[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version]]"
   - "[[wiki/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]"
   - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
   - "[[wiki/concepts/solvation-free-energy-decoupling-in-lammps]]"
@@ -53,6 +54,7 @@ sources:
   - SRC-0041
   - SRC-0045
   - SRC-0046
+  - SRC-0061
   - SRC-0047
 sensitivity: public
 encryption: none
@@ -77,6 +79,7 @@ Free energy estimation computes differences between free energies, often by esti
 - The supplement translates the estimator into per-window, epoch-based formulas for implementation and error estimation. [SRC-0006, sections 7-8]
 - Boltzmann generators estimate equilibrium observables and free energies by generating exact-density proposals and reweighting them to the target Boltzmann distribution. [SRC-0041] [SRC-0037] [SRC-0039]
 - Protein-ligand RBFE benchmark accuracy should be interpreted against experimental reproducibility, because assay-derived relative affinities have their own error floor. [SRC-0046]
+- OpenFE's journal benchmark reinforces that all-to-all pairwise metrics are more representative than edgewise metrics for arbitrary ligand comparisons, and that private active-project data can be substantially harder than curated public data. [SRC-0061, sections 3.1.1 and 3.2]
 - LAMMPS solvation free-energy decoupling can be implemented by adding an overlay correction that preserves intramolecular Coulomb energy while solute charges are scaled for solute-solvent electrostatic staging. [SRC-0047]
 
 ## Core equations
@@ -174,7 +177,7 @@ MBAR uses all cross-state reduced potentials to solve coupled normalization-cons
 - MBAR uncertainty estimates require effectively uncorrelated samples; correlated trajectories should be subsampled or otherwise handled before interpreting asymptotic error bars. [SRC-0023]
 - Boltzmann-generator free-energy estimates depend on generated-target overlap and effective sample size; low-variance estimates can still be unreliable if important states are missing. [SRC-0037] [SRC-0039] [SRC-0041]
 - Binding free-energy benchmark error should not be interpreted independently of experimental reproducibility and assay heterogeneity. [SRC-0046]
-- OpenFE public benchmark performance was better than private active-project performance, so curated benchmark accuracy is not automatically prospective industrial accuracy. [SRC-0045]
+- OpenFE public benchmark performance was better than private active-project performance, so curated benchmark accuracy is not automatically prospective industrial accuracy. [SRC-0061]
 
 ## Caveats
 
@@ -212,6 +215,7 @@ MBAR uses all cross-state reduced potentials to solve coupled normalization-cons
 - [[wiki/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
 - [[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]
 - [[wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]
+- [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version]]
 - [[wiki/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]
 - [[wiki/concepts/boltzmann-generators-equilibrium-sampling]]
 - [[wiki/concepts/transferable-and-scalable-boltzmann-generators]]

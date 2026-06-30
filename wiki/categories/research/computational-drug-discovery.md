@@ -13,7 +13,7 @@ related:
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: true
+graph_exclude: false
 generated: true
 category_path: research/computational-drug-discovery
 ---
@@ -39,6 +39,8 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/sources/SRC-0013-ladybugs-lambda-dynamics|LaDyBUGS Lambda-Dynamics]]
 - [[wiki/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free-energies|MM Force Field Free-Energy Fine-Tuning]]
 - [[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy|OpenFE RBFE Benchmark]]
+- [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version|OpenFE RBFE Benchmark Journal Version]]
+- [[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information|OpenFE RBFE Benchmark Supporting Information]]
 - [[wiki/sources/SRC-0005-times-square-sampling-free-energy|Times Square Sampling]]
 - [[wiki/sources/SRC-0006-times-square-sampling-supplement|Times Square Sampling Supplement]]
 

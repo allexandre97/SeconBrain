@@ -4,6 +4,7 @@ status: seed
 created: 2026-06-29
 tags:
   - llm-wiki
+graph_exclude: true
 ---
 
 # Project Overview

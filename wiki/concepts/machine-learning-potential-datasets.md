@@ -19,9 +19,13 @@ tags:
 sources:
   - SRC-0042
   - SRC-0044
+  - SRC-0059
+  - SRC-0060
 related:
   - "[[wiki/concepts/automated-force-field-training]]"
   - "[[wiki/concepts/stability-aware-mlff-training]]"
+  - "[[wiki/concepts/machine-learned-interatomic-potential-foundation-models]]"
+  - "[[wiki/concepts/ubio-molfm-biological-molecular-foundation-model]]"
 sensitivity: public
 encryption: none
 ---
@@ -40,20 +44,29 @@ Machine-learning potential datasets provide quantum-chemistry energies, forces, 
 - Charge and spin awareness are central for broader molecular chemistry datasets; OMol25 explicitly includes wide charge and spin variation. [SRC-0042]
 - Practical evaluation should include downstream or domain-informed tasks, not only random-split energy and force errors. [SRC-0042]
 - Overlay databanks address a complementary dataset problem: existing simulation trajectories can be made reusable for data-driven analyses by adding metadata, naming, quality-evaluation, and API layers without moving all raw data into one repository. [SRC-0057]
+- For foundation-model MLIPs, dataset scale alone is insufficient: SRC-0059 argues that data diversity, local-environment coverage, label fidelity, model expressivity, optimization, and compute must be balanced together. [SRC-0059, section 2]
+- High-throughput DFT datasets can contain systematic and unsystematic noise, near-equilibrium bias, and inconsistent settings; these issues can limit transferability even when the dataset is large. [SRC-0059, section 2.3]
+- UBio-Mol26 is a biology-focused dataset intended to complement OMol25 by covering larger solvated biological systems up to about 1,200 atoms; its current top-down component is protein-focused, leaving nucleic-acid diversity as an identified gap. [SRC-0060, sections 4.1 and 4.1.1]
 
 ## Evidence
 
 - SPICE reports more than 1.1 million conformations with DFT energies and forces for 15 elements. [SRC-0044]
 - OMol25 reports more than 140 million DFT single-point calculations covering 83 elements, systems up to 350 atoms, and benchmark tasks such as conformer ranking, protonation, ionization, spin gaps, ligand-pocket interactions, and distance scaling. [SRC-0042]
+- SRC-0059 compares large datasets and benchmarks such as OMat24, OMol25, MatPES, and Matbench Discovery to argue that useful evaluation needs downstream and physics-informed tests, not only aggregate energy/force errors. [SRC-0059, sections 2 and 6]
+- SRC-0060 reports UBio-Mol26 as 17 million configurations across proteins, drug-like molecules, DNA/RNA fragments, lipid bilayers, explicit solvent, trace ions, and mixed basis-set fidelity levels. [SRC-0060, section 4.1]
 
 ## Links
 
 - [[wiki/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and]]
 - [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and]]
+- [[wiki/sources/SRC-0059-six-open-questions-in-machine-learned-interatomic-potential]]
+- [[wiki/sources/SRC-0060-ubio-molfm-universal-molecular-foundation-model]]
 - [[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
 - [[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data]]
 - [[wiki/concepts/automated-force-field-training]]
 - [[wiki/concepts/stability-aware-mlff-training]]
+- [[wiki/concepts/machine-learned-interatomic-potential-foundation-models]]
+- [[wiki/concepts/ubio-molfm-biological-molecular-foundation-model]]
 
 ## Open Questions
 

@@ -177,6 +177,8 @@ def suggestions() -> list[Suggestion]:
         page_type = str(frontmatter.get("type", "")).strip()
         if page_type not in PAGE_TYPES:
             continue
+        if str(frontmatter.get("graph_exclude", "")).strip().casefold() == "true":
+            continue
         categories = set(as_list(frontmatter.get("categories", [])))
         text = evidence_text(frontmatter, body)
         for rule in rules:

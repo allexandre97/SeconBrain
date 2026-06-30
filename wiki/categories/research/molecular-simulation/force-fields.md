@@ -13,7 +13,7 @@ related:
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: true
+graph_exclude: false
 generated: true
 category_path: research/molecular-simulation/force-fields
 ---
@@ -49,9 +49,11 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/sources/SRC-0027-building-water-models-different-approach-opc|OPC Water Model]]
 - [[wiki/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation|Protein Force-Field Benchmark Datasets]]
 - [[wiki/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations|RNA Molecular Simulations Review]]
+- [[wiki/sources/SRC-0059-six-open-questions-in-machine-learned-interatomic-potential|Six Open Questions for MLIP Foundation Models]]
 - [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and|SPICE Dataset]]
 - [[wiki/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators|StABlE MLFF Training]]
 - [[wiki/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials|Symbolic-Regression Interatomic Potentials]]
+- [[wiki/sources/SRC-0060-ubio-molfm-universal-molecular-foundation-model|UBio-MolFM]]
 - [[wiki/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field|UUCG RNA Tetraloop Force-Field Challenge]]
 
 ### Concepts
@@ -66,11 +68,13 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/concepts/garnet-force-field|Garnet Force Field]]
 - [[wiki/concepts/gnn-to-symbolic-regression-potentials|GNN to Symbolic Regression Potentials]]
 - [[wiki/concepts/machine-learning-potential-datasets|Machine Learning Potential Datasets]]
+- [[wiki/concepts/machine-learned-interatomic-potential-foundation-models|Machine-Learned Interatomic Potential Foundation Models]]
 - [[wiki/concepts/opc-water-model|OPC Water Model]]
 - [[wiki/concepts/protein-force-field-benchmark-datasets|Protein Force Field Benchmark Datasets]]
 - [[wiki/concepts/rna-force-field-limitations|RNA Force Field Limitations]]
 - [[wiki/concepts/stability-aware-mlff-training|Stability-Aware MLFF Training]]
 - [[wiki/concepts/symbolic-regression-interatomic-potentials|Symbolic Regression Interatomic Potentials]]
+- [[wiki/concepts/ubio-molfm-biological-molecular-foundation-model|UBio-MolFM Biological Molecular Foundation Model]]
 
 ### Questions
 

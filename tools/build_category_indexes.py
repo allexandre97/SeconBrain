@@ -204,7 +204,7 @@ def render_category(
         "sources: []",
         "sensitivity: public",
         "encryption: none",
-        "graph_exclude: true",
+        "graph_exclude: false",
         "generated: true",
         f"category_path: {category}",
         "---",

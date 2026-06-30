@@ -13,7 +13,7 @@ related:
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: true
+graph_exclude: false
 generated: true
 category_path: research/biomolecules/proteins
 ---
@@ -37,8 +37,11 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data|Host-Guest Potential Tuning]]
 - [[wiki/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting-information|Host-Guest Potential Tuning Supplement]]
 - [[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy|OpenFE RBFE Benchmark]]
+- [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version|OpenFE RBFE Benchmark Journal Version]]
+- [[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information|OpenFE RBFE Benchmark Supporting Information]]
 - [[wiki/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation|Protein Force-Field Benchmark Datasets]]
 - [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and|SPICE Dataset]]
+- [[wiki/sources/SRC-0060-ubio-molfm-universal-molecular-foundation-model|UBio-MolFM]]
 
 ### Concepts
 
@@ -47,3 +50,4 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/concepts/machine-learning-potential-datasets|Machine Learning Potential Datasets]]
 - [[wiki/concepts/protein-force-field-benchmark-datasets|Protein Force Field Benchmark Datasets]]
 - [[wiki/concepts/relative-binding-free-energy-benchmarking|Relative Binding Free Energy Benchmarking]]
+- [[wiki/concepts/ubio-molfm-biological-molecular-foundation-model|UBio-MolFM Biological Molecular Foundation Model]]

@@ -60,6 +60,14 @@ Adaptive enhanced sampling uses information learned during a simulation to steer
 - Windowing is a locality mechanism: it restricts updates to overlapping parameter-space neighborhoods where distributions are expected to have useful overlap. [SRC-0005, section 3.1]
 - Adaptive sampling must preserve convergence guarantees; SRC-0005 and SRC-0006 state assumptions and proof structure for convergence despite adaptation. [SRC-0005, section 2.2.4] [SRC-0006, section 5]
 
+## TSS, AWH, and OPES comparison
+
+TSS, AWH, and OPES all adapt a simulation from information learned on the fly, but they adapt different objects. TSS treats free-energy estimation as stochastic approximation over a discrete family of rungs and adds explicit resource allocation through visit-control tilts and adaptive target densities. [SRC-0005, sections 2.1-2.2] AWH is also an extended-ensemble method over a parameter $\lambda$, but its central state is a conditional weight histogram that updates a free-energy bias toward a target $\lambda$ distribution. [SRC-0007, section II] [SRC-0008, section II.A] OPES instead reconstructs a collective-variable probability density and derives a bias from the ratio between the estimated density and a target density. [SRC-0010, eqs. 4-8]
+
+The practical distinction is that TSS emphasizes adaptive allocation and estimator variance, AWH emphasizes robust extended-ensemble bias learning from fractional conditional weights, and OPES emphasizes probability reconstruction in collective-variable space. TSS's windowing mechanism addresses large discrete rung sets by combining overlapping local estimates; AWH can use Gibbs parameter moves and nonuniform targets; OPES uses kernel compression and bias regularization to keep the KDE-based bias practical and bounded. [SRC-0005, section 3.1] [SRC-0008, section II.C] [SRC-0009, section I.A.1] [SRC-0010, eq. 8] [SRC-0011]
+
+The evidence base also differs. TSS has theory and focused demonstrations, including a Gaussian example and an aqueous-solution MD example, but not a broad molecular benchmark suite. [SRC-0005, section 4] [SRC-0006, section 10] AWH has a longer chain of demonstrations across model systems, atomistic PMFs, and alchemical hydration free energies, while still not being universally superior to BAR/MBAR when equilibrium sampling is already efficient. [SRC-0007] [SRC-0008] [SRC-0009, conclusion] OPES is best read as a metadynamics-adjacent CV enhanced-sampling framework whose reliability still depends on the chosen collective variables and target distribution. [SRC-0010]
+
 ## Core equations
 
 Tilt estimator for relative visitation: [SRC-0005, eq. 11]

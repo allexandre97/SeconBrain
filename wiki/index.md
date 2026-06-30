@@ -12,7 +12,7 @@ related: []
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: false
+graph_exclude: true
 ---
 # Wiki Index
 
@@ -39,6 +39,7 @@ Use this page as the main navigation point for reviewed wiki content.
 ## Answers
 
 - [[wiki/answers/tss-window-free-energy-surface-stitching]] - Mathematical explanation of how TSS stitches per-window free-energy estimates into a global surface.
+- [[wiki/answers/tss-awh-opes-adaptive-free-energy-comparison]] - Comparison of TSS with AWH and OPES as adaptive free-energy methods.
 
 ## Sources
 
@@ -100,6 +101,10 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations|RNA Molecular Simulations Review]] - Comprehensive review of RNA structural dynamics from molecular simulations.
 - [[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules|Overlay Databank]] - Main paper introducing overlay databanks through the NMRlipids Databank.
 - [[wiki/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven|Overlay Databank Supplement]] - Supporting information for the overlay databank/NMRlipids paper.
+- [[wiki/sources/SRC-0059-six-open-questions-in-machine-learned-interatomic-potential|Six Open Questions for MLIP Foundation Models]] - Perspective on definitions, data/model scaling, long-range interactions, discovery, simulation scale, and benchmarking for foundation-model MLIPs.
+- [[wiki/sources/SRC-0060-ubio-molfm-universal-molecular-foundation-model|UBio-MolFM]] - Biology-focused molecular foundation model combining UBio-Mol26, E2Former-V2, curriculum training, and short downstream MD validations.
+- [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version|OpenFE RBFE Benchmark Journal Version]] - Journal version of the large-scale public/private OpenFE relative binding free-energy benchmark.
+- [[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information|OpenFE RBFE Benchmark Supporting Information]] - Supplement with protocol differences, diagnostic figures, outlier analyses, and convergence/edge-metric checks.
 
 ## Concepts
 
@@ -148,6 +153,8 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/concepts/conflict-free-pinn-training]] - Gradient aggregation for multi-loss PINN training without loss-direction conflicts.
 - [[wiki/concepts/gnn-to-symbolic-regression-potentials]] - Recovering interpretable analytical potentials from GNN-derived interaction outputs.
 - [[wiki/concepts/machine-learning-potential-datasets]] - Quantum-chemistry datasets for training and evaluating molecular ML potentials.
+- [[wiki/concepts/machine-learned-interatomic-potential-foundation-models]] - Open questions and evaluation criteria for transferable foundation-model MLIPs.
+- [[wiki/concepts/ubio-molfm-biological-molecular-foundation-model]] - Biology-focused molecular foundation model for scalable quantum-chemistry-like biomolecular simulation.
 - [[wiki/concepts/protein-force-field-benchmark-datasets]] - Experimental observable datasets for benchmarking protein force fields and ensemble generators.
 - [[wiki/concepts/solvation-free-energy-decoupling-in-lammps]] - Overlay-corrected LAMMPS decoupling workflow for solvation free energy calculations.
 - [[wiki/concepts/md-pressure-and-stress-tensor-calculation]] - Virial and hybrid pressure/stress tensor calculations in periodic MD.

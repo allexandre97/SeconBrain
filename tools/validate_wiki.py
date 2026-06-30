@@ -39,6 +39,7 @@ VALID_PAGE_TYPES = {
     "source",
     "tension",
 }
+LOCAL_PATH_RE = re.compile(r"/lmb/home/|/home/")
 
 
 def has_frontmatter(path: Path) -> bool:
@@ -61,12 +62,31 @@ def frontmatter_value(path: Path, key: str) -> str | None:
     return None
 
 
+def frontmatter_lines(path: Path) -> list[str]:
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0].strip() != "---":
+        return []
+    try:
+        end = next(i for i, line in enumerate(lines[1:], 1) if line.strip() == "---")
+    except StopIteration:
+        return []
+    return lines[1:end]
+
+
+def has_frontmatter_key(path: Path, key: str) -> bool:
+    return any(line.startswith(f"{key}:") for line in frontmatter_lines(path))
+
+
 def wiki_markdown_pages() -> list[Path]:
     return [
         path
         for path in (ROOT / "wiki").rglob("*.md")
         if ".git" not in path.parts and not path.name.startswith(".")
     ]
+
+
+def skill_files() -> list[Path]:
+    return sorted((ROOT / ".agents" / "skills").glob("*/SKILL.md"))
 
 
 def build_link_index(paths: list[Path]) -> set[str]:
@@ -109,6 +129,15 @@ def main() -> int:
             errors.append(f"Missing required file: {file_path}")
 
     wiki_pages = sorted(wiki_markdown_pages())
+
+    for path in skill_files():
+        if not has_frontmatter(path):
+            errors.append(f"Skill file missing YAML frontmatter: {path.relative_to(ROOT)}")
+            continue
+        for key in ("name", "description"):
+            if not has_frontmatter_key(path, key):
+                errors.append(f"Skill file missing {key}: {path.relative_to(ROOT)}")
+
     for path in wiki_pages:
         if path not in FRONTMATTER_EXEMPT and not has_frontmatter(path):
             errors.append(f"Missing YAML frontmatter: {path.relative_to(ROOT)}")
@@ -118,8 +147,16 @@ def main() -> int:
         if page_type and page_type not in VALID_PAGE_TYPES:
             errors.append(f"Unknown page type in {path.relative_to(ROOT)}: {page_type}")
 
+        source_path = frontmatter_value(path, "source_path")
+        if source_path:
+            candidate = ROOT / source_path.strip().strip('"').strip("'")
+            if not candidate.is_file():
+                errors.append(f"Source page source_path does not exist in {path.relative_to(ROOT)}: {source_path}")
+
     for path in wiki_pages:
         text = path.read_text(encoding="utf-8")
+        if LOCAL_PATH_RE.search(text):
+            errors.append(f"Wiki Markdown contains local absolute path: {path.relative_to(ROOT)}")
         if OBSIDIAN_DISCOURAGED_MATH_RE.search(text):
             warnings.append(
                 "Obsidian math warning in "
@@ -136,6 +173,22 @@ def main() -> int:
             and EQUATION_INVENTORY_SECTION not in text
         ):
             errors.append(f"Math-heavy source page missing equation inventory section: {path.relative_to(ROOT)}")
+
+    navigation_pages = {
+        ROOT / "wiki" / "index.md",
+        ROOT / "wiki" / "log.md",
+    }
+    navigation_pages.update((ROOT / "wiki").rglob("README.md"))
+    navigation_pages.update((ROOT / "wiki" / "dashboards").rglob("*.md"))
+    navigation_pages.discard(ROOT / "wiki" / "categories" / "README.md")
+    for path in sorted(path for path in navigation_pages if path.exists()):
+        if frontmatter_value(path, "graph_exclude") != "true":
+            errors.append(f"Navigation page missing graph_exclude: true: {path.relative_to(ROOT)}")
+
+    for path in sorted((ROOT / "wiki" / "dashboards").rglob("*.md")):
+        if frontmatter_value(path, "generated") == "true":
+            if frontmatter_value(path, "graph_exclude") != "true":
+                errors.append(f"Generated dashboard missing graph_exclude: true: {path.relative_to(ROOT)}")
 
     link_index = build_link_index(wiki_pages)
     for path in wiki_pages:

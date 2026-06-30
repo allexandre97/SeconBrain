@@ -2,3 +2,4 @@
 *.swo
 .*.swp
 .obsidian
+__pycache__/

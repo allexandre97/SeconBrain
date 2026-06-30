@@ -13,7 +13,7 @@ related:
 sources: []
 sensitivity: public
 encryption: none
-graph_exclude: true
+graph_exclude: false
 generated: true
 category_path: research/statistics
 ---
@@ -30,7 +30,7 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Subcategories
 
-- [[wiki/categories/research/statistics/monte-carlo|research/statistics/monte-carlo]] - 14 direct, 14 total pages in branch.
+- [[wiki/categories/research/statistics/monte-carlo|research/statistics/monte-carlo]] - 15 direct, 15 total pages in branch.
 
 ## Direct members
 
