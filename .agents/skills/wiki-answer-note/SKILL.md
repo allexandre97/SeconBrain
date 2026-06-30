@@ -1,3 +1,8 @@
+---
+name: wiki-answer-note
+description: Use for answering user questions by writing readable answer notes into the wiki, consulting existing wiki pages first and raw sources only when needed.
+---
+
 # Wiki Answer Note
 
 Use this skill for prompts such as `Answer in the wiki: <question>` or `Write a wiki answer for: <question>`.

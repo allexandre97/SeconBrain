@@ -1,3 +1,8 @@
+---
+name: wiki-source-ingestion
+description: Use for importing and ingesting source files into the SecondBrain wiki, including source bundles, math-heavy sources, provenance, retrieval QA, and ingestion completion checks.
+---
+
 # Wiki Source Ingestion
 
 Use this skill for `Ingest <path>`, `Ingest <these files/folder>`, source-bundle ingestion, source import, math-heavy source ingestion, and source-specific retrieval QA.

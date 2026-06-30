@@ -1,3 +1,8 @@
+---
+name: wiki-note-maintenance
+description: Use for wiki validation, cleanup, duplicate detection, Obsidian math repair, source metadata fixes, category/index maintenance, and concept splitting or merging.
+---
+
 # Wiki Note Maintenance
 
 Use this skill for validation, cleanup, duplicate detection, formatting repair, concept splitting or merging, index/log consistency, and wiki health checks.
