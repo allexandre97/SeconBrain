@@ -6,7 +6,7 @@ updated: 2026-06-30
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - fiber-reconstruction
@@ -14,8 +14,8 @@ tags:
   - collagen
   - microscopy
 related:
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/topology-aware-tubular-structure-segmentation]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/topology-aware-tubular-structure-segmentation]]"
 sources:
   - SRC-0034
   - SRC-0035
@@ -44,10 +44,10 @@ Topology-aware fiber network reconstruction extracts a graph-like representation
 
 ## Links
 
-- [[sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d]]
-- [[sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
-- [[concepts/topology-aware-tubular-structure-segmentation]]
+- [[wiki/sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d]]
+- [[wiki/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/topology-aware-tubular-structure-segmentation]]
 
 ## Open Questions
 

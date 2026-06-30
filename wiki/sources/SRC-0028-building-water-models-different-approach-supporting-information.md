@@ -26,8 +26,8 @@ tags:
   - multipoles
   - math-heavy
 related:
-  - "[[sources/SRC-0027-building-water-models-different-approach-opc]]"
-  - "[[concepts/opc-water-model]]"
+  - "[[wiki/sources/SRC-0027-building-water-models-different-approach-opc]]"
+  - "[[wiki/concepts/opc-water-model]]"
 sources:
   - SRC-0028
 sensitivity: public
@@ -43,8 +43,7 @@ Source ID: `SRC-0028`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0028-building-water-models-different-approach-supporting-information.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0028-building-water-models-different-approach-supporting-information.pdf)
-
+- Open raw source: [raw/sources/SRC-0028-building-water-models-different-approach-supporting-information.pdf](../../raw/sources/SRC-0028-building-water-models-different-approach-supporting-information.pdf)
 ## Source bundle
 
 Supporting information for SRC-0027. [SRC-0027] [SRC-0028]
@@ -86,15 +85,15 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Dipole tensor, eq. (1) | SRC-0028 analytical solution | This page; [[concepts/opc-water-model]] | Defines the target water dipole component. | $p_i$, $\mu$ | Multipole target. |
-| Quadrupole tensor, eq. (2) | SRC-0028 analytical solution | This page; [[concepts/opc-water-model]] | Defines linear and square quadrupole components. | $Q_{ij}$, $Q_0$, $Q_T$ | Multipole target. |
+| Dipole tensor, eq. (1) | SRC-0028 analytical solution | This page; [[wiki/concepts/opc-water-model]] | Defines the target water dipole component. | $p_i$, $\mu$ | Multipole target. |
+| Quadrupole tensor, eq. (2) | SRC-0028 analytical solution | This page; [[wiki/concepts/opc-water-model]] | Defines linear and square quadrupole components. | $Q_{ij}$, $Q_0$, $Q_T$ | Multipole target. |
 | Octupole tensor, eq. (3) | SRC-0028 analytical solution | This page | Defines linear and square octupole components. | $O_{ijk}$, $\Omega_0$, $\Omega_T$ | Higher-moment fitting. |
-| Charge constraints, eqs. (4+) | SRC-0028 analytical solution | [[sources/SRC-0027-building-water-models-different-approach-opc]] | Relates charge positions to multipoles. | $q$, $y$, $z_1$, $z_2$ | OPC charge geometry construction. |
+| Charge constraints, eqs. (4+) | SRC-0028 analytical solution | [[wiki/sources/SRC-0027-building-water-models-different-approach-opc]] | Relates charge positions to multipoles. | $q$, $y$, $z_1$, $z_2$ | OPC charge geometry construction. |
 
 ## Links
 
-- [[sources/SRC-0027-building-water-models-different-approach-opc]]
-- [[concepts/opc-water-model]]
+- [[wiki/sources/SRC-0027-building-water-models-different-approach-opc]]
+- [[wiki/concepts/opc-water-model]]
 
 ## Open Questions
 

@@ -25,7 +25,7 @@ tags:
   - OpenMM
   - cutoff
 related:
-  - "[[concepts/gpu-md-neighbor-and-nonbonded-acceleration]]"
+  - "[[wiki/concepts/gpu-md-neighbor-and-nonbonded-acceleration]]"
 sources:
   - SRC-0053
 sensitivity: public
@@ -41,7 +41,7 @@ Source ID: `SRC-0053`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a.pdf)
+- Open raw source: [raw/sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a.pdf](../../raw/sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a.pdf)
 
 ## Summary
 
@@ -90,7 +90,7 @@ where $n_c$ is the average number of atoms within the cutoff and is approximatel
 
 ## Links
 
-- [[concepts/gpu-md-neighbor-and-nonbonded-acceleration]]
+- [[wiki/concepts/gpu-md-neighbor-and-nonbonded-acceleration]]
 
 ## Ingestion QA
 

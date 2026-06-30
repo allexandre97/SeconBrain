@@ -7,6 +7,10 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/biomolecules/proteins
+  - research/data-management
+  - research/experimental-benchmarking
+  - research/molecular-simulation/datasets
 tags:
   - protein-force-fields
   - benchmarking
@@ -15,8 +19,8 @@ tags:
 sources:
   - SRC-0043
 related:
-  - "[[concepts/force-field-training-from-experimental-observables]]"
-  - "[[concepts/ensemble-and-force-field-refinement]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/ensemble-and-force-field-refinement]]"
 sensitivity: public
 encryption: none
 ---
@@ -37,9 +41,9 @@ Protein force-field benchmark datasets compare simulations against experimental 
 
 ## Links
 
-- [[sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[concepts/ensemble-and-force-field-refinement]]
+- [[wiki/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/concepts/ensemble-and-force-field-refinement]]
 
 ## Open Questions
 

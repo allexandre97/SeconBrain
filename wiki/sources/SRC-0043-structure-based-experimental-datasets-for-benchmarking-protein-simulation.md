@@ -18,14 +18,18 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/biomolecules/proteins
+  - research/data-management
+  - research/experimental-benchmarking
+  - research/molecular-simulation/datasets
 tags:
   - datasets
   - protein-force-fields
   - benchmarking
   - experimental-observables
 related:
-  - "[[concepts/protein-force-field-benchmark-datasets]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/protein-force-field-benchmark-datasets]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
 sources:
   - SRC-0043
 sensitivity: public
@@ -41,7 +45,7 @@ Source ID: `SRC-0043`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation.pdf)
+- Open raw source: [raw/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation.pdf](../../raw/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation.pdf)
 
 ## Summary
 
@@ -70,9 +74,9 @@ This LiveCoMS perpetual review surveys structurally oriented experimental datase
 
 ## Links
 
-- [[concepts/protein-force-field-benchmark-datasets]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/protein-force-field-benchmark-datasets]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Ingestion QA
 

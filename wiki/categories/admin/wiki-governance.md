@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,12 +25,14 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/admin|admin]]
+- [[wiki/categories/admin|admin]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0002-project-design-note|Project Design Note]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0002-project-design-note|Project Design Note]]
 
-- [[concepts/reusable-codex-task-contracts|Reusable Codex Task Contracts]]
+### Concepts
+
+- [[wiki/concepts/reusable-codex-task-contracts|Reusable Codex Task Contracts]]

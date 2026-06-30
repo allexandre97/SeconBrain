@@ -13,11 +13,11 @@ tags:
   - adaptive-sampling
   - free-energy-estimation
 related:
-  - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
-  - "[[sources/SRC-0006-times-square-sampling-supplement]]"
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/on-the-fly-estimation-versus-mbar]]"
-  - "[[concepts/tss-implementation-patterns]]"
+  - "[[wiki/sources/SRC-0005-times-square-sampling-free-energy]]"
+  - "[[wiki/sources/SRC-0006-times-square-sampling-supplement]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
 sources:
   - SRC-0005
   - SRC-0006
@@ -50,8 +50,8 @@ Treat Times Square Sampling as a theoretically motivated adaptive free energy es
 
 ## Links
 
-- [[sources/SRC-0005-times-square-sampling-free-energy]]
-- [[sources/SRC-0006-times-square-sampling-supplement]]
-- [[concepts/times-square-sampling]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
-- [[concepts/tss-implementation-patterns]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
+- [[wiki/concepts/times-square-sampling]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/concepts/tss-implementation-patterns]]

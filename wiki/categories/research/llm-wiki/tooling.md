@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,10 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/llm-wiki|research/llm-wiki]]
+- [[wiki/categories/research/llm-wiki|research/llm-wiki]]
 
-## Questions
+## Direct members
 
-- [[questions/optional-tooling-for-llm-wiki|Optional Tooling for LLM Wiki]]
+### Questions
+
+- [[wiki/questions/optional-tooling-for-llm-wiki|Optional Tooling for LLM Wiki]]

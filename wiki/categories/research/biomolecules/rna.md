@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,14 +25,16 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/biomolecules|research/biomolecules]]
+- [[wiki/categories/research/biomolecules|research/biomolecules]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations|RNA Molecular Simulations Review]]
-- [[sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field|UUCG RNA Tetraloop Force-Field Challenge]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations|RNA Molecular Simulations Review]]
+- [[wiki/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field|UUCG RNA Tetraloop Force-Field Challenge]]
 
-- [[concepts/rna-force-field-limitations|RNA Force Field Limitations]]
-- [[concepts/rna-molecular-dynamics-simulations|RNA Molecular Dynamics Simulations]]
+### Concepts
+
+- [[wiki/concepts/rna-force-field-limitations|RNA Force Field Limitations]]
+- [[wiki/concepts/rna-molecular-dynamics-simulations|RNA Molecular Dynamics Simulations]]

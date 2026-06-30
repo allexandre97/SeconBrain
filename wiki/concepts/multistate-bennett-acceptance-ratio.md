@@ -15,9 +15,9 @@ tags:
   - bridge-sampling
   - math-heavy
 related:
-  - "[[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/mbar-with-configuration-mapping]]"
+  - "[[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/mbar-with-configuration-mapping]]"
 sources:
   - SRC-0023
 sensitivity: public
@@ -92,10 +92,10 @@ MBAR is statistically optimal within its assumptions, but the assumptions do not
 
 ## Links
 
-- [[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/mbar-with-configuration-mapping]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/mbar-with-configuration-mapping]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 
 ## Open Questions
 

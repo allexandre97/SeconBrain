@@ -13,7 +13,7 @@ tags:
   - thermodynamic-integration
   - decoupling
 related:
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0047
 sensitivity: public
@@ -64,5 +64,5 @@ $$
 
 ## Links
 
-- [[sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]
+- [[wiki/concepts/free-energy-estimation]]

@@ -10,8 +10,8 @@ categories:
 tags:
   - llm-wiki
 related:
-  - "[[concepts/local-first-personal-work-knowledge-base]]"
-  - "[[concepts/raw-wiki-schema-layers]]"
+  - "[[wiki/concepts/local-first-personal-work-knowledge-base]]"
+  - "[[wiki/concepts/raw-wiki-schema-layers]]"
 sources:
   - SRC-0001
   - SRC-0002
@@ -34,8 +34,8 @@ A persistent LLM wiki is a Markdown knowledge base that an LLM incrementally mai
 
 ## Links
 
-- [[sources/SRC-0001-karpathy-llm-knowledge-base]]
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/local-first-personal-work-knowledge-base]]
-- [[concepts/raw-wiki-schema-layers]]
-- [[concepts/source-ingestion]]
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/local-first-personal-work-knowledge-base]]
+- [[wiki/concepts/raw-wiki-schema-layers]]
+- [[wiki/concepts/source-ingestion]]

@@ -12,7 +12,7 @@ tags:
   - privacy
   - metadata
 related:
-  - "[[concepts/wiki-page-metadata]]"
+  - "[[wiki/concepts/wiki-page-metadata]]"
 sources:
   - SRC-0002
 sensitivity: public
@@ -35,5 +35,5 @@ The repository should support selective privacy controls without making encrypti
 
 ## Links
 
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/wiki-page-metadata]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/wiki-page-metadata]]

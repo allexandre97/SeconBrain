@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,10 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/admin|admin]]
+- [[wiki/categories/admin|admin]]
 
-## Concepts
+## Direct members
 
-- [[concepts/wiki-linting|Wiki Linting]]
+### Concepts
+
+- [[wiki/concepts/wiki-linting|Wiki Linting]]

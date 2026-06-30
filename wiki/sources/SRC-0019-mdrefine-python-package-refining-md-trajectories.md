@@ -18,6 +18,8 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/molecular-simulation/free-energy
+  - research/molecular-simulation/molecular-dynamics
 tags:
   - mdrefine
   - ensemble-refinement
@@ -25,9 +27,9 @@ tags:
   - force-field-refinement
   - math-heavy
 related:
-  - "[[sources/SRC-0020-mdrefine-supplementary-material]]"
-  - "[[concepts/ensemble-and-force-field-refinement]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/sources/SRC-0020-mdrefine-supplementary-material]]"
+  - "[[wiki/concepts/ensemble-and-force-field-refinement]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
 sources:
   - SRC-0019
 sensitivity: public
@@ -43,8 +45,7 @@ Source ID: `SRC-0019`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories.pdf)
-
+- Open raw source: [raw/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories.pdf](../../raw/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories.pdf)
 ## Source bundle
 
 Main paper for SRC-0020, the supplementary material. [SRC-0019] [SRC-0020]
@@ -110,7 +111,7 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| $L[P]$ | SRC-0019 loss section | This page; [[concepts/ensemble-and-force-field-refinement]] | Balances experiment fit and entropy to prior. | $P$, $P_0$, $\alpha$ | Ensemble refinement objective. |
+| $L[P]$ | SRC-0019 loss section | This page; [[wiki/concepts/ensemble-and-force-field-refinement]] | Balances experiment fit and entropy to prior. | $P$, $P_0$, $\alpha$ | Ensemble refinement objective. |
 | $P_{\lambda}$ | SRC-0019 loss section | This page | Gives exponential reweighting form. | $\lambda$, $g(x)$, $Z_{\lambda}$ | Reweighted ensemble. |
 | $\Gamma(\lambda)$ | SRC-0019 loss section | This page | Convex reduced optimization problem. | $\lambda$, $g_{\mathrm{exp}}$, $\sigma$ | Inner minimization. |
 | Joint loss | SRC-0019 loss section | This page | Combines ensemble, force field, and forward model. | $\phi$, $\theta$, $R_1$, $R_2$ | Simultaneous refinement. |
@@ -127,10 +128,10 @@ The paper demonstrates the package on examples that include ensemble reweighting
 
 ## Links
 
-- [[sources/SRC-0020-mdrefine-supplementary-material]]
-- [[concepts/ensemble-and-force-field-refinement]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0020-mdrefine-supplementary-material]]
+- [[wiki/concepts/ensemble-and-force-field-refinement]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

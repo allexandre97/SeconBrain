@@ -10,7 +10,7 @@ categories:
 tags:
   - maintenance
 related:
-  - "[[concepts/reusable-codex-task-contracts]]"
+  - "[[wiki/concepts/reusable-codex-task-contracts]]"
 sources:
   - SRC-0001
   - SRC-0002
@@ -33,7 +33,7 @@ Wiki linting is periodic maintenance that checks the knowledge base for structur
 
 ## Links
 
-- [[sources/SRC-0001-karpathy-llm-knowledge-base]]
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/source-ingestion]]
-- [[concepts/reusable-codex-task-contracts]]
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/source-ingestion]]
+- [[wiki/concepts/reusable-codex-task-contracts]]

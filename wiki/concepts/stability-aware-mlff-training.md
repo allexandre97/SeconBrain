@@ -8,6 +8,8 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
+  - research/molecular-simulation/molecular-dynamics
 tags:
   - machine-learning-force-fields
   - stable-training
@@ -15,7 +17,7 @@ tags:
 sources:
   - SRC-0024
 related:
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sensitivity: public
 encryption: none
 ---
@@ -50,6 +52,6 @@ The method depends on observables and instability criteria that are meaningful f
 
 ## Links
 
-- [[sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]

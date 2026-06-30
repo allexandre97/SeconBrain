@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,14 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
 ## Subcategories
 
-- [[categories/research/biomolecules/rna|research/biomolecules/rna]]
+- [[wiki/categories/research/biomolecules/lipids|research/biomolecules/lipids]] - 5 direct, 5 total pages in branch.
+- [[wiki/categories/research/biomolecules/proteins|research/biomolecules/proteins]] - 12 direct, 12 total pages in branch.
+- [[wiki/categories/research/biomolecules/rna|research/biomolecules/rna]] - 4 direct, 4 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

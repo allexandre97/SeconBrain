@@ -15,10 +15,10 @@ tags:
   - phase-space-overlap
   - math-heavy
 related:
-  - "[[sources/SRC-0012-mbar-configuration-mapping]]"
-  - "[[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/multistate-bennett-acceptance-ratio]]"
+  - "[[wiki/sources/SRC-0012-mbar-configuration-mapping]]"
+  - "[[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/multistate-bennett-acceptance-ratio]]"
 sources:
   - SRC-0012
   - SRC-0023
@@ -64,10 +64,10 @@ $$
 
 ## Links
 
-- [[sources/SRC-0012-mbar-configuration-mapping]]
-- [[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/multistate-bennett-acceptance-ratio]]
+- [[wiki/sources/SRC-0012-mbar-configuration-mapping]]
+- [[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/multistate-bennett-acceptance-ratio]]
 
 ## Open Questions
 

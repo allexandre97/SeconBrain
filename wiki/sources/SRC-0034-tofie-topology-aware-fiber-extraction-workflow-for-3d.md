@@ -17,7 +17,7 @@ sha256: 79ed5da5189f88df87d75619efe167279392119e09e248aea2492cbb1e0a1803
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - fiber-reconstruction
@@ -25,8 +25,8 @@ tags:
   - topology
   - 3d-microscopy
 related:
-  - "[[concepts/topology-aware-fiber-network-reconstruction]]"
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/topology-aware-fiber-network-reconstruction]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
 sources:
   - SRC-0034
 sensitivity: public
@@ -42,7 +42,7 @@ Source ID: `SRC-0034`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d.pdf)
+- Open raw source: [raw/sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d.pdf](../../raw/sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d.pdf)
 
 ## Summary
 
@@ -72,8 +72,8 @@ Togo et al. introduce ToFiE, an open-source semi-automated workflow for topology
 
 ## Links
 
-- [[concepts/topology-aware-fiber-network-reconstruction]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/topology-aware-fiber-network-reconstruction]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
 
 ## Ingestion QA
 

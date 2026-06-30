@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,23 +25,25 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/computer-vision|research/computer-vision]]
+- [[wiki/categories/research/computer-vision|research/computer-vision]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint|Actin Filament Quantification]]
-- [[sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for|clDice Topology-Preserving Loss]]
-- [[sources/SRC-0004-automated-cytoskeletal-network-segmentation|Cytoskeletal Network Segmentation Review]]
-- [[sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection|DeepVesselNet]]
-- [[sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures|Filament Instance Segmentation]]
-- [[sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks|SOAX]]
-- [[sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation|Stacked U-Net Filament Segmentation]]
-- [[sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d|ToFiE Fiber Extraction]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint|Actin Filament Quantification]]
+- [[wiki/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for|clDice Topology-Preserving Loss]]
+- [[wiki/sources/SRC-0004-automated-cytoskeletal-network-segmentation|Cytoskeletal Network Segmentation Review]]
+- [[wiki/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection|DeepVesselNet]]
+- [[wiki/sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures|Filament Instance Segmentation]]
+- [[wiki/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks|SOAX]]
+- [[wiki/sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation|Stacked U-Net Filament Segmentation]]
+- [[wiki/sources/SRC-0034-tofie-topology-aware-fiber-extraction-workflow-for-3d|ToFiE Fiber Extraction]]
 
-- [[concepts/cytoskeleton-segmentation-and-tracing|Cytoskeleton Segmentation and Tracing]]
-- [[concepts/filament-instance-and-semantic-segmentation|Filament Instance and Semantic Segmentation]]
-- [[concepts/stretching-open-active-contours|Stretching Open Active Contours]]
-- [[concepts/topology-aware-fiber-network-reconstruction|Topology-Aware Fiber Network Reconstruction]]
-- [[concepts/topology-aware-tubular-structure-segmentation|Topology-Aware Tubular Structure Segmentation]]
+### Concepts
+
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing|Cytoskeleton Segmentation and Tracing]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation|Filament Instance and Semantic Segmentation]]
+- [[wiki/concepts/stretching-open-active-contours|Stretching Open Active Contours]]
+- [[wiki/concepts/topology-aware-fiber-network-reconstruction|Topology-Aware Fiber Network Reconstruction]]
+- [[wiki/concepts/topology-aware-tubular-structure-segmentation|Topology-Aware Tubular Structure Segmentation]]

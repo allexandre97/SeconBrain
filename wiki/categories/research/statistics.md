@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,12 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
 ## Subcategories
 
-- [[categories/research/statistics/monte-carlo|research/statistics/monte-carlo]]
+- [[wiki/categories/research/statistics/monte-carlo|research/statistics/monte-carlo]] - 14 direct, 14 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

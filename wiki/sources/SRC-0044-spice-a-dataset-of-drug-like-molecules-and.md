@@ -19,14 +19,18 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/data-management
+  - research/molecular-simulation/datasets
+  - research/biomolecules/proteins
+  - research/machine-learning/molecular-modeling
 tags:
   - datasets
   - machine-learning-potentials
   - SPICE
   - quantum-chemistry
 related:
-  - "[[concepts/machine-learning-potential-datasets]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/machine-learning-potential-datasets]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0044
 sensitivity: public
@@ -42,7 +46,7 @@ Source ID: `SRC-0044`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and.pdf)
+- Open raw source: [raw/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and.pdf](../../raw/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and.pdf)
 
 ## Summary
 
@@ -73,9 +77,9 @@ SPICE is a quantum-chemistry dataset for training machine-learning potentials re
 
 ## Links
 
-- [[concepts/machine-learning-potential-datasets]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/machine-learning-potential-datasets]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Ingestion QA
 

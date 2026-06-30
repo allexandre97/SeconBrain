@@ -24,7 +24,7 @@ tags:
   - Ewald-summation
   - polymers
 related:
-  - "[[concepts/md-pressure-and-stress-tensor-calculation]]"
+  - "[[wiki/concepts/md-pressure-and-stress-tensor-calculation]]"
 sources:
   - SRC-0051
 sensitivity: public
@@ -40,7 +40,7 @@ Source ID: `SRC-0051`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0051-a-general-pressure-tensor-calculation-for-molecular-dynamics.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0051-a-general-pressure-tensor-calculation-for-molecular-dynamics.pdf)
+- Open raw source: [raw/sources/SRC-0051-a-general-pressure-tensor-calculation-for-molecular-dynamics.pdf](../../raw/sources/SRC-0051-a-general-pressure-tensor-calculation-for-molecular-dynamics.pdf)
 
 ## Summary
 
@@ -91,7 +91,7 @@ $$
 
 ## Links
 
-- [[concepts/md-pressure-and-stress-tensor-calculation]]
+- [[wiki/concepts/md-pressure-and-stress-tensor-calculation]]
 
 ## Ingestion QA
 

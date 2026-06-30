@@ -26,8 +26,8 @@ tags:
   - reinforcement-learning
   - embedded-atom-model
 related:
-  - "[[concepts/symbolic-regression-interatomic-potentials]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/symbolic-regression-interatomic-potentials]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0017
 sensitivity: public
@@ -43,7 +43,7 @@ Source ID: `SRC-0017`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials.pdf)
+- Open raw source: [raw/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials.pdf](../../raw/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials.pdf)
 
 ## Summary
 
@@ -74,7 +74,7 @@ where symbolic regression searches for explicit forms of the pair, density, and 
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| EAM decomposition | SRC-0017 methods/results | This page; [[concepts/symbolic-regression-interatomic-potentials]] | Defines the interpretable potential family. | $F$, $\rho_i$, $\phi(r)$ | Search space scaffold. |
+| EAM decomposition | SRC-0017 methods/results | This page; [[wiki/concepts/symbolic-regression-interatomic-potentials]] | Defines the interpretable potential family. | $F$, $\rho_i$, $\phi(r)$ | Search space scaffold. |
 | SR1/SR2 symbolic terms | SRC-0017 results | Source only | Learned explicit functions. | Pair/density/embedding terms | Model deployment. |
 | Energy/force loss | SRC-0017 results/methods | This page conceptually | Fits DFT energies and forces. | DFT labels, model predictions | Training objective. |
 
@@ -92,9 +92,9 @@ The paper emphasizes that several validation properties, including melting dynam
 
 ## Links
 
-- [[concepts/symbolic-regression-interatomic-potentials]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/symbolic-regression-interatomic-potentials]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

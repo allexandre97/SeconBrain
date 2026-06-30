@@ -16,12 +16,12 @@ tags:
   - free-energy-estimation
   - math-heavy
 related:
-  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
-  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
-  - "[[sources/SRC-0009-awh-alchemical-free-energy]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[questions/awh-validation-scope]]"
+  - "[[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[wiki/sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[wiki/sources/SRC-0009-awh-alchemical-free-energy]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/questions/awh-validation-scope]]"
 sources:
   - SRC-0007
   - SRC-0008
@@ -137,12 +137,12 @@ For alchemical calculations, $\lambda$ indexes Hamiltonians connecting physical 
 
 ## Links
 
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
-- [[sources/SRC-0008-awh-free-energy-landscapes]]
-- [[sources/SRC-0009-awh-alchemical-free-energy]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[questions/awh-validation-scope]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[wiki/sources/SRC-0008-awh-free-energy-landscapes]]
+- [[wiki/sources/SRC-0009-awh-alchemical-free-energy]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/questions/awh-validation-scope]]
 
 ## Open Questions
 

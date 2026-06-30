@@ -21,6 +21,7 @@ areas:
 categories:
   - research/molecular-simulation/datasets
   - research/data-management
+  - research/biomolecules/lipids
 tags:
   - overlay-databank
   - NMRlipids
@@ -28,9 +29,9 @@ tags:
   - membrane-simulations
   - machine-learning
 related:
-  - "[[sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven]]"
-  - "[[concepts/overlay-databanks-for-biomolecular-simulation-data]]"
-  - "[[concepts/machine-learning-potential-datasets]]"
+  - "[[wiki/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven]]"
+  - "[[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data]]"
+  - "[[wiki/concepts/machine-learning-potential-datasets]]"
 sources:
   - SRC-0057
   - SRC-0058
@@ -47,7 +48,7 @@ Source ID: `SRC-0057`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules.pdf)
+- Open raw source: [raw/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules.pdf](../../raw/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules.pdf)
 
 ## Summary
 
@@ -77,9 +78,9 @@ This Nature Communications paper proposes the overlay databank pattern: leave ra
 
 ## Links
 
-- [[sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven]]
-- [[concepts/overlay-databanks-for-biomolecular-simulation-data]]
-- [[concepts/machine-learning-potential-datasets]]
+- [[wiki/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven]]
+- [[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data]]
+- [[wiki/concepts/machine-learning-potential-datasets]]
 
 ## Ingestion QA
 

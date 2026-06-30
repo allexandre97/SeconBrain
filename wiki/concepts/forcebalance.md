@@ -17,8 +17,8 @@ sources:
   - SRC-0014
   - SRC-0021
 related:
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
 sensitivity: public
 encryption: none
 ---
@@ -57,7 +57,7 @@ ForceBalance improves the reproducibility of the fitting workflow, but the fitte
 
 ## Links
 
-- [[sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
-- [[sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
-- [[sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
-- [[concepts/force-field-training-from-experimental-observables]]
+- [[wiki/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
+- [[wiki/sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
+- [[wiki/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]

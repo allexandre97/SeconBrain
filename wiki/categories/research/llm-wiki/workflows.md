@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,9 +25,15 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/llm-wiki|research/llm-wiki]]
+- [[wiki/categories/research/llm-wiki|research/llm-wiki]]
 
-## Concepts
+## Direct members
 
-- [[concepts/reusable-codex-task-contracts|Reusable Codex Task Contracts]]
-- [[concepts/source-ingestion|Source Ingestion]]
+### Sources
+
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base|LLM Wiki]]
+
+### Concepts
+
+- [[wiki/concepts/reusable-codex-task-contracts|Reusable Codex Task Contracts]]
+- [[wiki/concepts/source-ingestion|Source Ingestion]]

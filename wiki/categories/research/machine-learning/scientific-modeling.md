@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,32 +25,34 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/machine-learning|research/machine-learning]]
+- [[wiki/categories/research/machine-learning|research/machine-learning]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for|clDice Topology-Preserving Loss]]
-- [[sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed|ConFIG]]
-- [[sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection|DeepVesselNet]]
-- [[sources/SRC-0003-training-a-force-field-from-scratch|Garnet Force Field]]
-- [[sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to|GNN to Symbolic-Regression Potentials]]
-- [[sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and|OMol25 Dataset]]
-- [[sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body|Original Boltzmann Generators]]
-- [[sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large|Scalable Boltzmann Generators]]
-- [[sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and|SPICE Dataset]]
-- [[sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators|StABlE MLFF Training]]
-- [[sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials|Symbolic-Regression Interatomic Potentials]]
-- [[sources/SRC-0037-transferable-boltzmann-generators|Transferable Boltzmann Generators]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for|clDice Topology-Preserving Loss]]
+- [[wiki/sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed|ConFIG]]
+- [[wiki/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection|DeepVesselNet]]
+- [[wiki/sources/SRC-0003-training-a-force-field-from-scratch|Garnet Force Field]]
+- [[wiki/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to|GNN to Symbolic-Regression Potentials]]
+- [[wiki/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and|OMol25 Dataset]]
+- [[wiki/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body|Original Boltzmann Generators]]
+- [[wiki/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large|Scalable Boltzmann Generators]]
+- [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and|SPICE Dataset]]
+- [[wiki/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators|StABlE MLFF Training]]
+- [[wiki/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials|Symbolic-Regression Interatomic Potentials]]
+- [[wiki/sources/SRC-0037-transferable-boltzmann-generators|Transferable Boltzmann Generators]]
 
-- [[concepts/automated-force-field-training|Automated Force Field Training]]
-- [[concepts/boltzmann-generators-equilibrium-sampling|Boltzmann Generators for Equilibrium Sampling]]
-- [[concepts/conflict-free-pinn-training|Conflict-Free PINN Training]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis|Deep Learning for Cytoskeleton Image Analysis]]
-- [[concepts/gnn-to-symbolic-regression-potentials|GNN to Symbolic Regression Potentials]]
-- [[concepts/machine-learning-potential-datasets|Machine Learning Potential Datasets]]
-- [[concepts/stability-aware-mlff-training|Stability-Aware MLFF Training]]
-- [[concepts/symbolic-regression-interatomic-potentials|Symbolic Regression Interatomic Potentials]]
-- [[concepts/topology-aware-tubular-structure-segmentation|Topology-Aware Tubular Structure Segmentation]]
-- [[concepts/transferable-and-scalable-boltzmann-generators|Transferable and Scalable Boltzmann Generators]]
+### Concepts
+
+- [[wiki/concepts/automated-force-field-training|Automated Force Field Training]]
+- [[wiki/concepts/boltzmann-generators-equilibrium-sampling|Boltzmann Generators for Equilibrium Sampling]]
+- [[wiki/concepts/conflict-free-pinn-training|Conflict-Free PINN Training]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis|Deep Learning for Cytoskeleton Image Analysis]]
+- [[wiki/concepts/gnn-to-symbolic-regression-potentials|GNN to Symbolic Regression Potentials]]
+- [[wiki/concepts/machine-learning-potential-datasets|Machine Learning Potential Datasets]]
+- [[wiki/concepts/stability-aware-mlff-training|Stability-Aware MLFF Training]]
+- [[wiki/concepts/symbolic-regression-interatomic-potentials|Symbolic Regression Interatomic Potentials]]
+- [[wiki/concepts/topology-aware-tubular-structure-segmentation|Topology-Aware Tubular Structure Segmentation]]
+- [[wiki/concepts/transferable-and-scalable-boltzmann-generators|Transferable and Scalable Boltzmann Generators]]

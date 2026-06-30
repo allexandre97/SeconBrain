@@ -31,13 +31,13 @@ tags:
   - math-heavy
   - supplement
 related:
-  - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/on-the-fly-estimation-versus-mbar]]"
-  - "[[concepts/tss-implementation-patterns]]"
-  - "[[questions/tss-generalization-scope]]"
+  - "[[wiki/sources/SRC-0005-times-square-sampling-free-energy]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
+  - "[[wiki/questions/tss-generalization-scope]]"
 sources:
   - SRC-0006
   - SRC-0005
@@ -56,11 +56,10 @@ Source ID: `SRC-0006`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0006-times-square-sampling-supplement.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0006-times-square-sampling-supplement.pdf)
-
+- Open raw source: [raw/sources/SRC-0006-times-square-sampling-supplement.pdf](../../raw/sources/SRC-0006-times-square-sampling-supplement.pdf)
 ## Source bundle
 
-This source is the supplement in the `times-square-sampling-2024` bundle. The main paper is [[sources/SRC-0005-times-square-sampling-free-energy]]. Completion for the bundle is judged across both source pages and the linked concept pages. [SRC-0005] [SRC-0006]
+This source is the supplement in the `times-square-sampling-2024` bundle. The main paper is [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]. Completion for the bundle is judged across both source pages and the linked concept pages. [SRC-0005] [SRC-0006]
 
 ## Summary
 
@@ -137,25 +136,25 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Stochastic approximation mean field, eq. (1.1) | SRC-0006 section 1.1 | This page; [[concepts/times-square-sampling]] | States root finding as $g(\theta)=0$. | $\theta$, $Y$, $G$, $P_\theta$ | General frame for TSS convergence. |
-| Stochastic approximation update, eq. (1.2) | SRC-0006 section 1.1 | This page; [[concepts/times-square-sampling]] | Shows gain matrix and harmonic step size. | $\Gamma$, $\theta^t$, $Y^{t+1}$ | Explains optimal-gain discussion. |
-| IIS-derived recursions, eqs. (1.15)-(1.16) | SRC-0006 section 1.2 | [[concepts/times-square-sampling]] | Gives partition-function coordinate view. | $Z$, $F$, importance weights | Explains why TSS uses logarithmic updates. |
-| Variable change $(F,\mu)$ to $(Z,\xi)$ | SRC-0006 section 2.1 | [[concepts/times-square-sampling]] | Makes the Jacobian/gain calculation tractable. | $Z=e^{-F}$, $\xi=e^{-F}\mu$ | Supports stable recursions and optimal gain. |
-| Optimal gain Jacobian | SRC-0006 section 2.2 | [[concepts/times-square-sampling]] | Proves Proposition 1. | $Jg(\theta^*)$, $\Gamma$ | Theoretical validation of recursions. |
-| Visit-control steady-state calculations | SRC-0006 sections 3.1-3.2 | [[concepts/adaptive-enhanced-sampling]] | Shows how $\eta$ affects Lyapunov descent. | $\eta$, $o$, $\pi$, $V_\gamma$ | Guides turning visit control on and choosing strength. |
-| TSS and MBAR covariance formulas | SRC-0006 sections 4.1-4.5 | [[concepts/on-the-fly-estimation-versus-mbar]] | Proves variance comparison. | $\Sigma_{TSS}$, $\Sigma_{MBAR}$, overlap matrix $O$ | Limits the lower-variance claim to the theorem's assumptions. |
-| Windowed invariant density, eq. (6.4) | SRC-0006 section 6.1 | This page; [[concepts/tss-implementation-patterns]] | Defines stationary distribution for $(X,K,J)$. | $W_j$, $J$, $p_{\pi,F}$ | Basis for windowed TSS. |
-| Window eigenvector, eqs. (6.9), (7.23)-(7.24) | SRC-0006 sections 6.1 and 7.2.1 | This page; [[concepts/tss-implementation-patterns]] | Computes window marginal probabilities. | $Q$, $p_j$, $\gamma$, $o$ | Needed for global estimates. |
-| Regularized per-window rung density, eqs. (6.10), (7.18)-(7.19) | SRC-0006 sections 6.2 and 7.1.3 | [[concepts/tss-implementation-patterns]] | Keeps probabilities positive and local. | $\epsilon_\gamma$, $M(\mu)$, $\gamma_{j;k}$ | Prevents zero-probability failures. |
-| Global visit-control objective, eqs. (6.18)-(6.19) | SRC-0006 section 6.2.1 | This page; [[concepts/tss-implementation-patterns]] | Defines convex optimization for sampling free energies. | $F^\circ$, $f_j$, $q_k$, $p_j$ | Global operation used for sampling. |
-| Reported free-energy system, eqs. (6.22)-(6.25) | SRC-0006 section 6.2.2 | This page; [[concepts/tss-implementation-patterns]] | Combines local estimates into lower-noise reported values. | $\gamma_k^{TSS}$, $F_k^{TSS}$, $f_j^{TSS}$ | Output free energies for users. |
-| Epoch counts, eqs. (7.2)-(7.4) | SRC-0006 section 7.1.1 | [[concepts/tss-implementation-patterns]] | Stores recent history across replicas. | $N_j^{t,l}(r)$, $R$, $\alpha$ | Supports bounded storage and history forgetting. |
-| Importance ratio and epoch free energy, eqs. (7.5)-(7.9) | SRC-0006 section 7.1.2 | This page; [[concepts/tss-implementation-patterns]] | Updates per-window epoch and all-epoch free energies. | $R_{j;k}$, $d_j$, $F_{j;k}^{t,l}$ | Main implementation recursion. |
-| Metric and observable estimates, eqs. (7.10)-(7.17) | SRC-0006 section 7.1.3 | [[concepts/free-energy-estimation]]; [[concepts/tss-implementation-patterns]] | Estimates coordinate-invariant rung density. | $g_{ij}(\lambda)$, $\psi$, $G_{j;k}$ | Required when using adaptive $\gamma(\mu)$. |
-| Tilt recursions, eqs. (7.20)-(7.22) | SRC-0006 section 7.1.4 | This page; [[concepts/adaptive-enhanced-sampling]] | Implements per-window visit-control tilts. | $o_{j;k}$, $\gamma_{j;k}$ | Drives visit control. |
-| Offset fixed point, eqs. (7.26)-(7.30) | SRC-0006 section 7.2.2 | This page; [[concepts/tss-implementation-patterns]] | Solves global visit-control free energies. | $f_j$, $h_j$, $g_j$, $\eta$ | Communication/global-estimator cost. |
-| Jackknife MSE, eqs. (8.1)-(8.5) | SRC-0006 section 8 | This page; [[concepts/tss-implementation-patterns]] | Estimates error bars from stored epochs. | jackknife replicates, $a_l$, $\phi$, $n_{epochs}$ | Enables reported uncertainty. |
-| High-frequency kernel, eqs. (10.1)-(10.2) | SRC-0006 section 10.2.3 | [[concepts/on-the-fly-estimation-versus-mbar]] | Describes repeated rung moves within one estimator-update interval. | $\nu$, $P^x$, $P^k$, $P^j$ | Practical self-adjustment mechanism. |
+| Stochastic approximation mean field, eq. (1.1) | SRC-0006 section 1.1 | This page; [[wiki/concepts/times-square-sampling]] | States root finding as $g(\theta)=0$. | $\theta$, $Y$, $G$, $P_\theta$ | General frame for TSS convergence. |
+| Stochastic approximation update, eq. (1.2) | SRC-0006 section 1.1 | This page; [[wiki/concepts/times-square-sampling]] | Shows gain matrix and harmonic step size. | $\Gamma$, $\theta^t$, $Y^{t+1}$ | Explains optimal-gain discussion. |
+| IIS-derived recursions, eqs. (1.15)-(1.16) | SRC-0006 section 1.2 | [[wiki/concepts/times-square-sampling]] | Gives partition-function coordinate view. | $Z$, $F$, importance weights | Explains why TSS uses logarithmic updates. |
+| Variable change $(F,\mu)$ to $(Z,\xi)$ | SRC-0006 section 2.1 | [[wiki/concepts/times-square-sampling]] | Makes the Jacobian/gain calculation tractable. | $Z=e^{-F}$, $\xi=e^{-F}\mu$ | Supports stable recursions and optimal gain. |
+| Optimal gain Jacobian | SRC-0006 section 2.2 | [[wiki/concepts/times-square-sampling]] | Proves Proposition 1. | $Jg(\theta^*)$, $\Gamma$ | Theoretical validation of recursions. |
+| Visit-control steady-state calculations | SRC-0006 sections 3.1-3.2 | [[wiki/concepts/adaptive-enhanced-sampling]] | Shows how $\eta$ affects Lyapunov descent. | $\eta$, $o$, $\pi$, $V_\gamma$ | Guides turning visit control on and choosing strength. |
+| TSS and MBAR covariance formulas | SRC-0006 sections 4.1-4.5 | [[wiki/concepts/on-the-fly-estimation-versus-mbar]] | Proves variance comparison. | $\Sigma_{TSS}$, $\Sigma_{MBAR}$, overlap matrix $O$ | Limits the lower-variance claim to the theorem's assumptions. |
+| Windowed invariant density, eq. (6.4) | SRC-0006 section 6.1 | This page; [[wiki/concepts/tss-implementation-patterns]] | Defines stationary distribution for $(X,K,J)$. | $W_j$, $J$, $p_{\pi,F}$ | Basis for windowed TSS. |
+| Window eigenvector, eqs. (6.9), (7.23)-(7.24) | SRC-0006 sections 6.1 and 7.2.1 | This page; [[wiki/concepts/tss-implementation-patterns]] | Computes window marginal probabilities. | $Q$, $p_j$, $\gamma$, $o$ | Needed for global estimates. |
+| Regularized per-window rung density, eqs. (6.10), (7.18)-(7.19) | SRC-0006 sections 6.2 and 7.1.3 | [[wiki/concepts/tss-implementation-patterns]] | Keeps probabilities positive and local. | $\epsilon_\gamma$, $M(\mu)$, $\gamma_{j;k}$ | Prevents zero-probability failures. |
+| Global visit-control objective, eqs. (6.18)-(6.19) | SRC-0006 section 6.2.1 | This page; [[wiki/concepts/tss-implementation-patterns]] | Defines convex optimization for sampling free energies. | $F^\circ$, $f_j$, $q_k$, $p_j$ | Global operation used for sampling. |
+| Reported free-energy system, eqs. (6.22)-(6.25) | SRC-0006 section 6.2.2 | This page; [[wiki/concepts/tss-implementation-patterns]] | Combines local estimates into lower-noise reported values. | $\gamma_k^{TSS}$, $F_k^{TSS}$, $f_j^{TSS}$ | Output free energies for users. |
+| Epoch counts, eqs. (7.2)-(7.4) | SRC-0006 section 7.1.1 | [[wiki/concepts/tss-implementation-patterns]] | Stores recent history across replicas. | $N_j^{t,l}(r)$, $R$, $\alpha$ | Supports bounded storage and history forgetting. |
+| Importance ratio and epoch free energy, eqs. (7.5)-(7.9) | SRC-0006 section 7.1.2 | This page; [[wiki/concepts/tss-implementation-patterns]] | Updates per-window epoch and all-epoch free energies. | $R_{j;k}$, $d_j$, $F_{j;k}^{t,l}$ | Main implementation recursion. |
+| Metric and observable estimates, eqs. (7.10)-(7.17) | SRC-0006 section 7.1.3 | [[wiki/concepts/free-energy-estimation]]; [[wiki/concepts/tss-implementation-patterns]] | Estimates coordinate-invariant rung density. | $g_{ij}(\lambda)$, $\psi$, $G_{j;k}$ | Required when using adaptive $\gamma(\mu)$. |
+| Tilt recursions, eqs. (7.20)-(7.22) | SRC-0006 section 7.1.4 | This page; [[wiki/concepts/adaptive-enhanced-sampling]] | Implements per-window visit-control tilts. | $o_{j;k}$, $\gamma_{j;k}$ | Drives visit control. |
+| Offset fixed point, eqs. (7.26)-(7.30) | SRC-0006 section 7.2.2 | This page; [[wiki/concepts/tss-implementation-patterns]] | Solves global visit-control free energies. | $f_j$, $h_j$, $g_j$, $\eta$ | Communication/global-estimator cost. |
+| Jackknife MSE, eqs. (8.1)-(8.5) | SRC-0006 section 8 | This page; [[wiki/concepts/tss-implementation-patterns]] | Estimates error bars from stored epochs. | jackknife replicates, $a_l$, $\phi$, $n_{epochs}$ | Enables reported uncertainty. |
+| High-frequency kernel, eqs. (10.1)-(10.2) | SRC-0006 section 10.2.3 | [[wiki/concepts/on-the-fly-estimation-versus-mbar]] | Describes repeated rung moves within one estimator-update interval. | $\nu$, $P^x$, $P^k$, $P^j$ | Practical self-adjustment mechanism. |
 
 ## Algorithmic recursions
 
@@ -212,13 +211,13 @@ The self-adjustment experiments compare different rung-update and estimator-upda
 
 ## Links
 
-- [[sources/SRC-0005-times-square-sampling-free-energy]]
-- [[concepts/times-square-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
-- [[concepts/tss-implementation-patterns]]
-- [[questions/tss-generalization-scope]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]
+- [[wiki/concepts/times-square-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/concepts/tss-implementation-patterns]]
+- [[wiki/questions/tss-generalization-scope]]
 
 ## Open Questions
 

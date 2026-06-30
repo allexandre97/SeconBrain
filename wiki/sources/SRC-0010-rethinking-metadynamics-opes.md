@@ -26,10 +26,10 @@ tags:
   - collective-variables
   - math-heavy
 related:
-  - "[[sources/SRC-0011-opes-supporting-information]]"
-  - "[[concepts/on-the-fly-probability-enhanced-sampling]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/sources/SRC-0011-opes-supporting-information]]"
+  - "[[wiki/concepts/on-the-fly-probability-enhanced-sampling]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0010
   - SRC-0011
@@ -48,11 +48,10 @@ Source ID: `SRC-0010`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0010-rethinking-metadynamics-from-bias-potentials-to-probability-distributions.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0010-rethinking-metadynamics-from-bias-potentials-to-probability-distributions.pdf)
-
+- Open raw source: [raw/sources/SRC-0010-rethinking-metadynamics-from-bias-potentials-to-probability-distributions.pdf](../../raw/sources/SRC-0010-rethinking-metadynamics-from-bias-potentials-to-probability-distributions.pdf)
 ## Source bundle
 
-This is the main paper in the `opes-rethinking-metadynamics` bundle. The supporting information is [[sources/SRC-0011-opes-supporting-information]]. [SRC-0010] [SRC-0011]
+This is the main paper in the `opes-rethinking-metadynamics` bundle. The supporting information is [[wiki/sources/SRC-0011-opes-supporting-information]]. [SRC-0010] [SRC-0011]
 
 ## Summary
 
@@ -116,11 +115,11 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Reweighting identity, eq. (1) | SRC-0010 introduction | [[concepts/on-the-fly-probability-enhanced-sampling]] | Recovers unbiased $P(s)$ from biased ensemble. | $P(s)$, $V(s)$ | Analysis and observables. |
+| Reweighting identity, eq. (1) | SRC-0010 introduction | [[wiki/concepts/on-the-fly-probability-enhanced-sampling]] | Recovers unbiased $P(s)$ from biased ensemble. | $P(s)$, $V(s)$ | Analysis and observables. |
 | Metadynamics bias, eq. (2) | SRC-0010 introduction | This page | Defines baseline MetaD accumulation. | $G$, $\gamma$, $V$ | Comparison target. |
 | Probability-based bias, eq. (3) | SRC-0010 method | This page | Shows adaptive umbrella-style probability reconstruction. | $\hat{P}_n$, $V_n$ | Historical connection. |
-| Target-distribution bias, eq. (4) | SRC-0010 method | This page; [[concepts/on-the-fly-probability-enhanced-sampling]] | Defines bias that samples $p^{tg}$. | $P$, $p^{tg}$ | Conceptual core. |
-| Weighted KDE, eq. (5) | SRC-0010 method | This page; [[concepts/on-the-fly-probability-enhanced-sampling]] | Estimates probability from biased samples. | $\tilde{P}_n$, $w_k$, $G$ | Main estimator. |
+| Target-distribution bias, eq. (4) | SRC-0010 method | This page; [[wiki/concepts/on-the-fly-probability-enhanced-sampling]] | Defines bias that samples $p^{tg}$. | $P$, $p^{tg}$ | Conceptual core. |
+| Weighted KDE, eq. (5) | SRC-0010 method | This page; [[wiki/concepts/on-the-fly-probability-enhanced-sampling]] | Estimates probability from biased samples. | $\tilde{P}_n$, $w_k$, $G$ | Main estimator. |
 | Bandwidth rescaling, eq. (6) | SRC-0010 method; SRC-0011 | This page | Shrinks kernels as effective sample size grows. | $\sigma_i$, $N_{\mathrm{eff}}$, $d$ | Resolution schedule. |
 | Explored-region normalization, eq. (7) | SRC-0010 method; SRC-0011 | This page | Normalizes over explored CV region. | $Z_n$, $\Omega_n$ | High-dimensional robustness. |
 | OPES bias, eq. (8) | SRC-0010 method | This page | Final bias with regularization cap. | $V_n$, $\epsilon$, $\gamma$ | Production bias. |
@@ -141,10 +140,10 @@ The paper reports faster convergence and reduced bias oscillations relative to s
 
 ## Links
 
-- [[sources/SRC-0011-opes-supporting-information]]
-- [[concepts/on-the-fly-probability-enhanced-sampling]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/sources/SRC-0011-opes-supporting-information]]
+- [[wiki/concepts/on-the-fly-probability-enhanced-sampling]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
 
 ## Open Questions
 

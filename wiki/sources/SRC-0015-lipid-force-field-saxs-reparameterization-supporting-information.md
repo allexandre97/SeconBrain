@@ -19,14 +19,15 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/biomolecules/lipids
 tags:
   - supporting-information
   - forcebalance
   - lipid-force-field
   - saxs
 related:
-  - "[[sources/SRC-0014-lipid-force-field-saxs-reparameterization]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/sources/SRC-0014-lipid-force-field-saxs-reparameterization]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
 sources:
   - SRC-0015
 sensitivity: public
@@ -42,8 +43,7 @@ Source ID: `SRC-0015`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information.pdf)
-
+- Open raw source: [raw/sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information.pdf](../../raw/sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information.pdf)
 ## Source bundle
 
 Supporting information for SRC-0014. [SRC-0014] [SRC-0015]
@@ -65,9 +65,9 @@ The SI makes the transferability diagnosis in SRC-0014 auditable by showing whic
 
 ## Links
 
-- [[sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

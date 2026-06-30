@@ -12,9 +12,9 @@ tags:
   - transferability
   - force-field-training
 related:
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
 sources:
   - SRC-0014
   - SRC-0016
@@ -56,8 +56,8 @@ The recurring pattern is that improved training loss is not enough. The stronges
 
 ## Links
 
-- [[concepts/automated-force-field-training]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
-- [[concepts/symbolic-regression-interatomic-potentials]]
-- [[concepts/ensemble-and-force-field-refinement]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/concepts/symbolic-regression-interatomic-potentials]]
+- [[wiki/concepts/ensemble-and-force-field-refinement]]

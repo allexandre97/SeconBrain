@@ -29,10 +29,10 @@ tags:
   - one-over-t
   - math-heavy
 related:
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[questions/awh-validation-scope]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/questions/awh-validation-scope]]"
 sources:
   - SRC-0007
 sensitivity: public
@@ -50,7 +50,7 @@ Source ID: `SRC-0007`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0007-improving-the-efficiency-of-extended-ensemble-simulations-the.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0007-improving-the-efficiency-of-extended-ensemble-simulations-the.pdf)
+- Open raw source: [raw/sources/SRC-0007-improving-the-efficiency-of-extended-ensemble-simulations-the.pdf](../../raw/sources/SRC-0007-improving-the-efficiency-of-extended-ensemble-simulations-the.pdf)
 
 ## Summary
 
@@ -128,12 +128,12 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Extended ensemble, eq. (1) | SRC-0007 section I.A | This page; [[concepts/accelerated-weight-histogram-method]] | Defines biased joint sampling over configurations and parameters. | $x$, $m$, $f_m$, $E_m$, $Z$ | Basis of AWH sampling. |
+| Extended ensemble, eq. (1) | SRC-0007 section I.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Defines biased joint sampling over configurations and parameters. | $x$, $m$, $f_m$, $E_m$, $Z$ | Basis of AWH sampling. |
 | Conditional ensemble, eq. (2) | SRC-0007 section I.A | This page | Defines the fixed-parameter equilibrium distribution and exact free energy. | $\pi_m$, $F_m$, $E_m$ | Explains what $f_m$ estimates. |
 | Parameter marginal, eq. (3) | SRC-0007 section I.A | This page | Shows why flat sampling requires $f_m \approx F_m$. | $P(m)$, $f_m$, $F_m$ | Target for adaptive weights. |
-| Gibbs move, eq. (4) | SRC-0007 section II | This page; [[concepts/accelerated-weight-histogram-method]] | Samples parameter moves from conditional probabilities. | $w_{m'm}$, $E_m$, $f_m$ | Allows large parameter jumps. |
-| Weight histogram, eq. (5) | SRC-0007 section II | This page; [[concepts/accelerated-weight-histogram-method]] | Accumulates fractional conditional probabilities. | $W_k$, $w_{km}$ | Main data structure of AWH. |
-| Free-energy update, eq. (7) | SRC-0007 section II | This page; [[concepts/accelerated-weight-histogram-method]] | Updates $f_k$ from deviation of $W_k$ from target. | $W_k$, $M$, $N$ | Core estimator recursion. |
+| Gibbs move, eq. (4) | SRC-0007 section II | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Samples parameter moves from conditional probabilities. | $w_{m'm}$, $E_m$, $f_m$ | Allows large parameter jumps. |
+| Weight histogram, eq. (5) | SRC-0007 section II | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Accumulates fractional conditional probabilities. | $W_k$, $w_{km}$ | Main data structure of AWH. |
+| Free-energy update, eq. (7) | SRC-0007 section II | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Updates $f_k$ from deviation of $W_k$ from target. | $W_k$, $M$, $N$ | Core estimator recursion. |
 | Histogram rescaling, eq. (8) | SRC-0007 section II | This page | Carries forward history after updating $f_k$. | $W_k$, $\Delta f_k$ | Prevents resetting learned information. |
 | Simulation combination, eqs. (9)-(10) | SRC-0007 section II.B | This page | Combines independent estimates and supports jackknife errors. | $f_m^{(n)}$, $N_n$, $\bar{F}_m$ | Parallel analysis. |
 | Error metric, eq. (12) | SRC-0007 section III.A | This page | Measures error in consecutive free-energy differences. | $\delta F$, $f_m$, $F_m$ | Benchmark metric. |
@@ -158,10 +158,10 @@ On an $8 \times 8 \times 8$ three-dimensional Ising spin glass, AWH improved acc
 
 ## Links
 
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[questions/awh-validation-scope]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/questions/awh-validation-scope]]
 
 ## Open Questions
 

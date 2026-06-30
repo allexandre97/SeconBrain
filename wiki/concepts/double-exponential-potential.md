@@ -11,7 +11,7 @@ tags:
   - nonbonded-potentials
   - molecular-dynamics
 related:
-  - "[[concepts/garnet-force-field]]"
+  - "[[wiki/concepts/garnet-force-field]]"
 sources:
   - SRC-0003
 sensitivity: public
@@ -34,6 +34,6 @@ The double exponential potential is the non-bonded potential used by Garnet as a
 
 ## Links
 
-- [[sources/SRC-0003-training-a-force-field-from-scratch]]
-- [[concepts/garnet-force-field]]
-- [[concepts/automated-force-field-training]]
+- [[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]
+- [[wiki/concepts/garnet-force-field]]
+- [[wiki/concepts/automated-force-field-training]]

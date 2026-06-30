@@ -8,14 +8,15 @@ areas:
 categories:
   - research/computer-vision/biomedical-imaging
   - research/machine-learning/scientific-modeling
+  - research/bioimage-analysis/filament-segmentation
 tags:
   - topology
   - tubular-segmentation
   - connectivity
   - deep-learning
 related:
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
-  - "[[concepts/topology-aware-fiber-network-reconstruction]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/topology-aware-fiber-network-reconstruction]]"
 sources:
   - SRC-0032
   - SRC-0033
@@ -49,10 +50,10 @@ $$
 
 ## Links
 
-- [[sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for]]
-- [[sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection]]
-- [[concepts/topology-aware-fiber-network-reconstruction]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for]]
+- [[wiki/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection]]
+- [[wiki/concepts/topology-aware-fiber-network-reconstruction]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
 
 ## Open Questions
 

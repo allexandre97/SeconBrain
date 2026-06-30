@@ -14,9 +14,9 @@ tags:
   - enhanced-sampling
   - coarse-graining
 related:
-  - "[[concepts/rna-force-field-limitations]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/molecular-dynamics-constraint-solvers]]"
+  - "[[wiki/concepts/rna-force-field-limitations]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/molecular-dynamics-constraint-solvers]]"
 sources:
   - SRC-0055
   - SRC-0056
@@ -40,7 +40,7 @@ RNA molecular dynamics simulations use atomistic or coarse-grained models to int
 
 ## Links
 
-- [[sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field]]
-- [[sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations]]
-- [[concepts/rna-force-field-limitations]]
-- [[concepts/adaptive-enhanced-sampling]]
+- [[wiki/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field]]
+- [[wiki/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations]]
+- [[wiki/concepts/rna-force-field-limitations]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]

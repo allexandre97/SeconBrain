@@ -26,7 +26,7 @@ tags:
   - LAMMPS
   - GROMACS
 related:
-  - "[[concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
+  - "[[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
 sources:
   - SRC-0054
 sensitivity: public
@@ -42,7 +42,7 @@ Source ID: `SRC-0054`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation.pdf)
+- Open raw source: [raw/sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation.pdf](../../raw/sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation.pdf)
 
 ## Summary
 
@@ -94,7 +94,7 @@ Its main mathematical change is the replacement of Gaussian localization by PSWF
 
 ## Links
 
-- [[concepts/particle-mesh-ewald-and-long-range-electrostatics]]
+- [[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]
 
 ## Ingestion QA
 

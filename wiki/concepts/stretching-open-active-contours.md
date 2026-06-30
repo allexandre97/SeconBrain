@@ -6,7 +6,7 @@ updated: 2026-06-30
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - SOAC
@@ -14,8 +14,8 @@ tags:
   - active-contours
   - filament-tracing
 related:
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
 sources:
   - SRC-0035
   - SRC-0029
@@ -40,9 +40,9 @@ Stretching Open Active Contours are deformable curves used by SOAX to trace biop
 
 ## Links
 
-- [[sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
-- [[concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
 
 ## Open Questions
 

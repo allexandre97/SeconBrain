@@ -10,7 +10,7 @@ categories:
 tags:
   - workflow
 related:
-  - "[[concepts/multi-category-wiki-organization]]"
+  - "[[wiki/concepts/multi-category-wiki-organization]]"
 sources:
   - SRC-0001
   - SRC-0002
@@ -35,6 +35,6 @@ encryption: none
 
 - [[index]]
 - [[log]]
-- [[sources/SRC-0001-karpathy-llm-knowledge-base]]
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/multi-category-wiki-organization]]
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/multi-category-wiki-organization]]

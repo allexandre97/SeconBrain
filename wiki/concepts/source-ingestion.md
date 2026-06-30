@@ -10,8 +10,8 @@ categories:
 tags:
   - workflow
 related:
-  - "[[concepts/multi-category-wiki-organization]]"
-  - "[[concepts/reusable-codex-task-contracts]]"
+  - "[[wiki/concepts/multi-category-wiki-organization]]"
+  - "[[wiki/concepts/reusable-codex-task-contracts]]"
 sources:
   - SRC-0001
   - SRC-0002
@@ -35,9 +35,9 @@ Source ingestion is the workflow for turning one raw source into reviewed wiki u
 
 ## Links
 
-- [[sources/SRC-0001-karpathy-llm-knowledge-base]]
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/wiki-index-and-log]]
-- [[concepts/wiki-linting]]
-- [[concepts/multi-category-wiki-organization]]
-- [[concepts/reusable-codex-task-contracts]]
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/wiki-index-and-log]]
+- [[wiki/concepts/wiki-linting]]
+- [[wiki/concepts/multi-category-wiki-organization]]
+- [[wiki/concepts/reusable-codex-task-contracts]]

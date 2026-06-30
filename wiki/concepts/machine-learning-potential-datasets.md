@@ -8,6 +8,10 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/data-management
+  - research/molecular-simulation/datasets
+  - research/machine-learning/molecular-modeling
+  - research/biomolecules/proteins
 tags:
   - datasets
   - machine-learning-potentials
@@ -16,8 +20,8 @@ sources:
   - SRC-0042
   - SRC-0044
 related:
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/stability-aware-mlff-training]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/stability-aware-mlff-training]]"
 sensitivity: public
 encryption: none
 ---
@@ -44,12 +48,12 @@ Machine-learning potential datasets provide quantum-chemistry energies, forces, 
 
 ## Links
 
-- [[sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and]]
-- [[sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and]]
-- [[sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
-- [[concepts/overlay-databanks-for-biomolecular-simulation-data]]
-- [[concepts/automated-force-field-training]]
-- [[concepts/stability-aware-mlff-training]]
+- [[wiki/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and]]
+- [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and]]
+- [[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
+- [[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/stability-aware-mlff-training]]
 
 ## Open Questions
 

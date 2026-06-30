@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,15 +25,19 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
 ## Subcategories
 
-- [[categories/research/llm-wiki/architecture|research/llm-wiki/architecture]]
-- [[categories/research/llm-wiki/design|research/llm-wiki/design]]
-- [[categories/research/llm-wiki/metadata|research/llm-wiki/metadata]]
-- [[categories/research/llm-wiki/navigation|research/llm-wiki/navigation]]
-- [[categories/research/llm-wiki/organization|research/llm-wiki/organization]]
-- [[categories/research/llm-wiki/privacy|research/llm-wiki/privacy]]
-- [[categories/research/llm-wiki/tooling|research/llm-wiki/tooling]]
-- [[categories/research/llm-wiki/workflows|research/llm-wiki/workflows]]
+- [[wiki/categories/research/llm-wiki/architecture|research/llm-wiki/architecture]] - 2 direct, 2 total pages in branch.
+- [[wiki/categories/research/llm-wiki/design|research/llm-wiki/design]] - 4 direct, 4 total pages in branch.
+- [[wiki/categories/research/llm-wiki/metadata|research/llm-wiki/metadata]] - 1 direct, 1 total pages in branch.
+- [[wiki/categories/research/llm-wiki/navigation|research/llm-wiki/navigation]] - 1 direct, 1 total pages in branch.
+- [[wiki/categories/research/llm-wiki/organization|research/llm-wiki/organization]] - 1 direct, 1 total pages in branch.
+- [[wiki/categories/research/llm-wiki/privacy|research/llm-wiki/privacy]] - 1 direct, 1 total pages in branch.
+- [[wiki/categories/research/llm-wiki/tooling|research/llm-wiki/tooling]] - 1 direct, 1 total pages in branch.
+- [[wiki/categories/research/llm-wiki/workflows|research/llm-wiki/workflows]] - 3 direct, 3 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

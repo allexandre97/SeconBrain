@@ -12,8 +12,8 @@ tags:
   - workflow
   - codex
 related:
-  - "[[concepts/source-ingestion]]"
-  - "[[concepts/wiki-linting]]"
+  - "[[wiki/concepts/source-ingestion]]"
+  - "[[wiki/concepts/wiki-linting]]"
 sources:
   - SRC-0002
 sensitivity: public
@@ -34,6 +34,6 @@ Recurring Codex constraints and report formats should be documented once in `AGE
 
 ## Links
 
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/source-ingestion]]
-- [[concepts/wiki-linting]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/source-ingestion]]
+- [[wiki/concepts/wiki-linting]]

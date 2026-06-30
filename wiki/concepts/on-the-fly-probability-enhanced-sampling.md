@@ -15,10 +15,10 @@ tags:
   - collective-variables
   - math-heavy
 related:
-  - "[[sources/SRC-0010-rethinking-metadynamics-opes]]"
-  - "[[sources/SRC-0011-opes-supporting-information]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]"
+  - "[[wiki/sources/SRC-0011-opes-supporting-information]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0010
   - SRC-0011
@@ -84,10 +84,10 @@ $$
 
 ## Links
 
-- [[sources/SRC-0010-rethinking-metadynamics-opes]]
-- [[sources/SRC-0011-opes-supporting-information]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]
+- [[wiki/sources/SRC-0011-opes-supporting-information]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
 
 ## Open Questions
 

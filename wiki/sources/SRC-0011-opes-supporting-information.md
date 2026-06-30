@@ -27,8 +27,8 @@ tags:
   - metadynamics
   - math-heavy
 related:
-  - "[[sources/SRC-0010-rethinking-metadynamics-opes]]"
-  - "[[concepts/on-the-fly-probability-enhanced-sampling]]"
+  - "[[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]"
+  - "[[wiki/concepts/on-the-fly-probability-enhanced-sampling]]"
 sources:
   - SRC-0011
   - SRC-0010
@@ -47,11 +47,10 @@ Source ID: `SRC-0011`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0011-supporting-information-for-rethinking-metadynamics-from-bias-potentials.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0011-supporting-information-for-rethinking-metadynamics-from-bias-potentials.pdf)
-
+- Open raw source: [raw/sources/SRC-0011-supporting-information-for-rethinking-metadynamics-from-bias-potentials.pdf](../../raw/sources/SRC-0011-supporting-information-for-rethinking-metadynamics-from-bias-potentials.pdf)
 ## Source bundle
 
-This is the supporting information for [[sources/SRC-0010-rethinking-metadynamics-opes]]. [SRC-0010] [SRC-0011]
+This is the supporting information for [[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]. [SRC-0010] [SRC-0011]
 
 ## Summary
 
@@ -108,9 +107,9 @@ $$
 | Gaussian kernel, eq. S1 | SRC-0011 Algorithmic details | This page | Defines compressed probability kernels. | $G$, $h$, $s$, $\sigma$ | Bias representation. |
 | Mahalanobis distance, eq. S2 | SRC-0011 Algorithmic details | This page | Tests whether to merge a new kernel. | $d$, $s^0$, $G$ | Compression criterion. |
 | Merge rules, eqs. S3-S5 | SRC-0011 Algorithmic details | This page | Combines two Gaussian kernels. | $h$, $s^0$, $\sigma$ | Kernel compression. |
-| Bandwidth rescaling, eq. S6 | SRC-0011 Bandwidth rescaling | This page; [[concepts/on-the-fly-probability-enhanced-sampling]] | Shrinks bandwidth. | $N_{\mathrm{eff}}$, $d$ | Resolution schedule. |
+| Bandwidth rescaling, eq. S6 | SRC-0011 Bandwidth rescaling | This page; [[wiki/concepts/on-the-fly-probability-enhanced-sampling]] | Shrinks bandwidth. | $N_{\mathrm{eff}}$, $d$ | Resolution schedule. |
 | Effective sample size, eq. S7 | SRC-0011 Bandwidth rescaling | This page | Quantifies weighted sample information. | $w_k$ | Stable early updates. |
-| Normalization estimate, eq. S9 | SRC-0011 Normalization factor | [[concepts/on-the-fly-probability-enhanced-sampling]] | Estimates $Z_n$ from compressed kernels. | $Z_n$, $G$, $S$ | Explored-region normalization. |
+| Normalization estimate, eq. S9 | SRC-0011 Normalization factor | [[wiki/concepts/on-the-fly-probability-enhanced-sampling]] | Estimates $Z_n$ from compressed kernels. | $Z_n$, $G$, $S$ | Explored-region normalization. |
 | Barrier cap, eq. S10 | SRC-0011 Barrier parameter | This page | Sets maximum bias depth. | $\Delta E$, $V_n$ | User parameter meaning. |
 
 ## Algorithmic recursions
@@ -128,8 +127,8 @@ The supplement reports extended model-system and alanine-peptide results, includ
 
 ## Links
 
-- [[sources/SRC-0010-rethinking-metadynamics-opes]]
-- [[concepts/on-the-fly-probability-enhanced-sampling]]
+- [[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]
+- [[wiki/concepts/on-the-fly-probability-enhanced-sampling]]
 
 ## Open Questions
 

@@ -17,15 +17,18 @@ sha256: 3d133ce3a745255c773ce0ec2c76d0d3474f22ee2aa36c7c9937a1bb660d0d5d
 areas:
   - research
 categories:
-  - research/molecular-simulation/binding-free-energy
+  - research/molecular-simulation/free-energy
+  - research/computational-drug-discovery
+  - research/experimental-benchmarking
+  - research/biomolecules/proteins
 tags:
   - FEP
   - FEP-plus
   - experimental-reproducibility
   - benchmarking
 related:
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0046
 sensitivity: public
@@ -41,7 +44,7 @@ Source ID: `SRC-0046`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.pdf)
+- Open raw source: [raw/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.pdf](../../raw/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.pdf)
 
 ## Summary
 
@@ -113,8 +116,8 @@ The paper uses edge counts for edgewise RMSE weights and compound counts for pai
 
 ## Links
 
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/concepts/free-energy-estimation]]
 
 ## Ingestion QA
 

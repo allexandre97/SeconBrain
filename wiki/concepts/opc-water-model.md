@@ -15,7 +15,7 @@ sources:
   - SRC-0027
   - SRC-0028
 related:
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sensitivity: public
 encryption: none
 ---
@@ -48,6 +48,6 @@ OPC remains a nonpolarizable fixed-charge model, so its accuracy is bounded by t
 
 ## Links
 
-- [[sources/SRC-0027-building-water-models-different-approach-opc]]
-- [[sources/SRC-0028-building-water-models-different-approach-supporting-information]]
-- [[concepts/automated-force-field-training]]
+- [[wiki/sources/SRC-0027-building-water-models-different-approach-opc]]
+- [[wiki/sources/SRC-0028-building-water-models-different-approach-supporting-information]]
+- [[wiki/concepts/automated-force-field-training]]

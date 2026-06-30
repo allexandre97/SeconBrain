@@ -6,16 +6,16 @@ updated: 2026-06-30
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - filament-segmentation
   - instance-segmentation
   - microscopy
 related:
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
-  - "[[concepts/stretching-open-active-contours]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/stretching-open-active-contours]]"
 sources:
   - SRC-0029
   - SRC-0030
@@ -46,11 +46,11 @@ Filament segmentation in microscopy can mean semantic foreground masking, instan
 
 ## Links
 
-- [[sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation]]
-- [[sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures]]
-- [[sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation]]
+- [[wiki/sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures]]
+- [[wiki/sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
 
 ## Open Questions
 

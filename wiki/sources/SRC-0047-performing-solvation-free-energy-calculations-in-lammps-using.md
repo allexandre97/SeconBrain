@@ -24,8 +24,8 @@ tags:
   - thermodynamic-integration
   - decoupling
 related:
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/solvation-free-energy-decoupling-in-lammps]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/solvation-free-energy-decoupling-in-lammps]]"
 sources:
   - SRC-0047
 sensitivity: public
@@ -41,7 +41,7 @@ Source ID: `SRC-0047`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using.pdf)
+- Open raw source: [raw/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using.pdf](../../raw/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using.pdf)
 
 ## Summary
 
@@ -131,8 +131,8 @@ with $\lambda_{\mathrm{coul}}=(1-\lambda_q^2)/\lambda_q^2$ for the soft Coulomb 
 
 ## Links
 
-- [[concepts/free-energy-estimation]]
-- [[concepts/solvation-free-energy-decoupling-in-lammps]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/solvation-free-energy-decoupling-in-lammps]]
 
 ## Ingestion QA
 

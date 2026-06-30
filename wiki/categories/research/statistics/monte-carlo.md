@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,27 +25,29 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/statistics|research/statistics]]
+- [[wiki/categories/research/statistics|research/statistics]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0008-awh-free-energy-landscapes|AWH Free Energy Landscapes]]
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh|Extended-Ensemble AWH]]
-- [[sources/SRC-0012-mbar-configuration-mapping|MBAR with Configuration Mapping]]
-- [[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar|Original MBAR Paper]]
-- [[sources/SRC-0005-times-square-sampling-free-energy|Times Square Sampling]]
-- [[sources/SRC-0006-times-square-sampling-supplement|Times Square Sampling Supplement]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0008-awh-free-energy-landscapes|AWH Free Energy Landscapes]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh|Extended-Ensemble AWH]]
+- [[wiki/sources/SRC-0012-mbar-configuration-mapping|MBAR with Configuration Mapping]]
+- [[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar|Original MBAR Paper]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy|Times Square Sampling]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement|Times Square Sampling Supplement]]
 
-- [[concepts/accelerated-weight-histogram-method|Accelerated Weight Histogram Method]]
-- [[concepts/adaptive-enhanced-sampling|Adaptive Enhanced Sampling]]
-- [[concepts/free-energy-estimation|Free Energy Estimation]]
-- [[concepts/mbar-with-configuration-mapping|MBAR with Configuration Mapping]]
-- [[concepts/multistate-bennett-acceptance-ratio|Multistate Bennett Acceptance Ratio]]
-- [[concepts/on-the-fly-estimation-versus-mbar|On-the-Fly Estimation Versus the Multistate Bennett Acceptance Ratio]]
-- [[concepts/times-square-sampling|Times Square Sampling]]
+### Concepts
 
-## Questions
+- [[wiki/concepts/accelerated-weight-histogram-method|Accelerated Weight Histogram Method]]
+- [[wiki/concepts/adaptive-enhanced-sampling|Adaptive Enhanced Sampling]]
+- [[wiki/concepts/free-energy-estimation|Free Energy Estimation]]
+- [[wiki/concepts/mbar-with-configuration-mapping|MBAR with Configuration Mapping]]
+- [[wiki/concepts/multistate-bennett-acceptance-ratio|Multistate Bennett Acceptance Ratio]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar|On-the-Fly Estimation Versus the Multistate Bennett Acceptance Ratio]]
+- [[wiki/concepts/times-square-sampling|Times Square Sampling]]
 
-- [[questions/tss-generalization-scope|Times Square Sampling Generalization Scope]]
+### Questions
+
+- [[wiki/questions/tss-generalization-scope|Times Square Sampling Generalization Scope]]

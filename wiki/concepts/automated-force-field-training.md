@@ -12,14 +12,14 @@ tags:
   - automation
   - molecular-dynamics
 related:
-  - "[[concepts/garnet-force-field]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
-  - "[[concepts/symbolic-regression-interatomic-potentials]]"
-  - "[[concepts/stability-aware-mlff-training]]"
-  - "[[concepts/forcebalance]]"
-  - "[[concepts/opc-water-model]]"
-  - "[[concepts/machine-learning-potential-datasets]]"
+  - "[[wiki/concepts/garnet-force-field]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/symbolic-regression-interatomic-potentials]]"
+  - "[[wiki/concepts/stability-aware-mlff-training]]"
+  - "[[wiki/concepts/forcebalance]]"
+  - "[[wiki/concepts/opc-water-model]]"
+  - "[[wiki/concepts/machine-learning-potential-datasets]]"
 sources:
   - SRC-0003
   - SRC-0014
@@ -61,22 +61,22 @@ Automated force-field training aims to learn molecular mechanics parameters and 
 
 ## Links
 
-- [[sources/SRC-0003-training-a-force-field-from-scratch]]
-- [[sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
-- [[sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free-energies]]
-- [[sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials]]
-- [[sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
-- [[sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators]]
-- [[sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
-- [[sources/SRC-0027-building-water-models-different-approach-opc]]
-- [[concepts/garnet-force-field]]
-- [[concepts/double-exponential-potential]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
-- [[concepts/rna-force-field-limitations]]
-- [[concepts/symbolic-regression-interatomic-potentials]]
-- [[concepts/stability-aware-mlff-training]]
-- [[concepts/forcebalance]]
-- [[concepts/opc-water-model]]
-- [[concepts/machine-learning-potential-datasets]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]
+- [[wiki/sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
+- [[wiki/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free-energies]]
+- [[wiki/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials]]
+- [[wiki/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
+- [[wiki/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators]]
+- [[wiki/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
+- [[wiki/sources/SRC-0027-building-water-models-different-approach-opc]]
+- [[wiki/concepts/garnet-force-field]]
+- [[wiki/concepts/double-exponential-potential]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/concepts/rna-force-field-limitations]]
+- [[wiki/concepts/symbolic-regression-interatomic-potentials]]
+- [[wiki/concepts/stability-aware-mlff-training]]
+- [[wiki/concepts/forcebalance]]
+- [[wiki/concepts/opc-water-model]]
+- [[wiki/concepts/machine-learning-potential-datasets]]
+- [[wiki/questions/force-field-training-validation-scope]]

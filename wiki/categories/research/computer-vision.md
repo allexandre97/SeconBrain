@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,12 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
 ## Subcategories
 
-- [[categories/research/computer-vision/biomedical-imaging|research/computer-vision/biomedical-imaging]]
+- [[wiki/categories/research/computer-vision/biomedical-imaging|research/computer-vision/biomedical-imaging]] - 13 direct, 13 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

@@ -14,9 +14,9 @@ tags:
   - validation
   - QM-MM
 related:
-  - "[[concepts/rna-molecular-dynamics-simulations]]"
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/rna-molecular-dynamics-simulations]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
 sources:
   - SRC-0055
   - SRC-0056
@@ -46,7 +46,7 @@ RNA force-field limitations arise because small energetic imbalances in hydrogen
 
 ## Links
 
-- [[sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field]]
-- [[sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations]]
-- [[concepts/rna-molecular-dynamics-simulations]]
-- [[concepts/automated-force-field-training]]
+- [[wiki/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field]]
+- [[wiki/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations]]
+- [[wiki/concepts/rna-molecular-dynamics-simulations]]
+- [[wiki/concepts/automated-force-field-training]]

@@ -6,17 +6,17 @@ updated: 2026-06-30
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/machine-learning/scientific-modeling
 tags:
   - deep-learning
   - image-segmentation
   - microscopy
 related:
-  - "[[concepts/cytoskeletal-network-image-analysis]]"
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
-  - "[[concepts/topology-aware-tubular-structure-segmentation]]"
+  - "[[wiki/concepts/cytoskeletal-network-image-analysis]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/topology-aware-tubular-structure-segmentation]]"
 sources:
   - SRC-0004
   - SRC-0029
@@ -52,11 +52,11 @@ Deep learning is used in cytoskeleton image analysis to improve segmentation, en
 
 ## Links
 
-- [[sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
-- [[concepts/cytoskeletal-network-image-analysis]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
-- [[concepts/filament-instance-and-semantic-segmentation]]
-- [[concepts/topology-aware-tubular-structure-segmentation]]
+- [[wiki/sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
+- [[wiki/concepts/cytoskeletal-network-image-analysis]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/concepts/topology-aware-tubular-structure-segmentation]]
 
 ## Open Questions
 

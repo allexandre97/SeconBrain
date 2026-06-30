@@ -19,14 +19,15 @@ areas:
 categories:
   - research/computer-vision/biomedical-imaging
   - research/machine-learning/scientific-modeling
+  - research/bioimage-analysis/filament-segmentation
 tags:
   - vessel-segmentation
   - centerline-prediction
   - bifurcation-detection
   - deep-learning
 related:
-  - "[[concepts/topology-aware-tubular-structure-segmentation]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/topology-aware-tubular-structure-segmentation]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
 sources:
   - SRC-0033
 sensitivity: public
@@ -42,7 +43,7 @@ Source ID: `SRC-0033`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection.pdf)
+- Open raw source: [raw/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection.pdf](../../raw/sources/SRC-0033-deepvesselnet-vessel-segmentation-centerline-prediction-and-bifurcation-detection.pdf)
 
 ## Summary
 
@@ -65,8 +66,8 @@ Tetteh et al. present DeepVesselNet, a neural architecture for extracting vascul
 
 ## Links
 
-- [[concepts/topology-aware-tubular-structure-segmentation]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/topology-aware-tubular-structure-segmentation]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
 
 ## Ingestion QA
 

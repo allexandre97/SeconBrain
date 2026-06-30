@@ -19,6 +19,7 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/biomolecules/lipids
 tags:
   - forcebalance
   - lipid-force-field
@@ -26,9 +27,9 @@ tags:
   - charmm36
   - math-heavy
 related:
-  - "[[sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0014
 sensitivity: public
@@ -44,8 +45,7 @@ Source ID: `SRC-0014`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0014-lipid-force-field-saxs-reparameterization.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0014-lipid-force-field-saxs-reparameterization.pdf)
-
+- Open raw source: [raw/sources/SRC-0014-lipid-force-field-saxs-reparameterization.pdf](../../raw/sources/SRC-0014-lipid-force-field-saxs-reparameterization.pdf)
 ## Source bundle
 
 Main paper for SRC-0015, the supporting information. [SRC-0014] [SRC-0015]
@@ -103,7 +103,7 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| SAXS residual | SRC-0014 Methods | This page; [[concepts/force-field-training-from-experimental-observables]] | Fits calculated SAXS to experiment. | $q_i$, $I_{\mathrm{calc}}$, $I_{\mathrm{exp}}$, $\lambda$ | Objective function. |
+| SAXS residual | SRC-0014 Methods | This page; [[wiki/concepts/force-field-training-from-experimental-observables]] | Fits calculated SAXS to experiment. | $q_i$, $I_{\mathrm{calc}}$, $I_{\mathrm{exp}}$, $\lambda$ | Objective function. |
 | Linear intensity rescaling | SRC-0014 Methods | This page | Aligns calculated and experimental intensity amplitudes. | $a$, $b$, $I_{\mathrm{raw,calc}}$ | Preprocessing before residuals. |
 | Observable response derivative | SRC-0014 Methods | This page | Gives parameter gradients for ensemble averages. | $A$, $U$, $\beta$, $\lambda$ | Gradient-based fitting. |
 
@@ -121,10 +121,10 @@ The paper reports that individual optimization trials can fall into rugged local
 
 ## Links
 
-- [[sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0015-lipid-force-field-saxs-reparameterization-supporting-information]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

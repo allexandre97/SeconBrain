@@ -6,16 +6,16 @@ updated: 2026-06-29
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
 tags:
   - cytoskeleton
   - microscopy
   - bioimage-analysis
 related:
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
-  - "[[concepts/topology-aware-fiber-network-reconstruction]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/topology-aware-fiber-network-reconstruction]]"
 sources:
   - SRC-0004
   - SRC-0029
@@ -47,11 +47,11 @@ Cytoskeletal network image analysis extracts geometrical, topological, and dynam
 
 ## Links
 
-- [[sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
-- [[concepts/filament-instance-and-semantic-segmentation]]
-- [[concepts/topology-aware-fiber-network-reconstruction]]
+- [[wiki/sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/concepts/topology-aware-fiber-network-reconstruction]]
 
 ## Open Questions
 

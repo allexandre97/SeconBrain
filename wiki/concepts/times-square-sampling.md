@@ -15,12 +15,12 @@ tags:
   - stochastic-approximation
   - math-heavy
 related:
-  - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
-  - "[[sources/SRC-0006-times-square-sampling-supplement]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/on-the-fly-estimation-versus-mbar]]"
-  - "[[concepts/tss-implementation-patterns]]"
+  - "[[wiki/sources/SRC-0005-times-square-sampling-free-energy]]"
+  - "[[wiki/sources/SRC-0006-times-square-sampling-supplement]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
 sources:
   - SRC-0005
   - SRC-0006
@@ -142,13 +142,13 @@ The supplement derives the recursions in partition-function coordinates, identif
 
 ## Links
 
-- [[sources/SRC-0005-times-square-sampling-free-energy]]
-- [[sources/SRC-0006-times-square-sampling-supplement]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
-- [[concepts/tss-implementation-patterns]]
-- [[questions/tss-generalization-scope]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/concepts/tss-implementation-patterns]]
+- [[wiki/questions/tss-generalization-scope]]
 
 ## Open Questions
 

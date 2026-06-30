@@ -8,14 +8,15 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/adaptive-sampling
+  - research/molecular-simulation/free-energy
 tags:
   - awh
   - replay-reweighting
   - natural-gradient
   - force-field-optimization
 related:
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
 sources:
   - SRC-0018
 sensitivity: public
@@ -70,6 +71,6 @@ The method is only as good as the support of the frozen ensemble; failed replay/
 
 ## Links
 
-- [[sources/SRC-0018-force-field-optimization-via-awh-gradients]]
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/sources/SRC-0018-force-field-optimization-via-awh-gradients]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]

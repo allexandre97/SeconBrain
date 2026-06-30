@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,13 +25,16 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/llm-wiki|research/llm-wiki]]
+- [[wiki/categories/research/llm-wiki|research/llm-wiki]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0002-project-design-note|Project Design Note]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base|LLM Wiki]]
+- [[wiki/sources/SRC-0002-project-design-note|Project Design Note]]
 
-- [[concepts/local-first-personal-work-knowledge-base|Local-First Personal/Work Knowledge Base]]
-- [[concepts/persistent-llm-wiki|Persistent LLM Wiki]]
+### Concepts
+
+- [[wiki/concepts/local-first-personal-work-knowledge-base|Local-First Personal/Work Knowledge Base]]
+- [[wiki/concepts/persistent-llm-wiki|Persistent LLM Wiki]]

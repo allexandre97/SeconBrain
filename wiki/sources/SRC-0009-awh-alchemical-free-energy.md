@@ -30,12 +30,12 @@ tags:
   - bar
   - math-heavy
 related:
-  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
-  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
-  - "[[questions/awh-validation-scope]]"
+  - "[[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[wiki/sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/questions/awh-validation-scope]]"
 sources:
   - SRC-0009
   - SRC-0007
@@ -55,7 +55,7 @@ Source ID: `SRC-0009`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0009-the-accelerated-weight-histogram-method-for-alchemical-free.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0009-the-accelerated-weight-histogram-method-for-alchemical-free.pdf)
+- Open raw source: [raw/sources/SRC-0009-the-accelerated-weight-histogram-method-for-alchemical-free.pdf](../../raw/sources/SRC-0009-the-accelerated-weight-histogram-method-for-alchemical-free.pdf)
 
 ## Summary
 
@@ -142,11 +142,11 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Extended ensemble, eq. (1) | SRC-0009 section I.A | This page; [[concepts/accelerated-weight-histogram-method]] | Defines alchemical AWH joint sampling. | $x$, $\lambda$, $\pi_\lambda$, $f_\lambda$, $E_\lambda$ | Core implementation target. |
+| Extended ensemble, eq. (1) | SRC-0009 section I.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Defines alchemical AWH joint sampling. | $x$, $\lambda$, $\pi_\lambda$, $f_\lambda$, $E_\lambda$ | Core implementation target. |
 | Conditional ensemble, eq. (2) | SRC-0009 section I.A | This page | Defines exact free energy at fixed $\lambda$. | $F_\lambda$, $E_\lambda$, $\beta$ | Connects $f_\lambda$ to physical free energy. |
-| Conditional weights, eq. (3) | SRC-0009 section I.A | This page; [[concepts/accelerated-weight-histogram-method]] | Gives Gibbs probabilities and fractional histogram weights. | $w_\lambda$, $\pi_\lambda$, $f_\lambda$ | Main data collected by AWH. |
+| Conditional weights, eq. (3) | SRC-0009 section I.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Gives Gibbs probabilities and fractional histogram weights. | $w_\lambda$, $\pi_\lambda$, $f_\lambda$ | Main data collected by AWH. |
 | Effective Hamiltonian, eq. (4) | SRC-0009 section I.A | This page | Describes convolved sampling alternative. | $H_{\mathrm{eff}}$, $\lambda$ | Available conceptually; GROMACS alchemical coordinate uses Gibbs sampling. |
-| AWH update, eq. (5) | SRC-0009 section I.A | This page; [[concepts/accelerated-weight-histogram-method]] | Updates free-energy hyperparameters. | $N$, $\pi_\lambda$, $\Delta W_\lambda$, $\Delta N$ | Main update in alchemical AWH. |
+| AWH update, eq. (5) | SRC-0009 section I.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Updates free-energy hyperparameters. | $N$, $\pi_\lambda$, $\Delta W_\lambda$, $\Delta N$ | Main update in alchemical AWH. |
 | Thermodynamic length, eq. (6) | SRC-0009 section I.A.1 | This page | Quantifies path difficulty. | $\mathcal{L}$, $g_\lambda$ | Path design. |
 | Variance approximation, eq. (7) | SRC-0009 section I.A.1 | This page | Relates target distribution and metric to free-energy variance. | $\tau$, $g_\lambda$, $\pi_\lambda$ | Target-distribution optimization. |
 | Metric correlation, eq. (8) | SRC-0009 section I.A.1 | This page | Defines AWH friction metric with time correlations. | $\mathcal{F}$, $w_\lambda$, $g_\lambda$ | Identifies bottlenecks. |
@@ -178,12 +178,12 @@ Testosterone: after 4000 ns total AWH simulation time, AWH outputs were in the r
 
 ## Links
 
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
-- [[sources/SRC-0008-awh-free-energy-landscapes]]
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[questions/awh-validation-scope]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[wiki/sources/SRC-0008-awh-free-energy-landscapes]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/questions/awh-validation-scope]]
 
 ## Open Questions
 

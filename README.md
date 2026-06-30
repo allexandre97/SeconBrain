@@ -10,6 +10,12 @@ An LLM-assisted wiki workspace for turning raw source material into reviewed Mar
 - `tools/` stores local maintenance scripts.
 - `tests/` stores local smoke tests for wiki tooling.
 
+## Obsidian Vault
+
+Open the repository root, not `wiki/`, as the Obsidian vault.
+
+This keeps raw sources, wiki pages, schemas, and tools in one local-first workspace. Source pages link to files under `raw/sources/` without duplicating large PDFs under `wiki/`.
+
 ## Basic Workflow
 
 1. Add one source file or source note under `raw/sources/`, or import a local file with `tools/import_source.py`.
@@ -46,6 +52,12 @@ Audit category usage with:
 
 ```sh
 python3 tools/audit_categories.py
+```
+
+Suggest missing categories without applying changes with:
+
+```sh
+python3 tools/suggest_categories.py
 ```
 
 ## Search

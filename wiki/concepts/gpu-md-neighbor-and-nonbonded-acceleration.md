@@ -14,7 +14,7 @@ tags:
   - nonbonded-interactions
   - molecular-dynamics
 related:
-  - "[[concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
+  - "[[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
 sources:
   - SRC-0049
   - SRC-0053
@@ -48,6 +48,6 @@ where $n_c$ is the average number of neighbors within the cutoff. [SRC-0053]
 
 ## Links
 
-- [[sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space]]
-- [[sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a]]
-- [[concepts/particle-mesh-ewald-and-long-range-electrostatics]]
+- [[wiki/sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space]]
+- [[wiki/sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a]]
+- [[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]

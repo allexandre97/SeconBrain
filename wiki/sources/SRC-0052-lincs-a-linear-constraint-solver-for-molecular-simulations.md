@@ -24,7 +24,7 @@ tags:
   - SHAKE
   - molecular-dynamics
 related:
-  - "[[concepts/molecular-dynamics-constraint-solvers]]"
+  - "[[wiki/concepts/molecular-dynamics-constraint-solvers]]"
 sources:
   - SRC-0052
 sensitivity: public
@@ -40,7 +40,7 @@ Source ID: `SRC-0052`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0052-lincs-a-linear-constraint-solver-for-molecular-simulations.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0052-lincs-a-linear-constraint-solver-for-molecular-simulations.pdf)
+- Open raw source: [raw/sources/SRC-0052-lincs-a-linear-constraint-solver-for-molecular-simulations.pdf](../../raw/sources/SRC-0052-lincs-a-linear-constraint-solver-for-molecular-simulations.pdf)
 
 ## Summary
 
@@ -101,7 +101,7 @@ $$
 
 ## Links
 
-- [[concepts/molecular-dynamics-constraint-solvers]]
+- [[wiki/concepts/molecular-dynamics-constraint-solvers]]
 
 ## Ingestion QA
 

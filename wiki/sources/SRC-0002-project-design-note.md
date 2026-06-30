@@ -19,9 +19,9 @@ tags:
   - design-note
   - llm-wiki
 related:
-  - "[[concepts/local-first-personal-work-knowledge-base]]"
-  - "[[concepts/multi-category-wiki-organization]]"
-  - "[[concepts/optional-encryption-and-sensitivity-metadata]]"
+  - "[[wiki/concepts/local-first-personal-work-knowledge-base]]"
+  - "[[wiki/concepts/multi-category-wiki-organization]]"
+  - "[[wiki/concepts/optional-encryption-and-sensitivity-metadata]]"
 sources:
   - SRC-0002
 sensitivity: public
@@ -35,7 +35,7 @@ Source ID: `SRC-0002`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0002-project-design-note.md`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0002-project-design-note.md)
+- Open raw source: [raw/sources/SRC-0002-project-design-note.md](../../raw/sources/SRC-0002-project-design-note.md)
 
 ## Summary
 
@@ -51,13 +51,13 @@ This source specifies the current repository design: a local-first LLM knowledge
 
 ## Links
 
-- [[concepts/local-first-personal-work-knowledge-base]]
-- [[concepts/multi-category-wiki-organization]]
-- [[concepts/wiki-page-metadata]]
-- [[concepts/optional-encryption-and-sensitivity-metadata]]
-- [[concepts/reusable-codex-task-contracts]]
-- [[concepts/raw-wiki-schema-layers]]
-- [[concepts/source-ingestion]]
+- [[wiki/concepts/local-first-personal-work-knowledge-base]]
+- [[wiki/concepts/multi-category-wiki-organization]]
+- [[wiki/concepts/wiki-page-metadata]]
+- [[wiki/concepts/optional-encryption-and-sensitivity-metadata]]
+- [[wiki/concepts/reusable-codex-task-contracts]]
+- [[wiki/concepts/raw-wiki-schema-layers]]
+- [[wiki/concepts/source-ingestion]]
 
 ## Open Questions
 

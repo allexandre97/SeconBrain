@@ -8,15 +8,16 @@ areas:
 categories:
   - research/molecular-simulation/free-energy
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - Boltzmann-generators
   - normalizing-flows
   - equilibrium-sampling
   - reweighting
 related:
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/transferable-and-scalable-boltzmann-generators]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/transferable-and-scalable-boltzmann-generators]]"
 sources:
   - SRC-0041
   - SRC-0037
@@ -64,11 +65,11 @@ $$
 
 ## Links
 
-- [[sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body]]
-- [[sources/SRC-0037-transferable-boltzmann-generators]]
-- [[sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/transferable-and-scalable-boltzmann-generators]]
+- [[wiki/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body]]
+- [[wiki/sources/SRC-0037-transferable-boltzmann-generators]]
+- [[wiki/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/transferable-and-scalable-boltzmann-generators]]
 
 ## Open Questions
 

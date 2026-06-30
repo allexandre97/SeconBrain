@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,12 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
 ## Subcategories
 
-- [[categories/research/bioimage-analysis/cytoskeleton|research/bioimage-analysis/cytoskeleton]]
+- [[wiki/categories/research/bioimage-analysis/filament-segmentation|research/bioimage-analysis/filament-segmentation]] - 15 direct, 15 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

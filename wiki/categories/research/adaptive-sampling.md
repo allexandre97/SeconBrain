@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,34 +25,36 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0009-awh-alchemical-free-energy|AWH Alchemical Free Energies]]
-- [[sources/SRC-0008-awh-free-energy-landscapes|AWH Free Energy Landscapes]]
-- [[sources/SRC-0018-force-field-optimization-via-awh-gradients|AWH Replay Force-Field Optimization]]
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh|Extended-Ensemble AWH]]
-- [[sources/SRC-0013-ladybugs-lambda-dynamics|LaDyBUGS Lambda-Dynamics]]
-- [[sources/SRC-0011-opes-supporting-information|OPES Supporting Information]]
-- [[sources/SRC-0010-rethinking-metadynamics-opes|Rethinking Metadynamics]]
-- [[sources/SRC-0005-times-square-sampling-free-energy|Times Square Sampling]]
-- [[sources/SRC-0006-times-square-sampling-supplement|Times Square Sampling Supplement]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0009-awh-alchemical-free-energy|AWH Alchemical Free Energies]]
+- [[wiki/sources/SRC-0008-awh-free-energy-landscapes|AWH Free Energy Landscapes]]
+- [[wiki/sources/SRC-0018-force-field-optimization-via-awh-gradients|AWH Replay Force-Field Optimization]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh|Extended-Ensemble AWH]]
+- [[wiki/sources/SRC-0013-ladybugs-lambda-dynamics|LaDyBUGS Lambda-Dynamics]]
+- [[wiki/sources/SRC-0011-opes-supporting-information|OPES Supporting Information]]
+- [[wiki/sources/SRC-0010-rethinking-metadynamics-opes|Rethinking Metadynamics]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy|Times Square Sampling]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement|Times Square Sampling Supplement]]
 
-- [[concepts/accelerated-weight-histogram-method|Accelerated Weight Histogram Method]]
-- [[concepts/adaptive-enhanced-sampling|Adaptive Enhanced Sampling]]
-- [[concepts/awh-replay-force-field-optimization|AWH Replay Force Field Optimization]]
-- [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling|Lambda-Dynamics with Bias-Updated Gibbs Sampling]]
-- [[concepts/on-the-fly-probability-enhanced-sampling|On-the-Fly Probability-Enhanced Sampling]]
-- [[concepts/times-square-sampling|Times Square Sampling]]
-- [[concepts/tss-implementation-patterns|Times Square Sampling Implementation Patterns]]
+### Concepts
 
-## Answers
+- [[wiki/concepts/accelerated-weight-histogram-method|Accelerated Weight Histogram Method]]
+- [[wiki/concepts/adaptive-enhanced-sampling|Adaptive Enhanced Sampling]]
+- [[wiki/concepts/awh-replay-force-field-optimization|AWH Replay Force Field Optimization]]
+- [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling|Lambda-Dynamics with Bias-Updated Gibbs Sampling]]
+- [[wiki/concepts/on-the-fly-probability-enhanced-sampling|On-the-Fly Probability-Enhanced Sampling]]
+- [[wiki/concepts/times-square-sampling|Times Square Sampling]]
+- [[wiki/concepts/tss-implementation-patterns|Times Square Sampling Implementation Patterns]]
 
-- [[answers/tss-window-free-energy-surface-stitching|How TSS Stitches Window Free-Energy Surfaces]]
+### Answers
 
-## Questions
+- [[wiki/answers/tss-window-free-energy-surface-stitching|How TSS Stitches Window Free-Energy Surfaces]]
 
-- [[questions/awh-validation-scope|AWH Validation Scope]]
+### Questions
+
+- [[wiki/questions/awh-validation-scope|AWH Validation Scope]]

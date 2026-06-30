@@ -17,7 +17,7 @@ sha256: 56e711a130426e9de2f0945dd5a46438c69e0979f3e6c398118908f0ee7103bc
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - cytoskeleton
@@ -25,9 +25,9 @@ tags:
   - deep-learning
   - microscopy
 related:
-  - "[[concepts/cytoskeletal-network-image-analysis]]"
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/cytoskeletal-network-image-analysis]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
 sources:
   - SRC-0004
 sensitivity: public
@@ -43,7 +43,7 @@ Source ID: `SRC-0004`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0004-automated-cytoskeletal-network-segmentation.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0004-automated-cytoskeletal-network-segmentation.pdf)
+- Open raw source: [raw/sources/SRC-0004-automated-cytoskeletal-network-segmentation.pdf](../../raw/sources/SRC-0004-automated-cytoskeletal-network-segmentation.pdf)
 
 ## Summary
 
@@ -61,9 +61,9 @@ This 2021 review surveys automated and semi-automated methods for enhancing, seg
 
 ## Links
 
-- [[concepts/cytoskeletal-network-image-analysis]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/cytoskeletal-network-image-analysis]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
 
 ## Open Questions
 

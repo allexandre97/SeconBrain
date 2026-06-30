@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,12 +25,15 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
 ## Subcategories
 
-- [[categories/research/molecular-simulation/binding-free-energy|research/molecular-simulation/binding-free-energy]]
-- [[categories/research/molecular-simulation/datasets|research/molecular-simulation/datasets]]
-- [[categories/research/molecular-simulation/force-fields|research/molecular-simulation/force-fields]]
-- [[categories/research/molecular-simulation/free-energy|research/molecular-simulation/free-energy]]
-- [[categories/research/molecular-simulation/molecular-dynamics|research/molecular-simulation/molecular-dynamics]]
+- [[wiki/categories/research/molecular-simulation/datasets|research/molecular-simulation/datasets]] - 8 direct, 8 total pages in branch.
+- [[wiki/categories/research/molecular-simulation/force-fields|research/molecular-simulation/force-fields]] - 38 direct, 38 total pages in branch.
+- [[wiki/categories/research/molecular-simulation/free-energy|research/molecular-simulation/free-energy]] - 41 direct, 41 total pages in branch.
+- [[wiki/categories/research/molecular-simulation/molecular-dynamics|research/molecular-simulation/molecular-dynamics]] - 17 direct, 17 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

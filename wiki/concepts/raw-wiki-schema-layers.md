@@ -10,7 +10,7 @@ categories:
 tags:
   - llm-wiki
 related:
-  - "[[concepts/wiki-page-metadata]]"
+  - "[[wiki/concepts/wiki-page-metadata]]"
 sources:
   - SRC-0001
   - SRC-0002
@@ -33,7 +33,7 @@ The proposed architecture separates source truth, synthesized knowledge, and ope
 
 ## Links
 
-- [[sources/SRC-0001-karpathy-llm-knowledge-base]]
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/persistent-llm-wiki]]
-- [[concepts/wiki-page-metadata]]
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/persistent-llm-wiki]]
+- [[wiki/concepts/wiki-page-metadata]]

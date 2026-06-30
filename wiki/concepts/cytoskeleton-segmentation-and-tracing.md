@@ -6,18 +6,18 @@ updated: 2026-06-30
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - image-segmentation
   - filament-tracing
   - microscopy
 related:
-  - "[[concepts/cytoskeletal-network-image-analysis]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
-  - "[[concepts/stretching-open-active-contours]]"
-  - "[[concepts/topology-aware-fiber-network-reconstruction]]"
+  - "[[wiki/concepts/cytoskeletal-network-image-analysis]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/stretching-open-active-contours]]"
+  - "[[wiki/concepts/topology-aware-fiber-network-reconstruction]]"
 sources:
   - SRC-0004
   - SRC-0029
@@ -53,12 +53,12 @@ Cytoskeleton segmentation and tracing converts microscopy images of filament net
 
 ## Links
 
-- [[sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
-- [[concepts/cytoskeletal-network-image-analysis]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
-- [[concepts/filament-instance-and-semantic-segmentation]]
-- [[concepts/stretching-open-active-contours]]
-- [[concepts/topology-aware-fiber-network-reconstruction]]
+- [[wiki/sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
+- [[wiki/concepts/cytoskeletal-network-image-analysis]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/concepts/stretching-open-active-contours]]
+- [[wiki/concepts/topology-aware-fiber-network-reconstruction]]
 
 ## Open Questions
 

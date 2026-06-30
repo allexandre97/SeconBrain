@@ -17,7 +17,7 @@ sha256: bd5642d9e200725b68382d716dbf193c6cddf5de354006702e9cf05d33c6d683
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - actin
@@ -25,8 +25,8 @@ tags:
   - keypoint-detection
   - fast-marching
 related:
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
 sources:
   - SRC-0031
 sensitivity: public
@@ -42,7 +42,7 @@ Source ID: `SRC-0031`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint.pdf)
+- Open raw source: [raw/sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint.pdf](../../raw/sources/SRC-0031-quantifying-actin-filaments-in-microscopic-images-using-keypoint.pdf)
 
 ## Summary
 
@@ -64,8 +64,8 @@ Liu et al. propose a hybrid pipeline for estimating actin filament count and len
 
 ## Links
 
-- [[concepts/filament-instance-and-semantic-segmentation]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
 
 ## Ingestion QA
 

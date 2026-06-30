@@ -24,7 +24,7 @@ tags:
   - electrostatics
   - B-splines
 related:
-  - "[[concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
+  - "[[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
 sources:
   - SRC-0050
 sensitivity: public
@@ -40,7 +40,7 @@ Source ID: `SRC-0050`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0050-a-smooth-particle-mesh-ewald-method.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0050-a-smooth-particle-mesh-ewald-method.pdf)
+- Open raw source: [raw/sources/SRC-0050-a-smooth-particle-mesh-ewald-method.pdf](../../raw/sources/SRC-0050-a-smooth-particle-mesh-ewald-method.pdf)
 
 ## Summary
 
@@ -109,7 +109,7 @@ $$
 
 ## Links
 
-- [[concepts/particle-mesh-ewald-and-long-range-electrostatics]]
+- [[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]
 
 ## Ingestion QA
 

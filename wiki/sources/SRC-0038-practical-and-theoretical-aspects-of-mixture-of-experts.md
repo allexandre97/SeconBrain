@@ -24,7 +24,7 @@ tags:
   - model-selection
   - clustering
 related:
-  - "[[concepts/mixture-of-experts-modeling]]"
+  - "[[wiki/concepts/mixture-of-experts-modeling]]"
 sources:
   - SRC-0038
 sensitivity: public
@@ -40,7 +40,7 @@ Source ID: `SRC-0038`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts.pdf)
+- Open raw source: [raw/sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts.pdf](../../raw/sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts.pdf)
 
 ## Summary
 
@@ -94,7 +94,7 @@ $$
 
 ## Links
 
-- [[concepts/mixture-of-experts-modeling]]
+- [[wiki/concepts/mixture-of-experts-modeling]]
 
 ## Ingestion QA
 

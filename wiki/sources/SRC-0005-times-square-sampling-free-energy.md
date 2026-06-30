@@ -30,13 +30,13 @@ tags:
   - molecular-simulation
   - math-heavy
 related:
-  - "[[sources/SRC-0006-times-square-sampling-supplement]]"
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/on-the-fly-estimation-versus-mbar]]"
-  - "[[concepts/tss-implementation-patterns]]"
-  - "[[questions/tss-generalization-scope]]"
+  - "[[wiki/sources/SRC-0006-times-square-sampling-supplement]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
+  - "[[wiki/questions/tss-generalization-scope]]"
 sources:
   - SRC-0005
   - SRC-0006
@@ -55,11 +55,10 @@ Source ID: `SRC-0005`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0005-times-square-sampling-free-energy.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0005-times-square-sampling-free-energy.pdf)
-
+- Open raw source: [raw/sources/SRC-0005-times-square-sampling-free-energy.pdf](../../raw/sources/SRC-0005-times-square-sampling-free-energy.pdf)
 ## Source bundle
 
-This source is the main paper in the `times-square-sampling-2024` bundle. The supplementary material is [[sources/SRC-0006-times-square-sampling-supplement]]. Completion for the bundle is judged across both source pages and the linked concept pages. [SRC-0005] [SRC-0006]
+This source is the main paper in the `times-square-sampling-2024` bundle. The supplementary material is [[wiki/sources/SRC-0006-times-square-sampling-supplement]]. Completion for the bundle is judged across both source pages and the linked concept pages. [SRC-0005] [SRC-0006]
 
 ## Summary
 
@@ -162,20 +161,20 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Gibbs density and partition function, eq. (1) | SRC-0005 section 2.1 | This page, Key equations; [[concepts/free-energy-estimation]] | Defines the free energy target. | $H_\lambda$, $Z_\lambda^*$, $F_\lambda^*$, $S$ | Required for any implementation or interpretation of estimated free energy differences. |
-| Simulated-tempering target, eq. (2) | SRC-0005 section 2.1 | This page; [[concepts/times-square-sampling]] | Defines the joint target over configurations and rungs. | $\gamma$, $F$, $F^*$, $\rho_k$ | Drives rung probabilities and conditional sampling. |
-| Rung and state transition kernels, eqs. (4)-(5) | SRC-0005 section 2.1 | [[concepts/times-square-sampling]]; [[concepts/tss-implementation-patterns]] | Splits the Markov transition into rung and configuration moves. | $P^k$, $P^x$, $T_k$, $X$, $K$ | Maps directly to sampler cycle design. |
-| Basic free-energy recursion and mean field, eqs. (7)-(8) | SRC-0005 section 2.1 | This page; [[concepts/free-energy-estimation]] | Frames free energy estimation as stochastic root finding. | $F_k^t$, $p(k \mid x)$, $\gamma_k$ | Core estimator before TSS-specific modifications. |
-| Tilt estimator and tilt mean field, eqs. (11), (13)-(14) | SRC-0005 section 2.2.1 | This page; [[concepts/adaptive-enhanced-sampling]] | Measures empirical rung visitation relative to target. | $o_k$, $K^s$, $\gamma_k$ | Basis for visit control and diagnostics. |
-| Visit-control density and regularization, eqs. (15)-(18) | SRC-0005 section 2.2.1 | This page; [[concepts/adaptive-enhanced-sampling]] | Biases sampling toward under-visited rungs while preserving positive probabilities. | $\pi^{TSS}$, $\eta$, $\epsilon_\pi$, $o$ | Main convergence-acceleration mechanism. |
-| Fisher-information-style rung density, eq. (19) | SRC-0005 section 2.2.2 | This page; [[concepts/times-square-sampling]] | Makes the reference rung density coordinate-aware. | $\gamma_k$, $\mu$, $\partial H / \partial \lambda$ | Requires auxiliary observable estimation. |
-| Auxiliary observable recursion, eqs. (20)-(21), (25) | SRC-0005 sections 2.2.2 and 2.2.4 | This page; [[concepts/times-square-sampling]] | Estimates ensemble averages needed for adaptive rung allocation. | $\mu_{km}$, $\psi_m$, $\pi_k$ | Used to compute $\gamma(\mu)$ and metrics. |
-| TSS stochastic approximation triple, eqs. (24)-(26) | SRC-0005 section 2.2.4 | This page, Algorithmic recursions; [[concepts/times-square-sampling]] | Defines the single-window estimator updates. | $F$, $\mu$, $o$, $\theta$ | Direct algorithmic recurrence. |
-| Relative-entropy Lyapunov function, eq. (27) | SRC-0005 section 2.2.4 | This page; [[concepts/adaptive-enhanced-sampling]] | Proves convergence and compares visit-control strength. | $V_\gamma$, $r(F)$, $\gamma$ | Theoretical validation boundary, not an implementation formula. |
-| Window transition and invariant distribution, eqs. (30)-(32) | SRC-0005 section 3.1 | This page; [[concepts/tss-implementation-patterns]] | Introduces $(X,K,J)$ and local window dynamics. | $W_j$, $J$, $win(k)$ | Enables scalable local energy evaluations. |
-| Global visit-control relation, eq. (33) | SRC-0005 section 3.1 | This page; [[concepts/tss-implementation-patterns]] | Stitches local tilts into global visit-control free energies. | $p_j$, $F_k^\circ$, $\gamma_{j;k}$, $o_{j;k}$ | Used for sampling but too noisy for final reporting. |
-| Epoch and global programming recursions | SRC-0006 sections 7-8 | [[sources/SRC-0006-times-square-sampling-supplement]]; [[concepts/tss-implementation-patterns]] | Converts the mathematical estimator into stored epochs, global weights, offsets, and error bars. | $N_j$, $R_{j;k}$, $Q$, $q_k$, $f_j$, jackknife replicates | Necessary for close implementation use. |
-| Variance comparison with MBAR | SRC-0005 proposition 3; SRC-0006 section 4.5 | [[concepts/on-the-fly-estimation-versus-mbar]] | Formalizes the self-adjustment advantage under stated assumptions. | $\Sigma_{TSS}$, $\Sigma_{MBAR}$, overlap matrix $O$, $\pi$ | Supports the lower-variance claim but only under the paper's assumptions. |
+| Gibbs density and partition function, eq. (1) | SRC-0005 section 2.1 | This page, Key equations; [[wiki/concepts/free-energy-estimation]] | Defines the free energy target. | $H_\lambda$, $Z_\lambda^*$, $F_\lambda^*$, $S$ | Required for any implementation or interpretation of estimated free energy differences. |
+| Simulated-tempering target, eq. (2) | SRC-0005 section 2.1 | This page; [[wiki/concepts/times-square-sampling]] | Defines the joint target over configurations and rungs. | $\gamma$, $F$, $F^*$, $\rho_k$ | Drives rung probabilities and conditional sampling. |
+| Rung and state transition kernels, eqs. (4)-(5) | SRC-0005 section 2.1 | [[wiki/concepts/times-square-sampling]]; [[wiki/concepts/tss-implementation-patterns]] | Splits the Markov transition into rung and configuration moves. | $P^k$, $P^x$, $T_k$, $X$, $K$ | Maps directly to sampler cycle design. |
+| Basic free-energy recursion and mean field, eqs. (7)-(8) | SRC-0005 section 2.1 | This page; [[wiki/concepts/free-energy-estimation]] | Frames free energy estimation as stochastic root finding. | $F_k^t$, $p(k \mid x)$, $\gamma_k$ | Core estimator before TSS-specific modifications. |
+| Tilt estimator and tilt mean field, eqs. (11), (13)-(14) | SRC-0005 section 2.2.1 | This page; [[wiki/concepts/adaptive-enhanced-sampling]] | Measures empirical rung visitation relative to target. | $o_k$, $K^s$, $\gamma_k$ | Basis for visit control and diagnostics. |
+| Visit-control density and regularization, eqs. (15)-(18) | SRC-0005 section 2.2.1 | This page; [[wiki/concepts/adaptive-enhanced-sampling]] | Biases sampling toward under-visited rungs while preserving positive probabilities. | $\pi^{TSS}$, $\eta$, $\epsilon_\pi$, $o$ | Main convergence-acceleration mechanism. |
+| Fisher-information-style rung density, eq. (19) | SRC-0005 section 2.2.2 | This page; [[wiki/concepts/times-square-sampling]] | Makes the reference rung density coordinate-aware. | $\gamma_k$, $\mu$, $\partial H / \partial \lambda$ | Requires auxiliary observable estimation. |
+| Auxiliary observable recursion, eqs. (20)-(21), (25) | SRC-0005 sections 2.2.2 and 2.2.4 | This page; [[wiki/concepts/times-square-sampling]] | Estimates ensemble averages needed for adaptive rung allocation. | $\mu_{km}$, $\psi_m$, $\pi_k$ | Used to compute $\gamma(\mu)$ and metrics. |
+| TSS stochastic approximation triple, eqs. (24)-(26) | SRC-0005 section 2.2.4 | This page, Algorithmic recursions; [[wiki/concepts/times-square-sampling]] | Defines the single-window estimator updates. | $F$, $\mu$, $o$, $\theta$ | Direct algorithmic recurrence. |
+| Relative-entropy Lyapunov function, eq. (27) | SRC-0005 section 2.2.4 | This page; [[wiki/concepts/adaptive-enhanced-sampling]] | Proves convergence and compares visit-control strength. | $V_\gamma$, $r(F)$, $\gamma$ | Theoretical validation boundary, not an implementation formula. |
+| Window transition and invariant distribution, eqs. (30)-(32) | SRC-0005 section 3.1 | This page; [[wiki/concepts/tss-implementation-patterns]] | Introduces $(X,K,J)$ and local window dynamics. | $W_j$, $J$, $win(k)$ | Enables scalable local energy evaluations. |
+| Global visit-control relation, eq. (33) | SRC-0005 section 3.1 | This page; [[wiki/concepts/tss-implementation-patterns]] | Stitches local tilts into global visit-control free energies. | $p_j$, $F_k^\circ$, $\gamma_{j;k}$, $o_{j;k}$ | Used for sampling but too noisy for final reporting. |
+| Epoch and global programming recursions | SRC-0006 sections 7-8 | [[wiki/sources/SRC-0006-times-square-sampling-supplement]]; [[wiki/concepts/tss-implementation-patterns]] | Converts the mathematical estimator into stored epochs, global weights, offsets, and error bars. | $N_j$, $R_{j;k}$, $Q$, $q_k$, $f_j$, jackknife replicates | Necessary for close implementation use. |
+| Variance comparison with MBAR | SRC-0005 proposition 3; SRC-0006 section 4.5 | [[wiki/concepts/on-the-fly-estimation-versus-mbar]] | Formalizes the self-adjustment advantage under stated assumptions. | $\Sigma_{TSS}$, $\Sigma_{MBAR}$, overlap matrix $O$, $\pi$ | Supports the lower-variance claim but only under the paper's assumptions. |
 
 ## Algorithmic recursions
 
@@ -246,17 +245,17 @@ For the windowed implementation, the supplement converts these recursions into e
 
 ## Links
 
-- [[sources/SRC-0006-times-square-sampling-supplement]]
-- [[concepts/times-square-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
-- [[concepts/tss-implementation-patterns]]
-- [[questions/tss-generalization-scope]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
+- [[wiki/concepts/times-square-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/concepts/tss-implementation-patterns]]
+- [[wiki/questions/tss-generalization-scope]]
 
 ## Open Questions
 
-- [[questions/tss-generalization-scope]] - How broadly should the lower-variance and resource-allocation claims be expected to transfer beyond the paper's analyzed settings? [SRC-0005] [SRC-0006]
+- [[wiki/questions/tss-generalization-scope]] - How broadly should the lower-variance and resource-allocation claims be expected to transfer beyond the paper's analyzed settings? [SRC-0005] [SRC-0006]
 
 ## Metadata notes
 

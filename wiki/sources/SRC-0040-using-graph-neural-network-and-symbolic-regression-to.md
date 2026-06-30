@@ -19,14 +19,15 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - graph-neural-networks
   - symbolic-regression
   - disordered-materials
   - interatomic-potentials
 related:
-  - "[[concepts/gnn-to-symbolic-regression-potentials]]"
-  - "[[concepts/symbolic-regression-interatomic-potentials]]"
+  - "[[wiki/concepts/gnn-to-symbolic-regression-potentials]]"
+  - "[[wiki/concepts/symbolic-regression-interatomic-potentials]]"
 sources:
   - SRC-0040
 sensitivity: public
@@ -42,7 +43,7 @@ Source ID: `SRC-0040`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to.pdf)
+- Open raw source: [raw/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to.pdf](../../raw/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to.pdf)
 
 ## Summary
 
@@ -64,9 +65,9 @@ Chen et al. propose a two-stage workflow that trains a graph neural network on s
 
 ## Links
 
-- [[concepts/gnn-to-symbolic-regression-potentials]]
-- [[concepts/symbolic-regression-interatomic-potentials]]
-- [[concepts/automated-force-field-training]]
+- [[wiki/concepts/gnn-to-symbolic-regression-potentials]]
+- [[wiki/concepts/symbolic-regression-interatomic-potentials]]
+- [[wiki/concepts/automated-force-field-training]]
 
 ## Ingestion QA
 

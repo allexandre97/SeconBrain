@@ -19,14 +19,15 @@ areas:
 categories:
   - research/molecular-simulation/free-energy
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - Boltzmann-generators
   - normalizing-flows
   - materials-sampling
   - free-energy
 related:
-  - "[[concepts/boltzmann-generators-equilibrium-sampling]]"
-  - "[[concepts/transferable-and-scalable-boltzmann-generators]]"
+  - "[[wiki/concepts/boltzmann-generators-equilibrium-sampling]]"
+  - "[[wiki/concepts/transferable-and-scalable-boltzmann-generators]]"
 sources:
   - SRC-0039
 sensitivity: public
@@ -42,7 +43,7 @@ Source ID: `SRC-0039`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large.pdf)
+- Open raw source: [raw/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large.pdf](../../raw/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large.pdf)
 
 ## Summary
 
@@ -102,9 +103,9 @@ $$
 
 ## Links
 
-- [[concepts/boltzmann-generators-equilibrium-sampling]]
-- [[concepts/transferable-and-scalable-boltzmann-generators]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/concepts/boltzmann-generators-equilibrium-sampling]]
+- [[wiki/concepts/transferable-and-scalable-boltzmann-generators]]
+- [[wiki/concepts/free-energy-estimation]]
 
 ## Ingestion QA
 

@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,12 +25,14 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/machine-learning|research/machine-learning]]
+- [[wiki/categories/research/machine-learning|research/machine-learning]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts|Mixture-of-Experts Overview]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts|Mixture-of-Experts Overview]]
 
-- [[concepts/mixture-of-experts-modeling|Mixture-of-Experts Modeling]]
+### Concepts
+
+- [[wiki/concepts/mixture-of-experts-modeling|Mixture-of-Experts Modeling]]

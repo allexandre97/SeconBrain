@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,14 +25,16 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation|Fast Ewald Summation with Prolates]]
-- [[sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space|GPU Compressed Neighbor Lists]]
-- [[sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a|OpenMM GPU Nonbonded Interactions]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation|Fast Ewald Summation with Prolates]]
+- [[wiki/sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space|GPU Compressed Neighbor Lists]]
+- [[wiki/sources/SRC-0053-efficient-nonbonded-interactions-for-molecular-dynamics-on-a|OpenMM GPU Nonbonded Interactions]]
 
-- [[concepts/gpu-md-neighbor-and-nonbonded-acceleration|GPU MD Neighbor and Nonbonded Acceleration]]
+### Concepts
+
+- [[wiki/concepts/gpu-md-neighbor-and-nonbonded-acceleration|GPU MD Neighbor and Nonbonded Acceleration]]

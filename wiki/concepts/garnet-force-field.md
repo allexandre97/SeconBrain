@@ -7,13 +7,15 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/biomolecules/proteins
+  - research/machine-learning/molecular-modeling
 tags:
   - garnet
   - molecular-dynamics
   - graph-neural-networks
 related:
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/double-exponential-potential]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/double-exponential-potential]]"
 sources:
   - SRC-0003
 sensitivity: public
@@ -37,7 +39,7 @@ Garnet is a graph-neural-network force field that predicts molecular mechanics p
 
 ## Links
 
-- [[sources/SRC-0003-training-a-force-field-from-scratch]]
-- [[concepts/automated-force-field-training]]
-- [[concepts/double-exponential-potential]]
-- [[questions/garnet-validation-scope]]
+- [[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/double-exponential-potential]]
+- [[wiki/questions/garnet-validation-scope]]

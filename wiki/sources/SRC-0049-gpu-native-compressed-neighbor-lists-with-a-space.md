@@ -25,7 +25,7 @@ tags:
   - space-filling-curves
   - particle-simulation
 related:
-  - "[[concepts/gpu-md-neighbor-and-nonbonded-acceleration]]"
+  - "[[wiki/concepts/gpu-md-neighbor-and-nonbonded-acceleration]]"
 sources:
   - SRC-0049
 sensitivity: public
@@ -41,7 +41,7 @@ Source ID: `SRC-0049`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space.pdf)
+- Open raw source: [raw/sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space.pdf](../../raw/sources/SRC-0049-gpu-native-compressed-neighbor-lists-with-a-space.pdf)
 
 ## Summary
 
@@ -91,7 +91,7 @@ where $r_i$ may vary by particle. [SRC-0049]
 
 ## Links
 
-- [[concepts/gpu-md-neighbor-and-nonbonded-acceleration]]
+- [[wiki/concepts/gpu-md-neighbor-and-nonbonded-acceleration]]
 
 ## Ingestion QA
 

@@ -29,11 +29,11 @@ tags:
   - gromacs
   - math-heavy
 related:
-  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[questions/awh-validation-scope]]"
+  - "[[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/questions/awh-validation-scope]]"
 sources:
   - SRC-0008
   - SRC-0007
@@ -52,7 +52,7 @@ Source ID: `SRC-0008`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0008-accelerated-weight-histogram-method-for-exploring-free-energy.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0008-accelerated-weight-histogram-method-for-exploring-free-energy.pdf)
+- Open raw source: [raw/sources/SRC-0008-accelerated-weight-histogram-method-for-exploring-free-energy.pdf](../../raw/sources/SRC-0008-accelerated-weight-histogram-method-for-exploring-free-energy.pdf)
 
 ## Summary
 
@@ -148,14 +148,14 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Marginal distribution, eq. (1) | SRC-0008 section II.A | This page; [[concepts/accelerated-weight-histogram-method]] | Connects bias, free energy, and sampled $\lambda$ density. | $P(\lambda)$, $F$, $g$ | Shows why $g=f+\log\rho$. |
-| Bias formula, eq. (2) | SRC-0008 section II.A | This page; [[concepts/accelerated-weight-histogram-method]] | Sets bias from current estimate and target distribution. | $g$, $f$, $\rho$ | Core setup equation. |
+| Marginal distribution, eq. (1) | SRC-0008 section II.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Connects bias, free energy, and sampled $\lambda$ density. | $P(\lambda)$, $F$, $g$ | Shows why $g=f+\log\rho$. |
+| Bias formula, eq. (2) | SRC-0008 section II.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Sets bias from current estimate and target distribution. | $g$, $f$, $\rho$ | Core setup equation. |
 | Gibbs sampler, eq. (3) | SRC-0008 section II.A | This page | Samples $\lambda$ conditionally on $x$. | $\omega$, $E$, $g$ | Enables large parameter jumps. |
-| AWH update, eq. (4) | SRC-0008 section II.A | This page; [[concepts/accelerated-weight-histogram-method]] | Updates $f(\lambda)$ from transition-probability histogram. | $n_\Lambda$, $\bar{\omega}$, $N$, $\rho$ | Main adaptive recursion. |
-| PMF definition, eq. (5) | SRC-0008 section II.B | This page; [[concepts/free-energy-estimation]] | Defines reaction-coordinate free energy. | $\Phi$, $\xi$, $\pi_0$ | Target of PMF calculations. |
+| AWH update, eq. (4) | SRC-0008 section II.A | This page; [[wiki/concepts/accelerated-weight-histogram-method]] | Updates $f(\lambda)$ from transition-probability histogram. | $n_\Lambda$, $\bar{\omega}$, $N$, $\rho$ | Main adaptive recursion. |
+| PMF definition, eq. (5) | SRC-0008 section II.B | This page; [[wiki/concepts/free-energy-estimation]] | Defines reaction-coordinate free energy. | $\Phi$, $\xi$, $\pi_0$ | Target of PMF calculations. |
 | Umbrella potential, eq. (6) | SRC-0008 section II.B | This page | Couples $\xi$ to dynamic umbrella center $\lambda$. | $Q_\kappa$, $\xi$, $\lambda$, $\kappa$ | Reaction-coordinate implementation. |
 | Umbrella convolution, eq. (7) | SRC-0008 section II.B | This page | Relates estimated $F(\lambda)$ to true PMF. | $F$, $\Phi$, $Q_\kappa$ | Explains deconvolution need. |
-| PMF deconvolution, eq. (9) | SRC-0008 section II.B | [[concepts/accelerated-weight-histogram-method]] | Estimates PMF from sampled $\xi$. | $\phi$, $\gamma$, $a(t)$ | On-the-fly PMF reconstruction. |
+| PMF deconvolution, eq. (9) | SRC-0008 section II.B | [[wiki/concepts/accelerated-weight-histogram-method]] | Estimates PMF from sampled $\xi$. | $\phi$, $\gamma$, $a(t)$ | On-the-fly PMF reconstruction. |
 | Free-energy cutoff, eq. (10) | SRC-0008 section II.C | This page | Avoids high-free-energy regions. | $\rho$, $\rho_0$, $f_C$ | Practical target distribution. |
 | Error and saturation ratio, eqs. (11)-(13) | SRC-0008 section II.D | This page | Guides initial effective sample count. | $\epsilon$, $\epsilon_{sat}$, $\eta$ | Tuning and diagnostics. |
 
@@ -181,12 +181,12 @@ For chignolin, the paper used a two-dimensional reaction coordinate for native a
 
 ## Links
 
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
-- [[sources/SRC-0009-awh-alchemical-free-energy]]
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[questions/awh-validation-scope]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[wiki/sources/SRC-0009-awh-alchemical-free-energy]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/questions/awh-validation-scope]]
 
 ## Open Questions
 

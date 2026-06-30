@@ -16,10 +16,10 @@ tags:
   - windowing
   - math-heavy
 related:
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/tss-implementation-patterns]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[questions/tss-generalization-scope]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/questions/tss-generalization-scope]]"
 sources:
   - SRC-0005
   - SRC-0006
@@ -27,16 +27,16 @@ sensitivity: public
 encryption: none
 wiki_pages_used:
   - "[[index]]"
-  - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
-  - "[[sources/SRC-0006-times-square-sampling-supplement]]"
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/tss-implementation-patterns]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[questions/tss-generalization-scope]]"
+  - "[[wiki/sources/SRC-0005-times-square-sampling-free-energy]]"
+  - "[[wiki/sources/SRC-0006-times-square-sampling-supplement]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/questions/tss-generalization-scope]]"
 raw_sources_consulted:
   - raw/sources/SRC-0006-times-square-sampling-supplement.pdf
 wiki_pages_updated:
-  - "[[concepts/tss-implementation-patterns]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
 ---
 
 # How TSS Stitches Window Free-Energy Surfaces
@@ -185,20 +185,20 @@ $$
 
 ## Sources used
 
-- [[sources/SRC-0005-times-square-sampling-free-energy]]
-- [[sources/SRC-0006-times-square-sampling-supplement]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
 
 ## Wiki pages used
 
 - [[index]]
-- [[concepts/times-square-sampling]]
-- [[concepts/tss-implementation-patterns]]
-- [[concepts/free-energy-estimation]]
-- [[questions/tss-generalization-scope]]
+- [[wiki/concepts/times-square-sampling]]
+- [[wiki/concepts/tss-implementation-patterns]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/questions/tss-generalization-scope]]
 
 ## Wiki updates made
 
-- Updated [[concepts/tss-implementation-patterns]] with a focused window-stitching interpretation.
+- Updated [[wiki/concepts/tss-implementation-patterns]] with a focused window-stitching interpretation.
 
 ## Remaining gaps
 

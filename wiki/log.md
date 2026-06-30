@@ -26,3 +26,4 @@
 - 2026-06-30: Imported and ingested SRC-0055 and SRC-0056 from the RNA folder, covering UUCG tetraloop force-field failures and a comprehensive review of RNA molecular simulations.
 - 2026-06-30: Imported and ingested SRC-0057/SRC-0058 as the overlay-databank-NMRlipids main/supplement bundle, adding concept coverage for reusable biomolecular simulation databanks.
 - 2026-06-30: Hardened source-page navigation and raw-source links, added category registry and deterministic category index/audit tooling, and removed unused generic scaffold directories.
+- 2026-06-30: Adopted the repository root as the Obsidian vault, normalized repo-root wikilinks and raw-source links, added deterministic category suggestions, repaired obvious multi-facet categories, and generated dashboard indexes without ingesting sources.

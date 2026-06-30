@@ -17,10 +17,10 @@ tags:
   - fastmbar
   - math-heavy
 related:
-  - "[[sources/SRC-0013-ladybugs-lambda-dynamics]]"
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/sources/SRC-0013-ladybugs-lambda-dynamics]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
 sources:
   - SRC-0013
 sensitivity: public
@@ -69,10 +69,10 @@ $$
 
 ## Links
 
-- [[sources/SRC-0013-ladybugs-lambda-dynamics]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/adaptive-enhanced-sampling]]
+- [[wiki/sources/SRC-0013-ladybugs-lambda-dynamics]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
 
 ## Open Questions
 

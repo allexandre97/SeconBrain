@@ -8,6 +8,7 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - symbolic-regression
   - interatomic-potentials
@@ -16,8 +17,8 @@ sources:
   - SRC-0017
   - SRC-0040
 related:
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/gnn-to-symbolic-regression-potentials]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/gnn-to-symbolic-regression-potentials]]"
 sensitivity: public
 encryption: none
 ---
@@ -54,8 +55,8 @@ When symbolic regression is applied to GNN-derived latent contributions, interpr
 
 ## Links
 
-- [[sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials]]
-- [[sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to]]
-- [[concepts/automated-force-field-training]]
-- [[concepts/gnn-to-symbolic-regression-potentials]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials]]
+- [[wiki/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/gnn-to-symbolic-regression-potentials]]
+- [[wiki/questions/force-field-training-validation-scope]]

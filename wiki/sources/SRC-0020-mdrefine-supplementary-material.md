@@ -19,6 +19,7 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/molecular-simulation/free-energy
 tags:
   - supporting-information
   - mdrefine
@@ -26,8 +27,8 @@ tags:
   - hyperparameter-optimization
   - math-heavy
 related:
-  - "[[sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]"
-  - "[[concepts/ensemble-and-force-field-refinement]]"
+  - "[[wiki/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]"
+  - "[[wiki/concepts/ensemble-and-force-field-refinement]]"
 sources:
   - SRC-0020
 sensitivity: public
@@ -43,8 +44,7 @@ Source ID: `SRC-0020`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0020-mdrefine-supplementary-material.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0020-mdrefine-supplementary-material.pdf)
-
+- Open raw source: [raw/sources/SRC-0020-mdrefine-supplementary-material.pdf](../../raw/sources/SRC-0020-mdrefine-supplementary-material.pdf)
 ## Source bundle
 
 Supporting material for SRC-0019. [SRC-0019] [SRC-0020]
@@ -117,7 +117,7 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| $L_1(\mu)$ | SRC-0020 S1 | This page; [[concepts/ensemble-and-force-field-refinement]] | Defines outer loss after inner minimization. | $\mu$, $\lambda^*$, $\alpha,\beta,\gamma$ | Outer optimizer. |
+| $L_1(\mu)$ | SRC-0020 S1 | This page; [[wiki/concepts/ensemble-and-force-field-refinement]] | Defines outer loss after inner minimization. | $\mu$, $\lambda^*$, $\alpha,\beta,\gamma$ | Outer optimizer. |
 | Stationarity gradient | SRC-0020 S1 | This page | Avoids differentiating through inner optimizer at first order. | $\partial L/\partial\lambda=0$ | Autodiff simplification. |
 | Implicit optimum equations | SRC-0020 S1 | This page | Basis for hyperparameter derivatives. | Hessians, mixed derivatives | Hyperparameter optimization. |
 | KSR | SRC-0020 S2 | This page | Tracks reweighting degeneracy. | $w_i$, $N$ | Validation diagnostic. |
@@ -133,9 +133,9 @@ The supplement shows additional plots where hyperparameter choices control overf
 
 ## Links
 
-- [[sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]
-- [[concepts/ensemble-and-force-field-refinement]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]
+- [[wiki/concepts/ensemble-and-force-field-refinement]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
 
 ## Open Questions
 

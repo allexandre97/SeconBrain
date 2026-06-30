@@ -17,15 +17,18 @@ sha256: 13b864deeb88b30b8c9fd482b7640bb7b6fdf8fa6977a3d79af034a8feb48563
 areas:
   - research
 categories:
-  - research/molecular-simulation/binding-free-energy
+  - research/molecular-simulation/free-energy
+  - research/computational-drug-discovery
+  - research/experimental-benchmarking
+  - research/biomolecules/proteins
 tags:
   - RBFE
   - OpenFE
   - benchmarking
   - drug-discovery
 related:
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0045
 sensitivity: public
@@ -41,7 +44,7 @@ Source ID: `SRC-0045`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.pdf)
+- Open raw source: [raw/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.pdf](../../raw/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.pdf)
 
 ## Summary
 
@@ -93,8 +96,8 @@ Here $w_i$ is the number of ligands in system $i$ for the all-to-all pairwise be
 
 ## Links
 
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/concepts/free-energy-estimation]]
 
 ## Ingestion QA
 

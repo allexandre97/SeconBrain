@@ -13,7 +13,7 @@ tags:
   - virial
   - periodic-boundary-conditions
 related:
-  - "[[concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
+  - "[[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]"
 sources:
   - SRC-0048
   - SRC-0051
@@ -54,6 +54,6 @@ $$
 
 ## Links
 
-- [[sources/SRC-0048-general-formulation-of-pressure-and-stress-tensor-for]]
-- [[sources/SRC-0051-a-general-pressure-tensor-calculation-for-molecular-dynamics]]
-- [[concepts/particle-mesh-ewald-and-long-range-electrostatics]]
+- [[wiki/sources/SRC-0048-general-formulation-of-pressure-and-stress-tensor-for]]
+- [[wiki/sources/SRC-0051-a-general-pressure-tensor-calculation-for-molecular-dynamics]]
+- [[wiki/concepts/particle-mesh-ewald-and-long-range-electrostatics]]

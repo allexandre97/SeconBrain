@@ -14,30 +14,30 @@ tags:
   - molecular-simulation
   - math-heavy
 related:
-  - "[[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
-  - "[[sources/SRC-0010-rethinking-metadynamics-opes]]"
-  - "[[sources/SRC-0012-mbar-configuration-mapping]]"
-  - "[[sources/SRC-0013-ladybugs-lambda-dynamics]]"
-  - "[[concepts/on-the-fly-probability-enhanced-sampling]]"
-  - "[[concepts/mbar-with-configuration-mapping]]"
-  - "[[concepts/multistate-bennett-acceptance-ratio]]"
-  - "[[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
-  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
-  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
-  - "[[sources/SRC-0009-awh-alchemical-free-energy]]"
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
-  - "[[sources/SRC-0006-times-square-sampling-supplement]]"
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
-  - "[[concepts/on-the-fly-estimation-versus-mbar]]"
-  - "[[concepts/boltzmann-generators-equilibrium-sampling]]"
-  - "[[concepts/transferable-and-scalable-boltzmann-generators]]"
-  - "[[sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]"
-  - "[[sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]"
-  - "[[sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]"
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
-  - "[[concepts/solvation-free-energy-decoupling-in-lammps]]"
+  - "[[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
+  - "[[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]"
+  - "[[wiki/sources/SRC-0012-mbar-configuration-mapping]]"
+  - "[[wiki/sources/SRC-0013-ladybugs-lambda-dynamics]]"
+  - "[[wiki/concepts/on-the-fly-probability-enhanced-sampling]]"
+  - "[[wiki/concepts/mbar-with-configuration-mapping]]"
+  - "[[wiki/concepts/multistate-bennett-acceptance-ratio]]"
+  - "[[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
+  - "[[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[wiki/sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[wiki/sources/SRC-0009-awh-alchemical-free-energy]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/sources/SRC-0005-times-square-sampling-free-energy]]"
+  - "[[wiki/sources/SRC-0006-times-square-sampling-supplement]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
+  - "[[wiki/concepts/boltzmann-generators-equilibrium-sampling]]"
+  - "[[wiki/concepts/transferable-and-scalable-boltzmann-generators]]"
+  - "[[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]"
+  - "[[wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]"
+  - "[[wiki/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/concepts/solvation-free-energy-decoupling-in-lammps]]"
 sources:
   - SRC-0023
   - SRC-0010
@@ -190,33 +190,33 @@ MBAR uses all cross-state reduced potentials to solve coupled normalization-cons
 
 ## Links
 
-- [[sources/SRC-0005-times-square-sampling-free-energy]]
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
-- [[sources/SRC-0008-awh-free-energy-landscapes]]
-- [[sources/SRC-0009-awh-alchemical-free-energy]]
-- [[sources/SRC-0010-rethinking-metadynamics-opes]]
-- [[sources/SRC-0012-mbar-configuration-mapping]]
-- [[sources/SRC-0013-ladybugs-lambda-dynamics]]
-- [[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/on-the-fly-probability-enhanced-sampling]]
-- [[concepts/mbar-with-configuration-mapping]]
-- [[concepts/multistate-bennett-acceptance-ratio]]
-- [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
-- [[sources/SRC-0006-times-square-sampling-supplement]]
-- [[concepts/times-square-sampling]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
-- [[sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body]]
-- [[sources/SRC-0037-transferable-boltzmann-generators]]
-- [[sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
-- [[sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]
-- [[sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]
-- [[sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]
-- [[concepts/boltzmann-generators-equilibrium-sampling]]
-- [[concepts/transferable-and-scalable-boltzmann-generators]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[concepts/solvation-free-energy-decoupling-in-lammps]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[wiki/sources/SRC-0008-awh-free-energy-landscapes]]
+- [[wiki/sources/SRC-0009-awh-alchemical-free-energy]]
+- [[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]
+- [[wiki/sources/SRC-0012-mbar-configuration-mapping]]
+- [[wiki/sources/SRC-0013-ladybugs-lambda-dynamics]]
+- [[wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/on-the-fly-probability-enhanced-sampling]]
+- [[wiki/concepts/mbar-with-configuration-mapping]]
+- [[wiki/concepts/multistate-bennett-acceptance-ratio]]
+- [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
+- [[wiki/concepts/times-square-sampling]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body]]
+- [[wiki/sources/SRC-0037-transferable-boltzmann-generators]]
+- [[wiki/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
+- [[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]
+- [[wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]
+- [[wiki/sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]
+- [[wiki/concepts/boltzmann-generators-equilibrium-sampling]]
+- [[wiki/concepts/transferable-and-scalable-boltzmann-generators]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/concepts/solvation-free-energy-decoupling-in-lammps]]
 
 ## Open Questions
 

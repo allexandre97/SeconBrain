@@ -13,7 +13,7 @@ tags:
   - local-first
   - llm-wiki
 related:
-  - "[[concepts/persistent-llm-wiki]]"
+  - "[[wiki/concepts/persistent-llm-wiki]]"
 sources:
   - SRC-0002
 sensitivity: public
@@ -35,6 +35,6 @@ The repository is intended to hold both personal and work-related knowledge in l
 
 ## Links
 
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/persistent-llm-wiki]]
-- [[concepts/raw-wiki-schema-layers]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/persistent-llm-wiki]]
+- [[wiki/concepts/raw-wiki-schema-layers]]

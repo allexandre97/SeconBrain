@@ -27,9 +27,9 @@ tags:
   - reweighting
   - math-heavy
 related:
-  - "[[concepts/multistate-bennett-acceptance-ratio]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/mbar-with-configuration-mapping]]"
+  - "[[wiki/concepts/multistate-bennett-acceptance-ratio]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/mbar-with-configuration-mapping]]"
 sources:
   - SRC-0023
 sensitivity: public
@@ -45,7 +45,7 @@ Source ID: `SRC-0023`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.pdf)
+- Open raw source: [raw/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.pdf](../../raw/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.pdf)
 
 ## Summary
 
@@ -136,9 +136,9 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| $p_i=c_i^{-1}q_i$ | SRC-0023 section II | This page; [[concepts/multistate-bennett-acceptance-ratio]] | Defines normalized states. | $p_i$, $q_i$, $c_i$ | Input model. |
-| $\Delta f_{ij}$ | SRC-0023 section II | This page; [[concepts/free-energy-estimation]] | Defines dimensionless free energy differences. | $f_i$, $c_i$ | Reported quantity. |
-| MBAR equations | SRC-0023 eq. 11 | This page; [[concepts/multistate-bennett-acceptance-ratio]] | Solves sampled-state free energies. | $u_i$, $N_i$, $\hat f_i$ | Core estimator. |
+| $p_i=c_i^{-1}q_i$ | SRC-0023 section II | This page; [[wiki/concepts/multistate-bennett-acceptance-ratio]] | Defines normalized states. | $p_i$, $q_i$, $c_i$ | Input model. |
+| $\Delta f_{ij}$ | SRC-0023 section II | This page; [[wiki/concepts/free-energy-estimation]] | Defines dimensionless free energy differences. | $f_i$, $c_i$ | Reported quantity. |
+| MBAR equations | SRC-0023 eq. 11 | This page; [[wiki/concepts/multistate-bennett-acceptance-ratio]] | Solves sampled-state free energies. | $u_i$, $N_i$, $\hat f_i$ | Core estimator. |
 | Weight matrix $W$ | SRC-0023 eq. 9 | This page | Stores contribution of each sample to each state. | $W_{ni}$, $q_i$, $N_i$ | Reweighting and covariance. |
 | Covariance $\hat\Theta$ | SRC-0023 eq. 8 | This page | Estimates asymptotic covariance of log normalizers. | $W$, $N$, pseudoinverse | Uncertainty propagation. |
 | $\delta^2\Delta\hat f_{ij}$ | SRC-0023 eq. 12 | This page | Gives free-energy-difference uncertainty. | $\hat\Theta_{ij}$ | Error bars. |
@@ -161,10 +161,10 @@ The paper demonstrates MBAR on DNA hairpin optical-tweezer data by combining con
 
 ## Links
 
-- [[concepts/multistate-bennett-acceptance-ratio]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/mbar-with-configuration-mapping]]
-- [[concepts/on-the-fly-estimation-versus-mbar]]
+- [[wiki/concepts/multistate-bennett-acceptance-ratio]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/mbar-with-configuration-mapping]]
+- [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 
 ## Open Questions
 

@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,10 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
-## Concepts
+## Direct members
 
-- [[concepts/tss-implementation-patterns|Times Square Sampling Implementation Patterns]]
+### Concepts
+
+- [[wiki/concepts/tss-implementation-patterns|Times Square Sampling Implementation Patterns]]

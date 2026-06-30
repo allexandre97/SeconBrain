@@ -20,6 +20,7 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/adaptive-sampling
+  - research/molecular-simulation/free-energy
 tags:
   - awh
   - force-field-optimization
@@ -27,9 +28,9 @@ tags:
   - natural-gradient
   - math-heavy
 related:
-  - "[[concepts/awh-replay-force-field-optimization]]"
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/awh-replay-force-field-optimization]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
 sources:
   - SRC-0018
 sensitivity: public
@@ -45,7 +46,7 @@ Source ID: `SRC-0018`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0018-force-field-optimization-via-awh-gradients.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0018-force-field-optimization-via-awh-gradients.pdf)
+- Open raw source: [raw/sources/SRC-0018-force-field-optimization-via-awh-gradients.pdf](../../raw/sources/SRC-0018-force-field-optimization-via-awh-gradients.pdf)
 
 ## Summary
 
@@ -121,7 +122,7 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Frozen reference density | SRC-0018 section 2 | This page; [[concepts/awh-replay-force-field-optimization]] | Defines frozen AWH mixture. | $u_{\mathrm{ref}}$, $g_{\mathrm{ref}}$, $i$ | Reference data distribution. |
+| Frozen reference density | SRC-0018 section 2 | This page; [[wiki/concepts/awh-replay-force-field-optimization]] | Defines frozen AWH mixture. | $u_{\mathrm{ref}}$, $g_{\mathrm{ref}}$, $i$ | Reference data distribution. |
 | Replay target free energy | SRC-0018 sections 3-4 | This page | Estimates target-state free energies. | $m$, $\Lambda_{\ell}$, $\theta$ | Endpoint/cycle predictions. |
 | Endpoint gradient | SRC-0018 section 5 | This page | Differentiates replayed free energies. | $w^{\mathrm{rep}}$, $\nabla_{\theta}u$ | Optimizer gradient. |
 | KL expansion | SRC-0018 sections 9-10 | This page | Justifies Fisher trust region. | $\phi$, $I(\phi)$ | Step scaling. |
@@ -139,10 +140,10 @@ The macro-epoch pipeline is: run adaptive AWH until Stage A readiness passes, ru
 
 ## Links
 
-- [[concepts/awh-replay-force-field-optimization]]
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/awh-replay-force-field-optimization]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

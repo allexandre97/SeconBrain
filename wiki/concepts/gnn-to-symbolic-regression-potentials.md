@@ -8,6 +8,7 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - graph-neural-networks
   - symbolic-regression
@@ -15,8 +16,8 @@ tags:
 sources:
   - SRC-0040
 related:
-  - "[[concepts/symbolic-regression-interatomic-potentials]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/symbolic-regression-interatomic-potentials]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sensitivity: public
 encryption: none
 ---
@@ -37,9 +38,9 @@ GNN-to-symbolic-regression potential learning uses a graph neural network to inf
 
 ## Links
 
-- [[sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to]]
-- [[concepts/symbolic-regression-interatomic-potentials]]
-- [[concepts/automated-force-field-training]]
+- [[wiki/sources/SRC-0040-using-graph-neural-network-and-symbolic-regression-to]]
+- [[wiki/concepts/symbolic-regression-interatomic-potentials]]
+- [[wiki/concepts/automated-force-field-training]]
 
 ## Open Questions
 

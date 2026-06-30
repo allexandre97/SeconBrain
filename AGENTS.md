@@ -2,34 +2,34 @@
 
 ## Project Structure & Module Organization
 
-This repository currently contains no source files, tests, assets, or build configuration. As the project grows, keep the top-level layout predictable and easy to scan:
+This repository is a local-first LLM-maintained wiki, not an application scaffold. Keep the top-level layout focused on the wiki architecture:
 
-- `src/` for application or library code.
-- `tests/` for automated tests that mirror the `src/` structure.
-- `docs/` for design notes, usage guides, and architecture decisions.
-- `assets/` for static files such as images, fixtures, or sample data.
+- `raw/sources/` for immutable source material.
+- `wiki/` for synthesized Markdown knowledge base pages.
+- `schema/` for conventions, templates, workflows, and validation rules.
+- `tools/` for local maintenance scripts.
+- `tests/` for smoke tests and validation-tool tests.
 
-Avoid placing generated files, dependency folders, or local environment artifacts in version control.
+Avoid placing generated caches, dependency folders, or local environment artifacts in version control.
 
 ## Build, Test, and Development Commands
 
-No build or test commands are configured yet. When tooling is introduced, document the canonical commands here and prefer scripts that can be run from the repository root. Examples:
+Run wiki tooling from the repository root:
 
-- `npm test` to run a JavaScript or TypeScript test suite.
-- `make build` to compile or package the project.
-- `python -m pytest` to run Python tests.
+- `python3 tools/validate_wiki.py` to validate required structure, frontmatter, and Obsidian wikilinks.
+- `python3 tools/suggest_categories.py` to report deterministic category suggestions without applying them.
+- `python3 tools/audit_categories.py` to inspect category drift.
+- `python3 tools/build_category_indexes.py` to regenerate category and dashboard navigation pages.
 
 Keep commands deterministic and avoid requiring machine-specific paths.
 
 ## Coding Style & Naming Conventions
 
-Follow the conventions of the language or framework added to the repository. Until a formatter or linter is configured, use clear names, consistent indentation, and small modules with focused responsibilities. Prefer descriptive file names such as `user_service.py`, `api-client.ts`, or `camera_config.c`, depending on the language in use.
-
-When formatters are added, commit their configuration and make formatting part of the normal development workflow.
+Keep tooling simple, readable, and standard-library-only unless a dependency is explicitly justified. Use clear names, consistent indentation, and small modules with focused responsibilities.
 
 ## Testing Guidelines
 
-Add tests alongside new functionality. Mirror source paths where practical, and use recognizable names such as `test_<feature>.py`, `<feature>.test.ts`, or `<module>_test.go`. Include regression tests for bug fixes and document any required fixtures under `tests/fixtures/`.
+Add tests alongside new tooling changes when practical. Use recognizable names such as `test_<feature>.py` or small shell smoke tests, and document any required fixtures under `tests/fixtures/`.
 
 ## Commit & Pull Request Guidelines
 
@@ -80,7 +80,6 @@ Use this structure unless the user explicitly changes it:
 ```text
 raw/
   sources/
-  assets/
 
 wiki/
   index.md
@@ -105,9 +104,14 @@ tools/
   validate_wiki.py
   search_wiki.py
   import_source.py
+  suggest_categories.py
+  audit_categories.py
+  build_category_indexes.py
 
 tests/
 ```
+
+Open the repository root, not `wiki/`, as the Obsidian vault.
 
 ## Page conventions
 
@@ -132,8 +136,8 @@ encryption: none
 Use Obsidian-style wikilinks for internal links:
 
 ```md
-[[concepts/example-concept]]
-[[entities/example-entity]]
+[[wiki/concepts/example-concept]]
+[[wiki/entities/example-entity]]
 ```
 
 Prefer short sections:

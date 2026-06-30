@@ -11,7 +11,7 @@ tags:
   - validation
   - garnet
 related:
-  - "[[concepts/garnet-force-field]]"
+  - "[[wiki/concepts/garnet-force-field]]"
 sources:
   - SRC-0003
 sensitivity: public
@@ -34,6 +34,6 @@ Treat Garnet as a promising automated force-field discovery platform, not as ful
 
 ## Links
 
-- [[sources/SRC-0003-training-a-force-field-from-scratch]]
-- [[concepts/garnet-force-field]]
-- [[concepts/automated-force-field-training]]
+- [[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]
+- [[wiki/concepts/garnet-force-field]]
+- [[wiki/concepts/automated-force-field-training]]

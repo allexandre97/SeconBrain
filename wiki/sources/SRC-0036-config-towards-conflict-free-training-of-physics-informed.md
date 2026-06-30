@@ -24,7 +24,7 @@ tags:
   - gradient-conflict
   - ConFIG
 related:
-  - "[[concepts/conflict-free-pinn-training]]"
+  - "[[wiki/concepts/conflict-free-pinn-training]]"
 sources:
   - SRC-0036
 sensitivity: public
@@ -40,7 +40,7 @@ Source ID: `SRC-0036`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed.pdf)
+- Open raw source: [raw/sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed.pdf](../../raw/sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed.pdf)
 
 ## Summary
 
@@ -107,7 +107,7 @@ where $U(g)=g/(|g|+\epsilon)$ and $[\,]^{-\top}$ denotes a pseudoinverse of the 
 
 ## Links
 
-- [[concepts/conflict-free-pinn-training]]
+- [[wiki/concepts/conflict-free-pinn-training]]
 
 ## Ingestion QA
 

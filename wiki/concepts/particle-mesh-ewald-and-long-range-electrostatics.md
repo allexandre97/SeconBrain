@@ -13,8 +13,8 @@ tags:
   - electrostatics
   - PSWF
 related:
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/md-pressure-and-stress-tensor-calculation]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/md-pressure-and-stress-tensor-calculation]]"
 sources:
   - SRC-0050
   - SRC-0054
@@ -57,6 +57,6 @@ $$
 
 ## Links
 
-- [[sources/SRC-0050-a-smooth-particle-mesh-ewald-method]]
-- [[sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation]]
-- [[concepts/md-pressure-and-stress-tensor-calculation]]
+- [[wiki/sources/SRC-0050-a-smooth-particle-mesh-ewald-method]]
+- [[wiki/sources/SRC-0054-accelerating-molecular-dynamics-simulations-using-fast-ewald-summation]]
+- [[wiki/concepts/md-pressure-and-stress-tensor-calculation]]

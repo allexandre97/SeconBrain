@@ -19,14 +19,17 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/data-management
+  - research/molecular-simulation/datasets
+  - research/machine-learning/molecular-modeling
 tags:
   - datasets
   - machine-learning-potentials
   - quantum-chemistry
   - OMol25
 related:
-  - "[[concepts/machine-learning-potential-datasets]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/machine-learning-potential-datasets]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0042
 sensitivity: public
@@ -42,7 +45,7 @@ Source ID: `SRC-0042`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and.pdf)
+- Open raw source: [raw/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and.pdf](../../raw/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and.pdf)
 
 ## Summary
 
@@ -69,9 +72,9 @@ OMol25 is a large-scale quantum-chemistry dataset for training and evaluating ma
 
 ## Links
 
-- [[concepts/machine-learning-potential-datasets]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/machine-learning-potential-datasets]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Ingestion QA
 

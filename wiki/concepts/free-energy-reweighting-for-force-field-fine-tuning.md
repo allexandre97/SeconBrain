@@ -7,16 +7,16 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
-  - research/free-energy
+  - research/molecular-simulation/free-energy
 tags:
   - reweighting
   - zwanzig
   - effective-sample-size
   - force-field-fine-tuning
 related:
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/awh-replay-force-field-optimization]]"
-  - "[[concepts/ensemble-and-force-field-refinement]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/awh-replay-force-field-optimization]]"
+  - "[[wiki/concepts/ensemble-and-force-field-refinement]]"
 sources:
   - SRC-0016
   - SRC-0018
@@ -82,7 +82,7 @@ ESS and KSR detect weight concentration, but high values do not guarantee that a
 
 ## Links
 
-- [[sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free-energies]]
-- [[sources/SRC-0018-force-field-optimization-via-awh-gradients]]
-- [[sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free-energies]]
+- [[wiki/sources/SRC-0018-force-field-optimization-via-awh-gradients]]
+- [[wiki/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]
+- [[wiki/concepts/free-energy-estimation]]

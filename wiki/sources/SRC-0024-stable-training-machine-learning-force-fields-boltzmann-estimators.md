@@ -20,6 +20,8 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
+  - research/molecular-simulation/molecular-dynamics
 tags:
   - machine-learning-force-fields
   - stable-training
@@ -27,8 +29,8 @@ tags:
   - differentiable-simulation
   - math-heavy
 related:
-  - "[[concepts/stability-aware-mlff-training]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/stability-aware-mlff-training]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0024
 sensitivity: public
@@ -44,7 +46,7 @@ Source ID: `SRC-0024`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators.pdf)
+- Open raw source: [raw/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators.pdf](../../raw/sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators.pdf)
 
 ## Summary
 
@@ -123,10 +125,10 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| $L_{\mathrm{obs}}$ | SRC-0024 section 3.1 | This page; [[concepts/stability-aware-mlff-training]] | Matches equilibrium observables. | $g(\Gamma)$, $g_{\mathrm{ref}}$, $P_{\theta}$ | Observable supervision. |
+| $L_{\mathrm{obs}}$ | SRC-0024 section 3.1 | This page; [[wiki/concepts/stability-aware-mlff-training]] | Matches equilibrium observables. | $g(\Gamma)$, $g_{\mathrm{ref}}$, $P_{\theta}$ | Observable supervision. |
 | Boltzmann distribution | SRC-0024 section 3.1 | This page | Defines equilibrium distribution induced by MLFF. | $H_{\theta}$, $T$, $C(\theta)$ | Differentiation target. |
 | Observable-loss gradient | SRC-0024 eq. 3 | This page | Reduces training gradient to expectation Jacobian. | $\theta$, $g$ | Optimization. |
-| Boltzmann Estimator | SRC-0024 eq. 4 | This page; [[concepts/stability-aware-mlff-training]] | Estimates Jacobian without unrolling MD. | $\nabla_{\theta}U_{\theta}$, $N$, $k_BT$ | Differentiable training. |
+| Boltzmann Estimator | SRC-0024 eq. 4 | This page; [[wiki/concepts/stability-aware-mlff-training]] | Estimates Jacobian without unrolling MD. | $\nabla_{\theta}U_{\theta}$, $N$, $k_BT$ | Differentiable training. |
 | $L_{\mathrm{StABlE}}$ | SRC-0024 eq. 6 | This page | Regularizes observable training with QM data. | $\lambda$, $L_{\mathrm{QM}}$ | Prevents underconstrained fitting. |
 
 ## Algorithmic recursions
@@ -141,9 +143,9 @@ StABlE pretrains on energy/force data, launches parallel MD replicas from traini
 
 ## Links
 
-- [[concepts/stability-aware-mlff-training]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/stability-aware-mlff-training]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

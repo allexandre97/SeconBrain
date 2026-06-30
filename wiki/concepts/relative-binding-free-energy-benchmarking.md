@@ -6,13 +6,16 @@ updated: 2026-06-30
 areas:
   - research
 categories:
-  - research/molecular-simulation/binding-free-energy
+  - research/molecular-simulation/free-energy
+  - research/computational-drug-discovery
+  - research/experimental-benchmarking
+  - research/biomolecules/proteins
 tags:
   - rbfe
   - drug-discovery
 related:
-  - "[[concepts/garnet-force-field]]"
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/garnet-force-field]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0003
   - SRC-0045
@@ -65,9 +68,9 @@ $$
 
 ## Links
 
-- [[sources/SRC-0003-training-a-force-field-from-scratch]]
-- [[sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]
-- [[sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]
-- [[concepts/garnet-force-field]]
-- [[concepts/free-energy-estimation]]
-- [[questions/garnet-validation-scope]]
+- [[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]
+- [[wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]
+- [[wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]
+- [[wiki/concepts/garnet-force-field]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/questions/garnet-validation-scope]]

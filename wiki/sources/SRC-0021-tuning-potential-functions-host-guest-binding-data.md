@@ -20,6 +20,9 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/computational-drug-discovery
+  - research/molecular-simulation/free-energy
+  - research/biomolecules/proteins
+  - research/experimental-benchmarking
 tags:
   - host-guest
   - binding-free-energy
@@ -28,9 +31,9 @@ tags:
   - implicit-solvent
   - math-heavy
 related:
-  - "[[sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting-information]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting-information]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
 sources:
   - SRC-0021
 sensitivity: public
@@ -46,8 +49,7 @@ Source ID: `SRC-0021`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data.pdf)
-
+- Open raw source: [raw/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data.pdf](../../raw/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data.pdf)
 ## Source bundle
 
 Main paper for SRC-0022, the supporting information. [SRC-0021] [SRC-0022]
@@ -135,7 +137,7 @@ $$
 | GB solvation energy | SRC-0021 Methods | This page | Defines optimized implicit-solvent energy component. | $q_i$, $R_i$, $f_{\mathrm{GB}}$ | Parameter target. |
 | Pose-combined $\Delta G_b$ | SRC-0021 Methods | This page | Combines asymmetric binding poses. | $\Delta G_{b,k}$, $N_b$ | ABFE prediction. |
 | Pose-gradient mixture | SRC-0021 Methods | This page | Computes parameter gradient over poses. | $p_k$, $\theta$ | ForceBalance gradients. |
-| ForceBalance least squares | SRC-0021 Methods | This page; [[concepts/force-field-training-from-experimental-observables]] | Fits properties with priors. | $y_i$, $\theta_j$, $\sigma_i$ | Optimization objective. |
+| ForceBalance least squares | SRC-0021 Methods | This page; [[wiki/concepts/force-field-training-from-experimental-observables]] | Fits properties with priors. | $y_i$, $\theta_j$, $\sigma_i$ | Optimization objective. |
 
 ## Evidence
 
@@ -151,10 +153,10 @@ The supporting information adds the train/test ABFE tables, protein-ligand bench
 
 ## Links
 
-- [[sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting-information]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting-information]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

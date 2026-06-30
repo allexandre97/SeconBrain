@@ -13,7 +13,7 @@ tags:
   - SHAKE
   - molecular-dynamics
 related:
-  - "[[concepts/md-pressure-and-stress-tensor-calculation]]"
+  - "[[wiki/concepts/md-pressure-and-stress-tensor-calculation]]"
 sources:
   - SRC-0052
 sensitivity: public
@@ -52,5 +52,5 @@ $$
 
 ## Links
 
-- [[sources/SRC-0052-lincs-a-linear-constraint-solver-for-molecular-simulations]]
-- [[concepts/md-pressure-and-stress-tensor-calculation]]
+- [[wiki/sources/SRC-0052-lincs-a-linear-constraint-solver-for-molecular-simulations]]
+- [[wiki/concepts/md-pressure-and-stress-tensor-calculation]]

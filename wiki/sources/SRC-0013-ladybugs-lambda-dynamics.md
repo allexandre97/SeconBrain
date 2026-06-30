@@ -29,10 +29,10 @@ tags:
   - fastmbar
   - math-heavy
 related:
-  - "[[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
 sources:
   - SRC-0013
 sensitivity: public
@@ -48,7 +48,7 @@ Source ID: `SRC-0013`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0013-fast-free-energy-estimates-from-lambda-dynamics-with.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0013-fast-free-energy-estimates-from-lambda-dynamics-with.pdf)
+- Open raw source: [raw/sources/SRC-0013-fast-free-energy-estimates-from-lambda-dynamics-with.pdf](../../raw/sources/SRC-0013-fast-free-energy-estimates-from-lambda-dynamics-with.pdf)
 
 ## Summary
 
@@ -106,10 +106,10 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Gibbs conditional, eq. (1) | SRC-0013 Methods | This page; [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]] | Samples discrete alchemical states. | $\lambda_i$, $X$, $E_i$, $V^{SS}$, $V^{MS}$ | Core sampler. |
+| Gibbs conditional, eq. (1) | SRC-0013 Methods | This page; [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]] | Samples discrete alchemical states. | $\lambda_i$, $X$, $E_i$, $V^{SS}$, $V^{MS}$ | Core sampler. |
 | Single-site potential, eq. (2) | SRC-0013 Methods | This page | Defines single-site alchemical energy. | $x^0$, $x^{y,c}$, $\lambda_{y,c}$ | Single-site ligand modifications. |
 | Multisite potential, eq. (3) | SRC-0013 Methods | This page | Adds interactions between alchemical sites. | $y,z,c,d$ | Multisite extension. |
-| Bias update, eq. (4) | SRC-0013 Methods | This page; [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]] | Combines FastMBAR free energy and visit-count penalty. | $E_i$, $\Delta G_i$, $L_i$, $\epsilon_b$ | Dynamic biasing. |
+| Bias update, eq. (4) | SRC-0013 Methods | This page; [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]] | Combines FastMBAR free energy and visit-count penalty. | $E_i$, $\Delta G_i$, $L_i$, $\epsilon_b$ | Dynamic biasing. |
 | State-count scaling, eq. (5) | SRC-0013 Methods | This page | Counts discrete lambda states. | $N_\lambda$, $N_s$, $\Delta\lambda$ | Cost scaling. |
 | Relative-to-absolute conversion, eq. (6) | SRC-0013 Methods | This page | Converts computed relative free energies for experiment comparison. | $\Delta G_{\mathrm{comp}}$ | Benchmark analysis. |
 
@@ -134,10 +134,10 @@ The paper reports that λD required 609 ns of bias-identification sampling befor
 
 ## Links
 
-- [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
 
 ## Open Questions
 

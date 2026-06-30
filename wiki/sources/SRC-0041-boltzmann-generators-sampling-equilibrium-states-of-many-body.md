@@ -19,13 +19,14 @@ areas:
 categories:
   - research/molecular-simulation/free-energy
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - Boltzmann-generators
   - normalizing-flows
   - enhanced-sampling
   - free-energy
 related:
-  - "[[concepts/boltzmann-generators-equilibrium-sampling]]"
+  - "[[wiki/concepts/boltzmann-generators-equilibrium-sampling]]"
 sources:
   - SRC-0041
 sensitivity: public
@@ -41,7 +42,7 @@ Source ID: `SRC-0041`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body.pdf)
+- Open raw source: [raw/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body.pdf](../../raw/sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body.pdf)
 
 ## Summary
 
@@ -96,9 +97,9 @@ $$
 
 ## Links
 
-- [[concepts/boltzmann-generators-equilibrium-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/boltzmann-generators-equilibrium-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
 
 ## Ingestion QA
 

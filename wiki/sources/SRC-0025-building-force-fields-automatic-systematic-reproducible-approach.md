@@ -27,9 +27,9 @@ tags:
   - tip4p-fb
   - math-heavy
 related:
-  - "[[sources/SRC-0026-building-force-fields-forcebalance-supporting-information]]"
-  - "[[concepts/forcebalance]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/sources/SRC-0026-building-force-fields-forcebalance-supporting-information]]"
+  - "[[wiki/concepts/forcebalance]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0025
 sensitivity: public
@@ -45,8 +45,7 @@ Source ID: `SRC-0025`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach.pdf)
-
+- Open raw source: [raw/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach.pdf](../../raw/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach.pdf)
 ## Source bundle
 
 Main paper for SRC-0026, the supporting information. [SRC-0025] [SRC-0026]
@@ -99,8 +98,8 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Weighted least-squares objective | SRC-0025 main text | This page; [[concepts/forcebalance]] | Fits simulated properties to references. | $y_i$, $y_i^{\mathrm{ref}}$, $\sigma_i$, $R$ | Core optimizer objective. |
-| Thermodynamic fluctuation derivative | SRC-0025 main text | This page; [[concepts/forcebalance]] | Gets parameter gradients from one simulation. | $A$, $U$, $\theta_j$ | Avoids finite-difference simulation. |
+| Weighted least-squares objective | SRC-0025 main text | This page; [[wiki/concepts/forcebalance]] | Fits simulated properties to references. | $y_i$, $y_i^{\mathrm{ref}}$, $\sigma_i$, $R$ | Core optimizer objective. |
+| Thermodynamic fluctuation derivative | SRC-0025 main text | This page; [[wiki/concepts/forcebalance]] | Gets parameter gradients from one simulation. | $A$, $U$, $\theta_j$ | Avoids finite-difference simulation. |
 
 ## Evidence
 
@@ -114,10 +113,10 @@ TIP4P-FB reproduces the dielectric constant at ambient conditions while maintain
 
 ## Links
 
-- [[sources/SRC-0026-building-force-fields-forcebalance-supporting-information]]
-- [[concepts/forcebalance]]
-- [[concepts/automated-force-field-training]]
-- [[concepts/force-field-training-from-experimental-observables]]
+- [[wiki/sources/SRC-0026-building-force-fields-forcebalance-supporting-information]]
+- [[wiki/concepts/forcebalance]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
 
 ## Open Questions
 

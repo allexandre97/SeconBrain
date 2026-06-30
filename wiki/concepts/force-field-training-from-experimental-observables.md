@@ -7,15 +7,17 @@ areas:
   - research
 categories:
   - research/molecular-simulation/force-fields
+  - research/experimental-benchmarking
+  - research/biomolecules/proteins
 tags:
   - force-field-training
   - experimental-observables
   - forcebalance
 related:
-  - "[[concepts/automated-force-field-training]]"
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
-  - "[[concepts/forcebalance]]"
-  - "[[concepts/protein-force-field-benchmark-datasets]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/forcebalance]]"
+  - "[[wiki/concepts/protein-force-field-benchmark-datasets]]"
 sources:
   - SRC-0014
   - SRC-0015
@@ -86,10 +88,10 @@ Optimizing to one observable family can create tradeoffs with another; SRC-0021 
 
 ## Links
 
-- [[sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
-- [[sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
-- [[sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
-- [[concepts/automated-force-field-training]]
-- [[concepts/forcebalance]]
-- [[concepts/protein-force-field-benchmark-datasets]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
+- [[wiki/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
+- [[wiki/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/forcebalance]]
+- [[wiki/concepts/protein-force-field-benchmark-datasets]]
+- [[wiki/questions/force-field-training-validation-scope]]

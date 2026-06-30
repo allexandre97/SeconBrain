@@ -10,7 +10,7 @@ categories:
 tags:
   - metadata
 related:
-  - "[[concepts/multi-category-wiki-organization]]"
+  - "[[wiki/concepts/multi-category-wiki-organization]]"
 sources:
   - SRC-0002
 sensitivity: public
@@ -32,6 +32,6 @@ Wiki pages use frontmatter fields such as `areas`, `categories`, `tags`, `relate
 
 ## Links
 
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/multi-category-wiki-organization]]
-- [[concepts/optional-encryption-and-sensitivity-metadata]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/multi-category-wiki-organization]]
+- [[wiki/concepts/optional-encryption-and-sensitivity-metadata]]

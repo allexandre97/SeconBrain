@@ -10,7 +10,7 @@ categories:
 tags:
   - tooling
 related:
-  - "[[concepts/wiki-linting]]"
+  - "[[wiki/concepts/wiki-linting]]"
 sources:
   - SRC-0001
   - SRC-0002
@@ -36,6 +36,6 @@ No optional tooling has been adopted. Revisit this only after the wiki grows eno
 
 ## Links
 
-- [[sources/SRC-0001-karpathy-llm-knowledge-base]]
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/wiki-linting]]
+- [[wiki/sources/SRC-0001-karpathy-llm-knowledge-base]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/wiki-linting]]

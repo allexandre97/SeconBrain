@@ -8,15 +8,16 @@ areas:
 categories:
   - research/molecular-simulation/datasets
   - research/data-management
+  - research/biomolecules/lipids
 tags:
   - overlay-databank
   - FAIR-data
   - biomolecular-simulation
   - machine-learning
 related:
-  - "[[concepts/machine-learning-potential-datasets]]"
-  - "[[concepts/protein-force-field-benchmark-datasets]]"
-  - "[[concepts/rna-molecular-dynamics-simulations]]"
+  - "[[wiki/concepts/machine-learning-potential-datasets]]"
+  - "[[wiki/concepts/protein-force-field-benchmark-datasets]]"
+  - "[[wiki/concepts/rna-molecular-dynamics-simulations]]"
 sources:
   - SRC-0057
   - SRC-0058
@@ -47,7 +48,7 @@ An overlay databank makes scattered simulation data reusable by keeping raw data
 
 ## Links
 
-- [[sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
-- [[sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven]]
-- [[concepts/machine-learning-potential-datasets]]
-- [[concepts/protein-force-field-benchmark-datasets]]
+- [[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
+- [[wiki/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven]]
+- [[wiki/concepts/machine-learning-potential-datasets]]
+- [[wiki/concepts/protein-force-field-benchmark-datasets]]

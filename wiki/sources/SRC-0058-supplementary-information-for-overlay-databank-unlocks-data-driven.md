@@ -21,6 +21,7 @@ areas:
 categories:
   - research/molecular-simulation/datasets
   - research/data-management
+  - research/biomolecules/lipids
 tags:
   - overlay-databank
   - NMRlipids
@@ -28,8 +29,8 @@ tags:
   - membrane-simulations
   - supporting-information
 related:
-  - "[[sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]"
-  - "[[concepts/overlay-databanks-for-biomolecular-simulation-data]]"
+  - "[[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]"
+  - "[[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data]]"
 sources:
   - SRC-0057
   - SRC-0058
@@ -46,7 +47,7 @@ Source ID: `SRC-0058`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven.pdf)
+- Open raw source: [raw/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven.pdf](../../raw/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven.pdf)
 
 ## Summary
 
@@ -73,8 +74,8 @@ This supporting information documents the NMRlipids Databank structure, metadata
 
 ## Links
 
-- [[sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
-- [[concepts/overlay-databanks-for-biomolecular-simulation-data]]
+- [[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules]]
+- [[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data]]
 
 ## Ingestion QA
 

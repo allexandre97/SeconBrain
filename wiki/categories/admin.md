@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,6 +25,10 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Subcategories
 
-- [[categories/admin/privacy|admin/privacy]]
-- [[categories/admin/wiki-governance|admin/wiki-governance]]
-- [[categories/admin/wiki-maintenance|admin/wiki-maintenance]]
+- [[wiki/categories/admin/privacy|admin/privacy]] - 1 direct, 1 total pages in branch.
+- [[wiki/categories/admin/wiki-governance|admin/wiki-governance]] - 2 direct, 2 total pages in branch.
+- [[wiki/categories/admin/wiki-maintenance|admin/wiki-maintenance]] - 1 direct, 1 total pages in branch.
+
+## Direct members
+
+- No pages are directly assigned to this category.

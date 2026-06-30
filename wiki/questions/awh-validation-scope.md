@@ -13,10 +13,10 @@ tags:
   - validation
   - free-energy-estimation
 related:
-  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
-  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
-  - "[[sources/SRC-0009-awh-alchemical-free-energy]]"
-  - "[[concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[wiki/sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[wiki/sources/SRC-0009-awh-alchemical-free-energy]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
 sources:
   - SRC-0007
   - SRC-0008
@@ -49,6 +49,6 @@ Treat AWH as a mature adaptive enhanced-sampling framework with targeted validat
 
 ## Links
 
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/adaptive-enhanced-sampling]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/free-energy-estimation]]

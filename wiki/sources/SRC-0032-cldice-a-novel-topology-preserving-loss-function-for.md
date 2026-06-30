@@ -19,14 +19,15 @@ areas:
 categories:
   - research/computer-vision/biomedical-imaging
   - research/machine-learning/scientific-modeling
+  - research/bioimage-analysis/filament-segmentation
 tags:
   - tubular-segmentation
   - topology
   - loss-function
   - cldice
 related:
-  - "[[concepts/topology-aware-tubular-structure-segmentation]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/topology-aware-tubular-structure-segmentation]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
 sources:
   - SRC-0032
 sensitivity: public
@@ -42,7 +43,7 @@ Source ID: `SRC-0032`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for.pdf)
+- Open raw source: [raw/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for.pdf](../../raw/sources/SRC-0032-cldice-a-novel-topology-preserving-loss-function-for.pdf)
 
 ## Summary
 
@@ -109,8 +110,8 @@ $$
 
 ## Links
 
-- [[concepts/topology-aware-tubular-structure-segmentation]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/topology-aware-tubular-structure-segmentation]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
 
 ## Ingestion QA
 

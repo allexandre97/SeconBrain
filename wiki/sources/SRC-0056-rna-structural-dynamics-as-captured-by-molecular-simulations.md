@@ -19,6 +19,7 @@ areas:
 categories:
   - research/molecular-simulation/molecular-dynamics
   - research/biomolecules/rna
+  - research/molecular-simulation/force-fields
 tags:
   - RNA
   - molecular-dynamics
@@ -26,9 +27,9 @@ tags:
   - force-fields
   - review
 related:
-  - "[[concepts/rna-molecular-dynamics-simulations]]"
-  - "[[concepts/rna-force-field-limitations]]"
-  - "[[concepts/adaptive-enhanced-sampling]]"
+  - "[[wiki/concepts/rna-molecular-dynamics-simulations]]"
+  - "[[wiki/concepts/rna-force-field-limitations]]"
+  - "[[wiki/concepts/adaptive-enhanced-sampling]]"
 sources:
   - SRC-0056
 sensitivity: public
@@ -44,7 +45,7 @@ Source ID: `SRC-0056`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations.pdf)
+- Open raw source: [raw/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations.pdf](../../raw/sources/SRC-0056-rna-structural-dynamics-as-captured-by-molecular-simulations.pdf)
 
 ## Summary
 
@@ -74,9 +75,9 @@ This Chemical Reviews article surveys RNA structural dynamics as studied by mole
 
 ## Links
 
-- [[concepts/rna-molecular-dynamics-simulations]]
-- [[concepts/rna-force-field-limitations]]
-- [[concepts/adaptive-enhanced-sampling]]
+- [[wiki/concepts/rna-molecular-dynamics-simulations]]
+- [[wiki/concepts/rna-force-field-limitations]]
+- [[wiki/concepts/adaptive-enhanced-sampling]]
 
 ## Ingestion QA
 

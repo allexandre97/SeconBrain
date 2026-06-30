@@ -11,8 +11,8 @@ tags:
   - categories
   - metadata
 related:
-  - "[[concepts/wiki-page-metadata]]"
-  - "[[categories/README]]"
+  - "[[wiki/concepts/wiki-page-metadata]]"
+  - "[[wiki/categories/README]]"
 sources:
   - SRC-0002
 sensitivity: public
@@ -33,6 +33,6 @@ Multi-category organization lets a wiki page belong to several contexts through 
 
 ## Links
 
-- [[sources/SRC-0002-project-design-note]]
-- [[concepts/wiki-page-metadata]]
-- [[categories/README]]
+- [[wiki/sources/SRC-0002-project-design-note]]
+- [[wiki/concepts/wiki-page-metadata]]
+- [[wiki/categories/README]]

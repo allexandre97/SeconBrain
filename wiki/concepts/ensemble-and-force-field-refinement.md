@@ -13,7 +13,7 @@ tags:
   - forward-model-refinement
   - mdrefine
 related:
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
 sources:
   - SRC-0019
   - SRC-0020
@@ -75,7 +75,7 @@ When both force-field and forward-model parameters are flexible, the same reduct
 
 ## Links
 
-- [[sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]
-- [[sources/SRC-0020-mdrefine-supplementary-material]]
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0019-mdrefine-python-package-refining-md-trajectories]]
+- [[wiki/sources/SRC-0020-mdrefine-supplementary-material]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/questions/force-field-training-validation-scope]]

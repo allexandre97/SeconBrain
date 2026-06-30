@@ -49,7 +49,7 @@ $$
 
 ## Links
 
-- [[sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts]]
+- [[wiki/sources/SRC-0038-practical-and-theoretical-aspects-of-mixture-of-experts]]
 
 ## Open Questions
 

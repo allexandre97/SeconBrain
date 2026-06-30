@@ -17,7 +17,7 @@ sha256: 9e958916e725212b130173b98588f20f742ccbeb358e19390be4907cb2b2c67a
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - filament-instance-segmentation
@@ -25,8 +25,8 @@ tags:
   - orientation-aware-network
   - deep-learning
 related:
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
 sources:
   - SRC-0030
 sensitivity: public
@@ -42,7 +42,7 @@ Source ID: `SRC-0030`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures.pdf)
+- Open raw source: [raw/sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures.pdf](../../raw/sources/SRC-0030-intersection-to-overpass-instance-segmentation-on-filamentous-structures.pdf)
 
 ## Summary
 
@@ -64,8 +64,8 @@ Liu et al. address instance segmentation of filamentous structures by replacing 
 
 ## Links
 
-- [[concepts/filament-instance-and-semantic-segmentation]]
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
 
 ## Ingestion QA
 

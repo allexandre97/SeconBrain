@@ -10,6 +10,10 @@ aliases:
   - "SRC-0001"
   - "LLM Wiki"
 source_path: raw/sources/SRC-0001-karpathy-llm-knowledge-base.md
+categories:
+  - research/llm-wiki/design
+  - research/llm-wiki/architecture
+  - research/llm-wiki/workflows
 tags:
   - llm-wiki
 ---
@@ -21,7 +25,7 @@ Source ID: `SRC-0001`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0001-karpathy-llm-knowledge-base.md`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0001-karpathy-llm-knowledge-base.md)
+- Open raw source: [raw/sources/SRC-0001-karpathy-llm-knowledge-base.md](../../raw/sources/SRC-0001-karpathy-llm-knowledge-base.md)
 
 ## Summary
 
@@ -37,12 +41,12 @@ This source proposes an LLM-maintained knowledge base where raw documents are co
 
 ## Links
 
-- [[concepts/persistent-llm-wiki]]
-- [[concepts/raw-wiki-schema-layers]]
-- [[concepts/source-ingestion]]
-- [[concepts/wiki-index-and-log]]
-- [[concepts/wiki-linting]]
+- [[wiki/concepts/persistent-llm-wiki]]
+- [[wiki/concepts/raw-wiki-schema-layers]]
+- [[wiki/concepts/source-ingestion]]
+- [[wiki/concepts/wiki-index-and-log]]
+- [[wiki/concepts/wiki-linting]]
 
 ## Open Questions
 
-- [[questions/optional-tooling-for-llm-wiki]] - Decide whether any optional tools or formats from the source should be adopted later. [SRC-0001]
+- [[wiki/questions/optional-tooling-for-llm-wiki]] - Decide whether any optional tools or formats from the source should be adopted later. [SRC-0001]

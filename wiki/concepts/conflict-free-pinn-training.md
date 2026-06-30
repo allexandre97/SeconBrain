@@ -33,7 +33,7 @@ Conflict-free PINN training addresses cases where separate PINN loss terms, such
 
 ## Links
 
-- [[sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed]]
+- [[wiki/sources/SRC-0036-config-towards-conflict-free-training-of-physics-informed]]
 
 ## Open Questions
 

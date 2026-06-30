@@ -20,14 +20,16 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/computational-drug-discovery
+  - research/molecular-simulation/free-energy
+  - research/biomolecules/proteins
 tags:
   - supporting-information
   - host-guest
   - binding-free-energy
   - implicit-solvent
 related:
-  - "[[sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]"
-  - "[[concepts/force-field-training-from-experimental-observables]]"
+  - "[[wiki/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]"
+  - "[[wiki/concepts/force-field-training-from-experimental-observables]]"
 sources:
   - SRC-0022
 sensitivity: public
@@ -43,8 +45,7 @@ Source ID: `SRC-0022`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting.pdf)
-
+- Open raw source: [raw/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting.pdf](../../raw/sources/SRC-0022-tuning-potential-functions-host-guest-binding-data-supporting.pdf)
 ## Source bundle
 
 Supporting information for SRC-0021. [SRC-0021] [SRC-0022]
@@ -70,9 +71,9 @@ The prior-width analysis reports that reducing the parameter prior width restrai
 
 ## Links
 
-- [[sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
-- [[concepts/force-field-training-from-experimental-observables]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
+- [[wiki/concepts/force-field-training-from-experimental-observables]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

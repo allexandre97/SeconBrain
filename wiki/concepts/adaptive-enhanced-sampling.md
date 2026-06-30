@@ -15,20 +15,20 @@ tags:
   - resource-allocation
   - math-heavy
 related:
-  - "[[sources/SRC-0010-rethinking-metadynamics-opes]]"
-  - "[[sources/SRC-0011-opes-supporting-information]]"
-  - "[[sources/SRC-0013-ladybugs-lambda-dynamics]]"
-  - "[[concepts/on-the-fly-probability-enhanced-sampling]]"
-  - "[[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
-  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
-  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
-  - "[[sources/SRC-0009-awh-alchemical-free-energy]]"
-  - "[[concepts/accelerated-weight-histogram-method]]"
-  - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
-  - "[[sources/SRC-0006-times-square-sampling-supplement]]"
-  - "[[concepts/times-square-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/tss-implementation-patterns]]"
+  - "[[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]"
+  - "[[wiki/sources/SRC-0011-opes-supporting-information]]"
+  - "[[wiki/sources/SRC-0013-ladybugs-lambda-dynamics]]"
+  - "[[wiki/concepts/on-the-fly-probability-enhanced-sampling]]"
+  - "[[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
+  - "[[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[wiki/sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[wiki/sources/SRC-0009-awh-alchemical-free-energy]]"
+  - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/sources/SRC-0005-times-square-sampling-free-energy]]"
+  - "[[wiki/sources/SRC-0006-times-square-sampling-supplement]]"
+  - "[[wiki/concepts/times-square-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/tss-implementation-patterns]]"
 sources:
   - SRC-0010
   - SRC-0011
@@ -126,20 +126,20 @@ Windowing is derived by introducing the active-window variable `J`, enforcing a 
 
 ## Links
 
-- [[sources/SRC-0005-times-square-sampling-free-energy]]
-- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
-- [[sources/SRC-0008-awh-free-energy-landscapes]]
-- [[sources/SRC-0009-awh-alchemical-free-energy]]
-- [[sources/SRC-0010-rethinking-metadynamics-opes]]
-- [[sources/SRC-0013-ladybugs-lambda-dynamics]]
-- [[concepts/accelerated-weight-histogram-method]]
-- [[concepts/on-the-fly-probability-enhanced-sampling]]
-- [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
-- [[sources/SRC-0006-times-square-sampling-supplement]]
-- [[concepts/times-square-sampling]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/tss-implementation-patterns]]
-- [[questions/tss-generalization-scope]]
+- [[wiki/sources/SRC-0005-times-square-sampling-free-energy]]
+- [[wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[wiki/sources/SRC-0008-awh-free-energy-landscapes]]
+- [[wiki/sources/SRC-0009-awh-alchemical-free-energy]]
+- [[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]
+- [[wiki/sources/SRC-0013-ladybugs-lambda-dynamics]]
+- [[wiki/concepts/accelerated-weight-histogram-method]]
+- [[wiki/concepts/on-the-fly-probability-enhanced-sampling]]
+- [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
+- [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
+- [[wiki/concepts/times-square-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/tss-implementation-patterns]]
+- [[wiki/questions/tss-generalization-scope]]
 
 ## Open Questions
 

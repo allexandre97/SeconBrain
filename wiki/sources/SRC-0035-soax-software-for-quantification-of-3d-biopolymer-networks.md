@@ -17,7 +17,7 @@ sha256: fa2ba6561f02ad8fc4f309dc30b3ed928af074364ea55fd96555de1f93fc6d49
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - SOAX
@@ -25,8 +25,8 @@ tags:
   - biopolymer-networks
   - filament-tracing
 related:
-  - "[[concepts/stretching-open-active-contours]]"
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/stretching-open-active-contours]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
 sources:
   - SRC-0035
 sensitivity: public
@@ -42,7 +42,7 @@ Source ID: `SRC-0035`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks.pdf)
+- Open raw source: [raw/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks.pdf](../../raw/sources/SRC-0035-soax-software-for-quantification-of-3d-biopolymer-networks.pdf)
 
 ## Summary
 
@@ -65,8 +65,8 @@ Xu et al. present SOAX, an open-source software tool for extracting centerlines 
 
 ## Links
 
-- [[concepts/stretching-open-active-contours]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/stretching-open-active-contours]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
 
 ## Ingestion QA
 

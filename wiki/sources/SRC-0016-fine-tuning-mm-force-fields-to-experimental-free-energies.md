@@ -20,6 +20,7 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/computational-drug-discovery
+  - research/molecular-simulation/free-energy
 tags:
   - espaloma
   - freesolv
@@ -28,8 +29,8 @@ tags:
   - fine-tuning
   - math-heavy
 related:
-  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0016
 sensitivity: public
@@ -45,7 +46,7 @@ Source ID: `SRC-0016`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free.pdf)
+- Open raw source: [raw/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free.pdf](../../raw/sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free.pdf)
 
 ## Summary
 
@@ -126,8 +127,8 @@ $$
 | PCA low-rank projection | SRC-0016 section 3.1 | This page | Reduces embedding dimension. | $\mathbf h_i$, $\mathbf Q$, $r$ | Limits fitted degrees of freedom. |
 | Linear electrostatic perturbation | SRC-0016 section 3.1 | This page | Maps embeddings to charge-model changes. | $\boldsymbol\Theta$, $\Delta e_i$, $\Delta s_i$ | Trainable model. |
 | QEq constrained minimization | SRC-0016 section 3.1 | This page | Produces charge-conserving partial charges. | $\mathbf q$, $Q$, $e_i^*$, $s_i^*$ | Charge update. |
-| Zwanzig estimator | SRC-0016 section 3.2 | This page; [[concepts/free-energy-reweighting-for-force-field-fine-tuning]] | Estimates perturbed free energy from old samples. | $\Delta U$, $\beta$ | One-shot fitting. |
-| ESS | SRC-0016 section 4.2 | This page; [[concepts/free-energy-reweighting-for-force-field-fine-tuning]] | Detects reweighting support collapse. | $w_i$ | Trust-region regularization. |
+| Zwanzig estimator | SRC-0016 section 3.2 | This page; [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]] | Estimates perturbed free energy from old samples. | $\Delta U$, $\beta$ | One-shot fitting. |
+| ESS | SRC-0016 section 4.2 | This page; [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]] | Detects reweighting support collapse. | $w_i$ | Trust-region regularization. |
 
 ## Evidence
 
@@ -143,9 +144,9 @@ Fine-tuning with ESS regularization is reported to outperform unregularized rewe
 
 ## Links
 
-- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

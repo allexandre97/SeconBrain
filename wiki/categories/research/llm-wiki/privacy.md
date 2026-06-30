@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,8 +25,10 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research/llm-wiki|research/llm-wiki]]
+- [[wiki/categories/research/llm-wiki|research/llm-wiki]]
 
-## Concepts
+## Direct members
 
-- [[concepts/optional-encryption-and-sensitivity-metadata|Optional Encryption and Sensitivity Metadata]]
+### Concepts
+
+- [[wiki/concepts/optional-encryption-and-sensitivity-metadata|Optional Encryption and Sensitivity Metadata]]

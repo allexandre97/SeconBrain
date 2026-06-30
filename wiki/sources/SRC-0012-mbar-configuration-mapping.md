@@ -27,9 +27,9 @@ tags:
   - phase-space-overlap
   - math-heavy
 related:
-  - "[[concepts/mbar-with-configuration-mapping]]"
-  - "[[concepts/free-energy-estimation]]"
-  - "[[concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[wiki/concepts/mbar-with-configuration-mapping]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/relative-binding-free-energy-benchmarking]]"
 sources:
   - SRC-0012
 sensitivity: public
@@ -45,7 +45,7 @@ Source ID: `SRC-0012`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0012-multistate-reweighting-and-configuration-mapping-together-accelerate-thermodynamic.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0012-multistate-reweighting-and-configuration-mapping-together-accelerate-thermodynamic.pdf)
+- Open raw source: [raw/sources/SRC-0012-multistate-reweighting-and-configuration-mapping-together-accelerate-thermodynamic.pdf](../../raw/sources/SRC-0012-multistate-reweighting-and-configuration-mapping-together-accelerate-thermodynamic.pdf)
 
 ## Summary
 
@@ -96,8 +96,8 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Warped reduced energy, eq. (1) | SRC-0012 section II | This page; [[concepts/mbar-with-configuration-mapping]] | Adds mapping and Jacobian to target-state reduced energy. | $u_i$, $T_{ji}$, $J_{ji}$ | Core mapped reweighting quantity. |
-| MBAR with mapping, eq. (2) | SRC-0012 section II | This page; [[concepts/mbar-with-configuration-mapping]] | Uses warped energies in MBAR. | $f_i$, $u_{ij}^{w}$, $N_k$ | Free-energy estimator. |
+| Warped reduced energy, eq. (1) | SRC-0012 section II | This page; [[wiki/concepts/mbar-with-configuration-mapping]] | Adds mapping and Jacobian to target-state reduced energy. | $u_i$, $T_{ji}$, $J_{ji}$ | Core mapped reweighting quantity. |
+| MBAR with mapping, eq. (2) | SRC-0012 section II | This page; [[wiki/concepts/mbar-with-configuration-mapping]] | Uses warped energies in MBAR. | $f_i$, $u_{ij}^{w}$, $N_k$ | Free-energy estimator. |
 | Reference-state map, eq. (3) | SRC-0012 section III.A | This page | Constructs pairwise maps through reference coordinates. | $T_i$, $T_{ij}$, $\mu_i$, $\sigma_i$ | Toy-model mapping. |
 | Jacobian, eq. (4) | SRC-0012 section III.A | This page | Gives map volume factor. | $J_{ij}$, $\sigma_i$ | Required correction. |
 | Harmonic warped energy, eq. (5) | SRC-0012 section III.A | This page | Applies map and Jacobian to oscillator. | $u_{ij}^{w}$, $K_i$ | Exact toy result. |
@@ -124,9 +124,9 @@ For solvated dipoles with different equilibrium bond lengths, MBAR with mapping 
 
 ## Links
 
-- [[concepts/mbar-with-configuration-mapping]]
-- [[concepts/free-energy-estimation]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/concepts/mbar-with-configuration-mapping]]
+- [[wiki/concepts/free-energy-estimation]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
 
 ## Open Questions
 

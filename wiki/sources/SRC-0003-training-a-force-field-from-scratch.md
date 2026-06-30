@@ -19,13 +19,16 @@ areas:
 categories:
   - research/molecular-simulation/force-fields
   - research/machine-learning/scientific-modeling
+  - research/biomolecules/proteins
+  - research/machine-learning/molecular-modeling
+  - research/experimental-benchmarking
 tags:
   - molecular-dynamics
   - force-fields
   - graph-neural-networks
 related:
-  - "[[concepts/garnet-force-field]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/concepts/garnet-force-field]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0003
 sensitivity: public
@@ -41,7 +44,7 @@ Source ID: `SRC-0003`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0003-training-a-force-field-from-scratch.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0003-training-a-force-field-from-scratch.pdf)
+- Open raw source: [raw/sources/SRC-0003-training-a-force-field-from-scratch.pdf](../../raw/sources/SRC-0003-training-a-force-field-from-scratch.pdf)
 
 ## Summary
 
@@ -60,15 +63,15 @@ This arXiv paper introduces Garnet, a graph-neural-network system that predicts 
 
 ## Links
 
-- [[concepts/garnet-force-field]]
-- [[concepts/automated-force-field-training]]
-- [[concepts/double-exponential-potential]]
-- [[concepts/relative-binding-free-energy-benchmarking]]
-- [[questions/garnet-validation-scope]]
+- [[wiki/concepts/garnet-force-field]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/concepts/double-exponential-potential]]
+- [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+- [[wiki/questions/garnet-validation-scope]]
 
 ## Open Questions
 
-- [[questions/garnet-validation-scope]] - Which molecule classes and simulation tasks still need validation before treating Garnet as broadly transferable? [SRC-0003]
+- [[wiki/questions/garnet-validation-scope]] - Which molecule classes and simulation tasks still need validation before treating Garnet as broadly transferable? [SRC-0003]
 
 ## Ingestion QA
 

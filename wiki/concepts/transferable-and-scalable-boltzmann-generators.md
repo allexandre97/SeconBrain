@@ -8,14 +8,15 @@ areas:
 categories:
   - research/molecular-simulation/free-energy
   - research/machine-learning/scientific-modeling
+  - research/machine-learning/molecular-modeling
 tags:
   - Boltzmann-generators
   - transfer-learning
   - scalability
   - materials
 related:
-  - "[[concepts/boltzmann-generators-equilibrium-sampling]]"
-  - "[[concepts/free-energy-estimation]]"
+  - "[[wiki/concepts/boltzmann-generators-equilibrium-sampling]]"
+  - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0037
   - SRC-0039
@@ -39,10 +40,10 @@ Transferable and scalable Boltzmann generators try to amortize the cost of train
 
 ## Links
 
-- [[sources/SRC-0037-transferable-boltzmann-generators]]
-- [[sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
-- [[concepts/boltzmann-generators-equilibrium-sampling]]
-- [[concepts/free-energy-estimation]]
+- [[wiki/sources/SRC-0037-transferable-boltzmann-generators]]
+- [[wiki/sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
+- [[wiki/concepts/boltzmann-generators-equilibrium-sampling]]
+- [[wiki/concepts/free-energy-estimation]]
 
 ## Open Questions
 

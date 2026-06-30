@@ -17,7 +17,7 @@ sha256: c0c2bfb54e9f9eec9a79757c3c5ad72b0166c6e350277136517e45697e4b300a
 areas:
   - research
 categories:
-  - research/bioimage-analysis/cytoskeleton
+  - research/bioimage-analysis/filament-segmentation
   - research/computer-vision/biomedical-imaging
 tags:
   - filament-segmentation
@@ -25,9 +25,9 @@ tags:
   - deep-learning
   - u-net
 related:
-  - "[[concepts/cytoskeleton-segmentation-and-tracing]]"
-  - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
-  - "[[concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[wiki/concepts/cytoskeleton-segmentation-and-tracing]]"
+  - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/concepts/filament-instance-and-semantic-segmentation]]"
 sources:
   - SRC-0029
 sensitivity: public
@@ -43,7 +43,7 @@ Source ID: `SRC-0029`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation.pdf)
+- Open raw source: [raw/sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation.pdf](../../raw/sources/SRC-0029-densely-connected-stacked-u-network-for-filament-segmentation.pdf)
 
 ## Summary
 
@@ -65,9 +65,9 @@ Liu et al. introduce a densely connected stacked U-Net architecture for semantic
 
 ## Links
 
-- [[concepts/deep-learning-cytoskeleton-image-analysis]]
-- [[concepts/filament-instance-and-semantic-segmentation]]
-- [[concepts/cytoskeleton-segmentation-and-tracing]]
+- [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/concepts/filament-instance-and-semantic-segmentation]]
+- [[wiki/concepts/cytoskeleton-segmentation-and-tracing]]
 
 ## Ingestion QA
 

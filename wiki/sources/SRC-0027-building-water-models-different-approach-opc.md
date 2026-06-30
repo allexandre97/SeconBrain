@@ -26,9 +26,9 @@ tags:
   - hydration-free-energy
   - math-heavy
 related:
-  - "[[sources/SRC-0028-building-water-models-different-approach-supporting-information]]"
-  - "[[concepts/opc-water-model]]"
-  - "[[concepts/automated-force-field-training]]"
+  - "[[wiki/sources/SRC-0028-building-water-models-different-approach-supporting-information]]"
+  - "[[wiki/concepts/opc-water-model]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
 sources:
   - SRC-0027
 sensitivity: public
@@ -44,8 +44,7 @@ Source ID: `SRC-0027`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0027-building-water-models-different-approach-opc.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0027-building-water-models-different-approach-opc.pdf)
-
+- Open raw source: [raw/sources/SRC-0027-building-water-models-different-approach-opc.pdf](../../raw/sources/SRC-0027-building-water-models-different-approach-opc.pdf)
 ## Source bundle
 
 Main paper for SRC-0028, the supporting information. [SRC-0027] [SRC-0028]
@@ -116,7 +115,7 @@ $$
 
 | Equation / label | Source location | Wiki location | Purpose | Variables | Implementation relevance |
 | --- | --- | --- | --- | --- | --- |
-| Dipole constraint | SRC-0027 Computational Methods | This page; [[concepts/opc-water-model]] | Matches water dipole. | $\mu$, $q$, $z_1$, $z_2$ | Charge geometry design. |
+| Dipole constraint | SRC-0027 Computational Methods | This page; [[wiki/concepts/opc-water-model]] | Matches water dipole. | $\mu$, $q$, $z_1$, $z_2$ | Charge geometry design. |
 | Quadrupole constraints | SRC-0027 Computational Methods | This page | Matches $Q_0$ and $Q_T$. | $Q_0$, $Q_T$, $y$ | Charge geometry design. |
 | Geometry formulas | SRC-0027 Computational Methods | This page | Converts multipole targets to charge positions. | $y$, $z_1$, $z_2$, $q$ | Parameter generation. |
 | Bulk score | SRC-0027 Computational Methods | This page | Ranks test water models. | $x$, $x_{\mathrm{exp}}$, tolerance | Model selection. |
@@ -129,10 +128,10 @@ $$
 
 ## Links
 
-- [[sources/SRC-0028-building-water-models-different-approach-supporting-information]]
-- [[concepts/opc-water-model]]
-- [[concepts/automated-force-field-training]]
-- [[questions/force-field-training-validation-scope]]
+- [[wiki/sources/SRC-0028-building-water-models-different-approach-supporting-information]]
+- [[wiki/concepts/opc-water-model]]
+- [[wiki/concepts/automated-force-field-training]]
+- [[wiki/questions/force-field-training-validation-scope]]
 
 ## Open Questions
 

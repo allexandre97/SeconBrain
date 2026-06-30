@@ -24,7 +24,7 @@ tags:
   - many-body-potentials
   - periodic-boundary-conditions
 related:
-  - "[[concepts/md-pressure-and-stress-tensor-calculation]]"
+  - "[[wiki/concepts/md-pressure-and-stress-tensor-calculation]]"
 sources:
   - SRC-0048
 sensitivity: public
@@ -40,7 +40,7 @@ Source ID: `SRC-0048`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0048-general-formulation-of-pressure-and-stress-tensor-for.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0048-general-formulation-of-pressure-and-stress-tensor-for.pdf)
+- Open raw source: [raw/sources/SRC-0048-general-formulation-of-pressure-and-stress-tensor-for.pdf](../../raw/sources/SRC-0048-general-formulation-of-pressure-and-stress-tensor-for.pdf)
 
 ## Summary
 
@@ -96,7 +96,7 @@ $$
 
 ## Links
 
-- [[concepts/md-pressure-and-stress-tensor-calculation]]
+- [[wiki/concepts/md-pressure-and-stress-tensor-calculation]]
 
 ## Ingestion QA
 

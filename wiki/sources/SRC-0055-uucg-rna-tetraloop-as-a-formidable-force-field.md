@@ -19,6 +19,7 @@ areas:
 categories:
   - research/molecular-simulation/molecular-dynamics
   - research/biomolecules/rna
+  - research/molecular-simulation/force-fields
 tags:
   - RNA
   - force-fields
@@ -26,8 +27,8 @@ tags:
   - AMBER
   - QM-MM
 related:
-  - "[[concepts/rna-molecular-dynamics-simulations]]"
-  - "[[concepts/rna-force-field-limitations]]"
+  - "[[wiki/concepts/rna-molecular-dynamics-simulations]]"
+  - "[[wiki/concepts/rna-force-field-limitations]]"
 sources:
   - SRC-0055
 sensitivity: public
@@ -43,7 +44,7 @@ Source ID: `SRC-0055`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field.pdf)
+- Open raw source: [raw/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field.pdf](../../raw/sources/SRC-0055-uucg-rna-tetraloop-as-a-formidable-force-field.pdf)
 
 ## Summary
 
@@ -73,8 +74,8 @@ This JCTC paper analyzes why the UUCG RNA tetraloop is difficult for explicit-so
 
 ## Links
 
-- [[concepts/rna-molecular-dynamics-simulations]]
-- [[concepts/rna-force-field-limitations]]
+- [[wiki/concepts/rna-molecular-dynamics-simulations]]
+- [[wiki/concepts/rna-force-field-limitations]]
 
 ## Ingestion QA
 

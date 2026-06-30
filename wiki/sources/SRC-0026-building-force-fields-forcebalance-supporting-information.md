@@ -24,8 +24,8 @@ tags:
   - forcebalance
   - water-models
 related:
-  - "[[sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]"
-  - "[[concepts/forcebalance]]"
+  - "[[wiki/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]"
+  - "[[wiki/concepts/forcebalance]]"
 sources:
   - SRC-0026
 sensitivity: public
@@ -41,8 +41,7 @@ Source ID: `SRC-0026`
 ## Raw source
 
 - Repository path: `raw/sources/SRC-0026-building-force-fields-forcebalance-supporting-information.pdf`
-- Local relative link: [Open raw source](../../raw/sources/SRC-0026-building-force-fields-forcebalance-supporting-information.pdf)
-
+- Open raw source: [raw/sources/SRC-0026-building-force-fields-forcebalance-supporting-information.pdf](../../raw/sources/SRC-0026-building-force-fields-forcebalance-supporting-information.pdf)
 ## Source bundle
 
 Supporting information for SRC-0025. [SRC-0025] [SRC-0026]
@@ -59,8 +58,8 @@ This supporting information provides additional water-model property comparisons
 
 ## Links
 
-- [[sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
-- [[concepts/forcebalance]]
+- [[wiki/sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
+- [[wiki/concepts/forcebalance]]
 
 ## Open Questions
 

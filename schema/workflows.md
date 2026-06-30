@@ -13,6 +13,7 @@ Apply this contract to wiki-related tasks unless the user explicitly overrides i
 - Run `python3 tools/validate_wiki.py` before reporting completion.
 - Keep source pages readable in Obsidian: preserve `source_id`, use human-readable `display_title`, `short_title`, aliases, and H1 titles, and include raw-source links when the repository copy exists.
 - Prefer categories from `schema/category_registry.md`; record uncertain category candidates instead of silently inventing new taxonomy branches.
+- Open the repository root, not `wiki/`, as the Obsidian vault.
 
 ## Default Report Format
 
@@ -64,4 +65,4 @@ Use `.agents/skills/wiki-answer-note/SKILL.md` for persistent answer notes, targ
 
 Use `.agents/skills/wiki-note-maintenance/SKILL.md` for validation, cleanup, duplicate detection, wiki linting, math-format repair, concept splitting or merging, index/log consistency, and wiki health checks.
 
-Category pages under `wiki/categories/` are generated from frontmatter with `python3 tools/build_category_indexes.py`; use `python3 tools/audit_categories.py` to inspect category drift before broad taxonomy cleanup.
+Category pages and dashboard indexes under `wiki/categories/` and `wiki/dashboards/` are generated from frontmatter with `python3 tools/build_category_indexes.py`; use `python3 tools/suggest_categories.py` and `python3 tools/audit_categories.py` to inspect category drift before broad taxonomy cleanup.

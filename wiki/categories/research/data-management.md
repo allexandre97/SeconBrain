@@ -9,7 +9,7 @@ tags:
   - generated
   - navigation
 related:
-  - "[[categories/README]]"
+  - "[[wiki/categories/README]]"
 sources: []
 sensitivity: public
 encryption: none
@@ -25,13 +25,20 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ## Parent category
 
-- [[categories/research|research]]
+- [[wiki/categories/research|research]]
 
-## Sources
+## Direct members
 
-- [[sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules|Overlay Databank]]
-- [[sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven|Overlay Databank Supplement]]
+### Sources
 
-## Concepts
+- [[wiki/sources/SRC-0042-the-open-molecules-2025-omol25-dataset-evaluations-and|OMol25 Dataset]]
+- [[wiki/sources/SRC-0057-overlay-databank-unlocks-data-driven-analyses-of-biomolecules|Overlay Databank]]
+- [[wiki/sources/SRC-0058-supplementary-information-for-overlay-databank-unlocks-data-driven|Overlay Databank Supplement]]
+- [[wiki/sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation|Protein Force-Field Benchmark Datasets]]
+- [[wiki/sources/SRC-0044-spice-a-dataset-of-drug-like-molecules-and|SPICE Dataset]]
 
-- [[concepts/overlay-databanks-for-biomolecular-simulation-data|Overlay Databanks for Biomolecular Simulation Data]]
+### Concepts
+
+- [[wiki/concepts/machine-learning-potential-datasets|Machine Learning Potential Datasets]]
+- [[wiki/concepts/overlay-databanks-for-biomolecular-simulation-data|Overlay Databanks for Biomolecular Simulation Data]]
+- [[wiki/concepts/protein-force-field-benchmark-datasets|Protein Force Field Benchmark Datasets]]
