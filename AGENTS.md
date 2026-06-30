@@ -90,6 +90,7 @@ wiki/
   index.md
   log.md
   overview.md
+  answers/
   sources/
   concepts/
   entities/
@@ -118,7 +119,7 @@ All wiki pages should use YAML frontmatter where practical:
 
 ```yaml
 ---
-type: concept | entity | source | claim | tension | question | overview | category
+type: concept | entity | source | claim | tension | question | answer | overview | category
 status: seed | active | needs-review | deprecated
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -203,6 +204,20 @@ When answering a question using the wiki:
 4. Identify gaps where the wiki is silent or uncertain.
 5. If the answer creates a useful synthesis, propose a page to add or update.
 
+Requests such as:
+
+```text
+Answer in the wiki: <question>
+```
+
+or:
+
+```text
+Write a wiki answer for: <question>
+```
+
+mean Codex should apply the answer-note workflow in `schema/workflows.md`: search the wiki first, answer from existing wiki pages when possible, consult raw sources only if the wiki is insufficient, update durable wiki pages when missing reusable knowledge is found, create a readable answer note under `wiki/answers/`, run validation, and report the answer note path and any durable pages updated.
+
 ## Lint workflow
 
 When asked to lint or health-check the wiki:
@@ -228,4 +243,3 @@ Prefer deterministic checks in `tools/` before asking the model to reason over m
 * Add or update tests when adding validation/search tools.
 * After changing tooling, run the relevant tests or validation command.
 * Keep generated caches out of git unless explicitly needed.
-

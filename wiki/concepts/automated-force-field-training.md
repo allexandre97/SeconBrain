@@ -2,7 +2,7 @@
 type: concept
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 areas:
   - research
 categories:
@@ -13,8 +13,26 @@ tags:
   - molecular-dynamics
 related:
   - "[[concepts/garnet-force-field]]"
+  - "[[concepts/force-field-training-from-experimental-observables]]"
+  - "[[concepts/free-energy-reweighting-for-force-field-fine-tuning]]"
+  - "[[concepts/symbolic-regression-interatomic-potentials]]"
+  - "[[concepts/stability-aware-mlff-training]]"
+  - "[[concepts/forcebalance]]"
+  - "[[concepts/opc-water-model]]"
+  - "[[concepts/machine-learning-potential-datasets]]"
 sources:
   - SRC-0003
+  - SRC-0014
+  - SRC-0016
+  - SRC-0017
+  - SRC-0018
+  - SRC-0019
+  - SRC-0021
+  - SRC-0024
+  - SRC-0025
+  - SRC-0027
+  - SRC-0042
+  - SRC-0044
 sensitivity: public
 encryption: none
 ---
@@ -33,9 +51,32 @@ Automated force-field training aims to learn molecular mechanics parameters and 
 - Protein training uses GB3 NMR data through ensemble reweighting, with gradients reused across batches because the protein simulations are expensive. [SRC-0003]
 - The paper argues that automated training enables systematic exploration of force-field functional forms. [SRC-0003]
 - The approach is not fully universal yet; future work should expand validated species to nucleic acids, lipids, metals, carbohydrates, IDPs, and other polymers. [SRC-0003]
+- Later ingested sources broaden the training picture: experimental SAXS and binding observables can be direct ForceBalance targets, neural force fields can be fine-tuned by reweighting, and symbolic regression can search over interpretable functional forms. [SRC-0014] [SRC-0016] [SRC-0017] [SRC-0021]
+- RNA force-field development needs motif-level validation because small systems such as UUCG tetraloops can reveal coupled errors that are not captured by broader or easier benchmarks. [SRC-0055] [SRC-0056]
+- Across these approaches, regularization and validation outside the fitted observable are central because force-field training can improve one target while degrading transfer properties. [SRC-0014] [SRC-0021]
+- SRC-0024 adds a stability-aware MLFF training view: downstream MD stability and observable recovery are training targets, not just energy/force errors. [SRC-0024]
+- SRC-0025 introduces ForceBalance as a reproducible optimization framework for fitting force-field parameters, demonstrated on TIP3P-FB and TIP4P-FB water models. [SRC-0025]
+- SRC-0027 shows a complementary water-model strategy where charge geometry is derived from electrostatic multipole matching before validating liquid and hydration properties. [SRC-0027]
+- Large quantum-chemistry datasets such as SPICE and OMol25 supply broad energy/force labels for training general-purpose molecular ML potentials, but downstream simulation reliability still requires validation beyond random-split energy and force errors. [SRC-0044] [SRC-0042]
 
 ## Links
 
 - [[sources/SRC-0003-training-a-force-field-from-scratch]]
+- [[sources/SRC-0014-lipid-force-field-saxs-reparameterization]]
+- [[sources/SRC-0016-fine-tuning-mm-force-fields-to-experimental-free-energies]]
+- [[sources/SRC-0017-symbolic-regression-reinforcement-learning-interatomic-potentials]]
+- [[sources/SRC-0021-tuning-potential-functions-host-guest-binding-data]]
+- [[sources/SRC-0024-stable-training-machine-learning-force-fields-boltzmann-estimators]]
+- [[sources/SRC-0025-building-force-fields-automatic-systematic-reproducible-approach]]
+- [[sources/SRC-0027-building-water-models-different-approach-opc]]
 - [[concepts/garnet-force-field]]
 - [[concepts/double-exponential-potential]]
+- [[concepts/force-field-training-from-experimental-observables]]
+- [[concepts/free-energy-reweighting-for-force-field-fine-tuning]]
+- [[concepts/rna-force-field-limitations]]
+- [[concepts/symbolic-regression-interatomic-potentials]]
+- [[concepts/stability-aware-mlff-training]]
+- [[concepts/forcebalance]]
+- [[concepts/opc-water-model]]
+- [[concepts/machine-learning-potential-datasets]]
+- [[questions/force-field-training-validation-scope]]

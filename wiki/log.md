@@ -11,3 +11,17 @@
 - 2026-06-29: Imported and deeply ingested SRC-0005, the Times Square Sampling paper on adaptive on-the-fly free energy estimation.
 - 2026-06-29: Imported SRC-0006 and upgraded SRC-0005/SRC-0006 as the Times Square Sampling source bundle with math-deep equation, proof-map, implementation, and retrieval-QA coverage.
 - 2026-06-30: Fixed Obsidian math formatting in existing Times Square Sampling wiki pages without re-ingesting sources.
+- 2026-06-30: Added answer-note workflow guidance, template metadata, glossary terms, and `wiki/answers/` documentation.
+- 2026-06-30: Added an answer note explaining the mathematics of TSS window free-energy stitching and updated the TSS implementation-patterns concept.
+- 2026-06-30: Imported and ingested SRC-0007 through SRC-0009 as the accelerated weight histogram source bundle, adding source pages, an AWH concept page, and a validation-scope question.
+- 2026-06-30: Imported and ingested SRC-0010 through SRC-0013 from the enhanced-sampling folder, including an OPES main/supplement bundle, MBAR with configuration mapping, and LaDyBUGS concept coverage.
+- 2026-06-30: Imported and ingested SRC-0014 through SRC-0022 from the FF_train folder, covering SAXS lipid reparameterization, espaloma free-energy fine-tuning, symbolic-regression potentials, AWH replay optimization, MDRefine, and host-guest binding-data potential tuning.
+- 2026-06-30: Imported and ingested SRC-0023, the original MBAR paper by Shirts and Chodera, adding a dedicated MBAR concept and updating free-energy estimation links.
+- 2026-06-30: Imported and ingested SRC-0024 through SRC-0028 from the updated FF_train folder, covering StABlE MLFF training, ForceBalance water-model fitting, and OPC multipole-first water-model construction with supporting materials.
+- 2026-06-30: Imported and ingested SRC-0029 through SRC-0035 from the Fibers folder, covering filament semantic and instance segmentation, actin quantification, clDice, DeepVesselNet, ToFiE, and SOAX.
+- 2026-06-30: Imported and ingested SRC-0036 through SRC-0041 from the ML folder, covering ConFIG for PINNs, transferable/scalable Boltzmann generators, mixture-of-experts modeling, and GNN-to-symbolic-regression potentials.
+- 2026-06-30: Imported and ingested SRC-0042 through SRC-0044 from the Datasets folder, covering OMol25, protein force-field benchmark datasets, and SPICE.
+- 2026-06-30: Imported and ingested SRC-0045 through SRC-0047 from the BFE folder, covering OpenFE industrial RBFE benchmarking, FEP+/experimental reproducibility limits, and LAMMPS solvation free-energy decoupling.
+- 2026-06-30: Imported and ingested SRC-0048 through SRC-0054 from the MD folder, covering pressure/stress tensor virials, smooth PME and prolate Ewald electrostatics, LINCS constraints, and GPU neighbor/nonbonded algorithms.
+- 2026-06-30: Imported and ingested SRC-0055 and SRC-0056 from the RNA folder, covering UUCG tetraloop force-field failures and a comprehensive review of RNA molecular simulations.
+- 2026-06-30: Imported and ingested SRC-0057/SRC-0058 as the overlay-databank-NMRlipids main/supplement bundle, adding concept coverage for reusable biomolecular simulation databanks.

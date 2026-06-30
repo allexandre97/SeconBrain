@@ -2,7 +2,7 @@
 type: concept
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 areas:
   - research
 categories:
@@ -14,14 +14,46 @@ tags:
   - molecular-simulation
   - math-heavy
 related:
+  - "[[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]"
+  - "[[sources/SRC-0010-rethinking-metadynamics-opes]]"
+  - "[[sources/SRC-0012-mbar-configuration-mapping]]"
+  - "[[sources/SRC-0013-ladybugs-lambda-dynamics]]"
+  - "[[concepts/on-the-fly-probability-enhanced-sampling]]"
+  - "[[concepts/mbar-with-configuration-mapping]]"
+  - "[[concepts/multistate-bennett-acceptance-ratio]]"
+  - "[[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
+  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[sources/SRC-0009-awh-alchemical-free-energy]]"
+  - "[[concepts/accelerated-weight-histogram-method]]"
   - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
   - "[[sources/SRC-0006-times-square-sampling-supplement]]"
   - "[[concepts/times-square-sampling]]"
   - "[[concepts/adaptive-enhanced-sampling]]"
   - "[[concepts/on-the-fly-estimation-versus-mbar]]"
+  - "[[concepts/boltzmann-generators-equilibrium-sampling]]"
+  - "[[concepts/transferable-and-scalable-boltzmann-generators]]"
+  - "[[sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]"
+  - "[[sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]"
+  - "[[sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]"
+  - "[[concepts/relative-binding-free-energy-benchmarking]]"
+  - "[[concepts/solvation-free-energy-decoupling-in-lammps]]"
 sources:
+  - SRC-0023
+  - SRC-0010
+  - SRC-0012
+  - SRC-0013
+  - SRC-0007
+  - SRC-0008
+  - SRC-0009
   - SRC-0005
   - SRC-0006
+  - SRC-0037
+  - SRC-0039
+  - SRC-0041
+  - SRC-0045
+  - SRC-0046
+  - SRC-0047
 sensitivity: public
 encryption: none
 ---
@@ -37,8 +69,15 @@ Free energy estimation computes differences between free energies, often by esti
 - In SRC-0005, each probability distribution is defined by a Hamiltonian and an unknown partition function; the dimensionless free energy is the negative logarithm of that partition function. [SRC-0005, eq. 1]
 - Free energy differences are all that matter because the estimates are identifiable only up to a common additive constant. [SRC-0005, section 2.1]
 - Enhanced sampling introduces intermediate distributions to improve exploration, but how sampling effort is allocated across those distributions strongly affects estimator variance. [SRC-0005, introduction]
+- AWH estimates free-energy weights in an extended ensemble by using conditional probabilities over parameter values as fractional histogram data. [SRC-0007, section II]
+- OPES estimates free-energy surfaces by reconstructing collective-variable probability distributions on the fly. [SRC-0010]
+- Configuration mapping can extend MBAR to states with poor or zero raw configuration overlap by transforming samples and including Jacobian corrections. [SRC-0012]
+- MBAR estimates free energy differences and equilibrium expectations from multiple equilibrium states without histogram binning and with asymptotic uncertainty estimates. [SRC-0023]
 - TSS treats free energy estimation as both a stochastic root-finding problem and a resource-allocation problem. [SRC-0005, sections 2.1-2.2]
 - The supplement translates the estimator into per-window, epoch-based formulas for implementation and error estimation. [SRC-0006, sections 7-8]
+- Boltzmann generators estimate equilibrium observables and free energies by generating exact-density proposals and reweighting them to the target Boltzmann distribution. [SRC-0041] [SRC-0037] [SRC-0039]
+- Protein-ligand RBFE benchmark accuracy should be interpreted against experimental reproducibility, because assay-derived relative affinities have their own error floor. [SRC-0046]
+- LAMMPS solvation free-energy decoupling can be implemented by adding an overlay correction that preserves intramolecular Coulomb energy while solute charges are scaled for solute-solvent electrostatic staging. [SRC-0047]
 
 ## Core equations
 
@@ -54,6 +93,15 @@ Free energy difference between two rungs: [SRC-0005, section 2.1]
 
 $$
 F_a^*-F_b^*=-\log\frac{Z_a^*}{Z_b^*}.
+$$
+
+MBAR self-consistent equations for dimensionless free energies: [SRC-0023, eq. 11]
+
+$$
+\hat f_i=
+-\log\sum_{j=1}^{K}\sum_{n=1}^{N_j}
+\frac{\exp[-u_i(x_{jn})]}
+{\sum_{k=1}^{K}N_k\exp[\hat f_k-u_k(x_{jn})]}.
 $$
 
 TSS's basic root-finding observable: [SRC-0005, eqs. 7-8]
@@ -76,6 +124,22 @@ g_{ij}(\lambda)=E\left[\frac{\partial H}{\partial \lambda_i}\frac{\partial H}{\p
 -E\left[\frac{\partial H}{\partial \lambda_i}\right]E\left[\frac{\partial H}{\partial \lambda_j}\right].
 $$
 
+Solvation free energy by thermodynamic integration: [SRC-0047, eqs. 1-2]
+
+$$
+\Delta G_{\mathrm{solv}}^i
+=
+\int_{\lambda_i=0}^{\lambda_i=1}
+\left\langle \frac{dU}{d\lambda_i} \right\rangle_{\lambda_i} d\lambda_i,
+\qquad i \in \{\mathrm{LJ},\mathrm{coul}\}.
+$$
+
+Relative binding free energy from an assay readout: [SRC-0046, eq. 2]
+
+$$
+\Delta\Delta G^{ab} = -kT \ln \frac{X^b}{X^a}.
+$$
+
 ## Variable glossary
 
 - $\rho_\lambda$: probability density at parameter $\lambda$. [SRC-0005, eq. 1]
@@ -85,6 +149,11 @@ $$
 - $\lambda_k$: discretized parameter value or rung. [SRC-0005, section 2.1]
 - $\psi_m$: auxiliary observable whose ensemble average may inform the target rung density. [SRC-0005, section 2.2.2]
 - $\mu_{km}$: estimated average of $\psi_m$ under rung $k$. [SRC-0005, eq. 20]
+- $f_\lambda$: AWH free-energy estimate or hyperparameter used to bias sampling along $\lambda$. [SRC-0008, section II.A] [SRC-0009, section I.A]
+- $\hat f_i$: MBAR estimate of the dimensionless free energy of state $i$, up to a common additive constant. [SRC-0023]
+- $\Delta\Delta G^{ab}$: relative binding free energy between ligands $a$ and $b$. [SRC-0046]
+- $X$: assay readout such as $\mathrm{IC}_{50}$, $K_d$, or $K_i$. [SRC-0046]
+- $\lambda_i$: coupling parameter for a staged free-energy calculation, such as LJ or Coulomb staging. [SRC-0047]
 
 ## Derivation sketch
 
@@ -92,30 +161,62 @@ The estimator uses simulated tempering to sample an extended distribution where 
 
 The supplement's iterative-importance-sampling derivation rewrites free-energy estimation in partition-function coordinates, then converts back to logarithmic free-energy coordinates. This explains both the logarithmic update and the history-forgetting implementation. [SRC-0006, sections 1.2 and 6.3]
 
+AWH uses a related extended-ensemble view: choose bias parameters so the sampled parameter marginal matches a target distribution. Since the correct bias is tied to the unknown free energy, AWH repeatedly updates the bias from conditional probability histograms. [SRC-0007, section II] [SRC-0008, section II.A]
+
+MBAR uses all cross-state reduced potentials to solve coupled normalization-constant equations. This makes it a postprocessing estimator for fixed samples rather than an adaptive sampling rule. [SRC-0023]
+
 ## Implementation consequences
 
 - Free energy estimates should be interpreted as differences or profiles, not absolute values. [SRC-0005, section 2.1]
 - Estimator quality depends on overlap between neighboring distributions and on how often informative rungs are visited. [SRC-0005, introduction]
 - Windowed implementations must combine local estimates into global reported free energies rather than directly report noisy visit-control free energies. [SRC-0006, section 6.2]
 - Error bars in the supplement are jackknife estimates over stored epochs and require decorrelated epoch pseudo-values. [SRC-0006, section 8]
+- MBAR uncertainty estimates require effectively uncorrelated samples; correlated trajectories should be subsampled or otherwise handled before interpreting asymptotic error bars. [SRC-0023]
+- Boltzmann-generator free-energy estimates depend on generated-target overlap and effective sample size; low-variance estimates can still be unreliable if important states are missing. [SRC-0037] [SRC-0039] [SRC-0041]
+- Binding free-energy benchmark error should not be interpreted independently of experimental reproducibility and assay heterogeneity. [SRC-0046]
+- OpenFE public benchmark performance was better than private active-project performance, so curated benchmark accuracy is not automatically prospective industrial accuracy. [SRC-0045]
 
 ## Caveats
 
 - A theoretically optimal estimator still depends on practical sampling quality; poor mixing in `S` or `Lambda` can make estimates unreliable. [SRC-0005, section 2.1] [SRC-0006, section 10]
+- MBAR does not remove the need for phase-space overlap between sampled and target states. [SRC-0023]
 - The source bundle gives examples and theory, but not universal validation across all alchemical schedules or molecular systems. [SRC-0006, section 10.1]
 
 ## Evidence
 
 - SRC-0005 motivates TSS by arguing that the allocation of computational resources across rungs changes the variance of the desired free energy estimate. [SRC-0005, introduction]
 - SRC-0006's aqueous-solution example reports free energy differences for eight alchemical edges and compares estimated errors under different TSS settings. [SRC-0006, section 10]
+- SRC-0023 demonstrates MBAR by combining multiple optical-tweezer constant-force data sets to estimate a DNA hairpin PMF. [SRC-0023]
 
 ## Links
 
 - [[sources/SRC-0005-times-square-sampling-free-energy]]
+- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[sources/SRC-0008-awh-free-energy-landscapes]]
+- [[sources/SRC-0009-awh-alchemical-free-energy]]
+- [[sources/SRC-0010-rethinking-metadynamics-opes]]
+- [[sources/SRC-0012-mbar-configuration-mapping]]
+- [[sources/SRC-0013-ladybugs-lambda-dynamics]]
+- [[sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar]]
+- [[concepts/accelerated-weight-histogram-method]]
+- [[concepts/on-the-fly-probability-enhanced-sampling]]
+- [[concepts/mbar-with-configuration-mapping]]
+- [[concepts/multistate-bennett-acceptance-ratio]]
+- [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
 - [[sources/SRC-0006-times-square-sampling-supplement]]
 - [[concepts/times-square-sampling]]
 - [[concepts/adaptive-enhanced-sampling]]
 - [[concepts/on-the-fly-estimation-versus-mbar]]
+- [[sources/SRC-0041-boltzmann-generators-sampling-equilibrium-states-of-many-body]]
+- [[sources/SRC-0037-transferable-boltzmann-generators]]
+- [[sources/SRC-0039-scalable-boltzmann-generators-for-equilibrium-sampling-of-large]]
+- [[sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy]]
+- [[sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein]]
+- [[sources/SRC-0047-performing-solvation-free-energy-calculations-in-lammps-using]]
+- [[concepts/boltzmann-generators-equilibrium-sampling]]
+- [[concepts/transferable-and-scalable-boltzmann-generators]]
+- [[concepts/relative-binding-free-energy-benchmarking]]
+- [[concepts/solvation-free-energy-decoupling-in-lammps]]
 
 ## Open Questions
 

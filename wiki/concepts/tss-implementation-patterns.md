@@ -76,6 +76,24 @@ $$
 F_k^{TSS}=\frac{1}{\gamma_k^{TSS}}\sum_{j \in win(k)}p_j\gamma_{j;k}(F_{j;k}-f_j^{TSS}).
 $$
 
+## Window stitching interpretation
+
+Each window produces local estimates $F_{j;k}$ only for rungs $k \in W_j$. These estimates have window-specific additive gauges, so TSS cannot combine them by simple averaging. The global reconstruction first estimates window marginal probabilities $p_j$ from the overlap graph, then solves for window offsets $f_j$ or $f_j^{TSS}$ so that overlapping windows agree in a weighted least-squares or convex-optimization sense. [SRC-0006, sections 6.2 and 7.2]
+
+Near convergence, TSS sets visit-control tilts to one and uses the reported-rung density
+
+$$
+\gamma_k^{TSS}=\sum_{j \in win(k)}p_j\gamma_{j;k},
+$$
+
+then reports the offset-aligned weighted average
+
+$$
+F_k^{TSS}=\frac{1}{\gamma_k^{TSS}}\sum_{j \in win(k)}p_j\gamma_{j;k}(F_{j;k}-f_j^{TSS}).
+$$
+
+The offsets $f_j^{TSS}$ solve a singular linear system, with one gauge constraint such as $\sum_j p_j f_j^{TSS}=0$ replacing one equation. This is the mathematical step that turns overlapping local free-energy surfaces into one global surface over all rungs. [SRC-0006, eqs. 6.21-6.25]
+
 Jackknife epoch spacing: [SRC-0006, eq. 8.5]
 
 $$

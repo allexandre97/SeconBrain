@@ -2,7 +2,7 @@
 type: concept
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 areas:
   - research
 categories:
@@ -15,12 +15,27 @@ tags:
   - resource-allocation
   - math-heavy
 related:
+  - "[[sources/SRC-0010-rethinking-metadynamics-opes]]"
+  - "[[sources/SRC-0011-opes-supporting-information]]"
+  - "[[sources/SRC-0013-ladybugs-lambda-dynamics]]"
+  - "[[concepts/on-the-fly-probability-enhanced-sampling]]"
+  - "[[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]"
+  - "[[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]"
+  - "[[sources/SRC-0008-awh-free-energy-landscapes]]"
+  - "[[sources/SRC-0009-awh-alchemical-free-energy]]"
+  - "[[concepts/accelerated-weight-histogram-method]]"
   - "[[sources/SRC-0005-times-square-sampling-free-energy]]"
   - "[[sources/SRC-0006-times-square-sampling-supplement]]"
   - "[[concepts/times-square-sampling]]"
   - "[[concepts/free-energy-estimation]]"
   - "[[concepts/tss-implementation-patterns]]"
 sources:
+  - SRC-0010
+  - SRC-0011
+  - SRC-0013
+  - SRC-0007
+  - SRC-0008
+  - SRC-0009
   - SRC-0005
   - SRC-0006
 sensitivity: public
@@ -37,6 +52,9 @@ Adaptive enhanced sampling uses information learned during a simulation to steer
 
 - Enhanced sampling methods such as replica exchange and simulated tempering help sample multimodal distributions by introducing a family of overlapping intermediate distributions. [SRC-0005, introduction]
 - Their efficiency depends on the free energy landscape and on how computational resources are distributed among rungs, but that landscape is usually unknown before sampling. [SRC-0005, introduction]
+- AWH is an adaptive extended-ensemble method that learns free-energy weights from conditional transition-probability histograms while sampling. [SRC-0007, section II] [SRC-0008, section II.A]
+- OPES adapts a bias by reconstructing the probability distribution in collective-variable space and then targeting a chosen distribution. [SRC-0010]
+- LaDyBUGS adapts scalar biases during discrete Gibbs-sampler lambda-dynamics so multiple alchemical ligand states are sampled smoothly in one simulation. [SRC-0013]
 - TSS adapts the rung-sampling distribution using current estimates, enabling resource allocation to change during the run. [SRC-0005, section 2.2]
 - Visit control is a transient adaptive mechanism that pushes sampling toward under-visited rungs and mitigates slow convergence caused by poor initial free energy guesses. [SRC-0005, section 2.2.1]
 - Windowing is a locality mechanism: it restricts updates to overlapping parameter-space neighborhoods where distributions are expected to have useful overlap. [SRC-0005, section 3.1]
@@ -69,6 +87,13 @@ $$
 q_k^t=\sum_{j \in win(k)}p_j^t\frac{\gamma_{j;k}^t o_{j;k}^t}{\sum_{\ell \in W_j}\gamma_{j;\ell}^t o_{j;\ell}^t}.
 $$
 
+AWH conditional weight update: [SRC-0009, eqs. 3 and 5]
+
+$$
+w_\lambda(x)=
+\frac{\pi_\lambda e^{f_\lambda-\beta E_\lambda(x)}}{\sum_{\lambda'}\pi_{\lambda'}e^{f_{\lambda'}-\beta E_{\lambda'}(x)}}.
+$$
+
 ## Variable glossary
 
 - $\gamma$: target asymptotic allocation across rungs. [SRC-0005, section 2.2.1]
@@ -78,10 +103,13 @@ $$
 - $\epsilon_\pi$, $\epsilon_\gamma$: regularization parameters that keep probabilities positive. [SRC-0005, eq. 17] [SRC-0006, eq. 7.18]
 - $W_j$: local window. [SRC-0005, section 3.1]
 - $q_k$: global probability of visiting rung $k$ across windows. [SRC-0006, eq. 7.25]
+- $W_\lambda$: AWH weight histogram accumulated from conditional probabilities. [SRC-0007, eq. 5]
 
 ## Derivation sketch
 
 Visit control is derived by freezing a poor free-energy estimate and observing that the resulting rung occupancies can be exponentially tilted away from the desired reference distribution. The tilts estimate that occupancy distortion, and the adaptive density attempts to counteract it without changing the asymptotic target. [SRC-0005, section 2.2.1]
+
+In AWH, adaptation is driven by a persistent histogram of fractional conditional weights rather than only integer visits. The update compares the accumulated histogram to the target distribution and shrinks update size as the effective sample count grows. [SRC-0007, section II] [SRC-0008, section II.D]
 
 Windowing is derived by introducing the active-window variable `J`, enforcing a double cover of parameter space, and using local transitions that remain ergodic over windows. The supplement then derives global probabilities and free-energy offsets from local estimates. [SRC-0005, section 3.1] [SRC-0006, sections 6-7]
 
@@ -99,6 +127,14 @@ Windowing is derived by introducing the active-window variable `J`, enforcing a 
 ## Links
 
 - [[sources/SRC-0005-times-square-sampling-free-energy]]
+- [[sources/SRC-0007-improving-efficiency-extended-ensemble-awh]]
+- [[sources/SRC-0008-awh-free-energy-landscapes]]
+- [[sources/SRC-0009-awh-alchemical-free-energy]]
+- [[sources/SRC-0010-rethinking-metadynamics-opes]]
+- [[sources/SRC-0013-ladybugs-lambda-dynamics]]
+- [[concepts/accelerated-weight-histogram-method]]
+- [[concepts/on-the-fly-probability-enhanced-sampling]]
+- [[concepts/lambda-dynamics-with-bias-updated-gibbs-sampling]]
 - [[sources/SRC-0006-times-square-sampling-supplement]]
 - [[concepts/times-square-sampling]]
 - [[concepts/free-energy-estimation]]

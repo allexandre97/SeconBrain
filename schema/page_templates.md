@@ -6,7 +6,7 @@ Use these starter patterns when adding new wiki pages. Include only fields that 
 
 ```yaml
 ---
-type: concept | entity | source | claim | tension | question | overview | category
+type: concept | entity | source | claim | tension | question | answer | overview | category
 status: seed | active | needs-review | deprecated
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -149,4 +149,43 @@ bundle_role: main
 ### Coverage decision
 
 ### Known gaps
+```
+
+## Answer Page
+
+```md
+---
+type: answer
+status: active
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+question: ""
+answer_status: answered | partially-answered | needs-review
+areas: []
+categories: []
+tags: []
+related: []
+sources: []
+sensitivity: public
+encryption: none
+wiki_pages_used: []
+raw_sources_consulted: []
+wiki_pages_updated: []
+---
+
+# Question
+
+## Short answer
+
+## Detailed answer
+
+## Key equations
+
+## Sources used
+
+## Wiki pages used
+
+## Wiki updates made
+
+## Remaining gaps
 ```

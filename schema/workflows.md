@@ -132,6 +132,43 @@ For an admin or personal document, likely questions include:
 
 Record the checked questions under the source page's `## Ingestion QA` section. The coverage decision must state whether the wiki representation is complete, partial, or needs review, and known gaps must be listed explicitly.
 
+## Answer-note workflow
+
+Use this workflow when the user asks for a persistent answer note, including prompts such as `Answer in the wiki: <question>` or `Write a wiki answer for: <question>`.
+
+1. Start from `wiki/index.md`.
+2. Search relevant wiki pages.
+3. Identify whether the wiki already answers the question.
+4. If the wiki is sufficient, write the answer note using wiki pages only.
+5. If the wiki is insufficient, consult original sources using targeted source lookup.
+6. Use source summaries, source outlines, equation inventories, proof maps, headings, local text search, and relevant sections before reading an entire source.
+7. Read the whole source only when the query is broad, the source is short, or targeted lookup fails.
+8. If raw-source lookup reveals reusable knowledge, update the relevant durable wiki pages before or alongside the answer note.
+9. Preserve citations and provenance.
+10. Record which wiki pages and raw sources were used.
+11. Record which wiki pages were updated.
+12. Mark remaining gaps clearly.
+13. Run `python3 tools/validate_wiki.py`.
+14. Report the answer note path and any durable pages updated.
+
+Answer notes belong under `wiki/answers/` and should use the answer-page template in `schema/page_templates.md`. They are readable generated responses, not replacements for durable source, concept, question, claim, or tension pages.
+
+## Targeted source lookup
+
+When the wiki lacks an answer, Codex should not blindly re-read or re-ingest the entire source. Use a staged strategy:
+
+```text
+source page summary
+-> source outline / table of contents
+-> equation inventory / proof map, if present
+-> local search in raw source text
+-> relevant section/page
+-> neighboring section/page
+-> broader scan only if needed
+```
+
+Prefer the narrowest lookup that can answer the question with provenance. Move to broader source reading only when the query is broad, the source is short, or targeted lookup fails to find the needed context. Raw-source consultation during a query is not ingestion unless the user explicitly asks to ingest or re-ingest a source.
+
 ## Math-heavy source ingestion
 
 Automatically use this workflow for sources containing substantial equations, derivations, proofs, algorithms, mathematical definitions, theorem statements, or implementation recursions. Math-heavy ingestion does not require full proof reproduction unless explicitly requested, but it must preserve enough mathematical structure for future retrieval and implementation-oriented review.

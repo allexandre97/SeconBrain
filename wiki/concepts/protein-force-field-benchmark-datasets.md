@@ -1,0 +1,46 @@
+---
+type: concept
+status: active
+created: 2026-06-30
+updated: 2026-06-30
+areas:
+  - research
+categories:
+  - research/molecular-simulation/force-fields
+tags:
+  - protein-force-fields
+  - benchmarking
+  - experimental-observables
+  - datasets
+sources:
+  - SRC-0043
+related:
+  - "[[concepts/force-field-training-from-experimental-observables]]"
+  - "[[concepts/ensemble-and-force-field-refinement]]"
+sensitivity: public
+encryption: none
+---
+
+# Protein Force Field Benchmark Datasets
+
+## Summary
+
+Protein force-field benchmark datasets compare simulations against experimental observables that report on protein structural ensembles. Useful benchmarks should include peptides, folded proteins, and disordered proteins, and should account for experimental uncertainty, simulation convergence, and forward-model assumptions. [SRC-0043]
+
+## Key Points
+
+- Recommended first-tier observables include chemical shifts, scalar couplings, residual dipolar couplings, and Bragg electron/nuclear densities. [SRC-0043]
+- NMR benchmarks are valuable because solution conditions resemble many protein simulations and observables can report on ensemble excursions from native structures. [SRC-0043]
+- Room-temperature crystallography benchmarks add tertiary-structure and crystal-environment information, but often need larger/longer crystal simulations and less standardized comparison workflows. [SRC-0043]
+- Benchmarks should separate sampling precision from force-field accuracy by checking equilibration, convergence, and statistical uncertainty. [SRC-0043]
+- Simulation-experiment comparison depends on forward models and experimental structural models, so disagreement is not automatically a force-field error. [SRC-0043]
+
+## Links
+
+- [[sources/SRC-0043-structure-based-experimental-datasets-for-benchmarking-protein-simulation]]
+- [[concepts/force-field-training-from-experimental-observables]]
+- [[concepts/ensemble-and-force-field-refinement]]
+
+## Open Questions
+
+- Which benchmark observables should be used as first-tier filters versus second-tier diagnostics when evaluating new protein force fields or protein ensemble generators?

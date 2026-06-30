@@ -2,7 +2,7 @@
 type: concept
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 areas:
   - research
 categories:
@@ -15,8 +15,16 @@ tags:
 related:
   - "[[concepts/cytoskeletal-network-image-analysis]]"
   - "[[concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[concepts/filament-instance-and-semantic-segmentation]]"
+  - "[[concepts/stretching-open-active-contours]]"
+  - "[[concepts/topology-aware-fiber-network-reconstruction]]"
 sources:
   - SRC-0004
+  - SRC-0029
+  - SRC-0030
+  - SRC-0031
+  - SRC-0034
+  - SRC-0035
 sensitivity: public
 encryption: none
 ---
@@ -35,6 +43,9 @@ Cytoskeleton segmentation and tracing converts microscopy images of filament net
 - Reviewed tools and approaches include line and orientation filters, Hessian vesselness filters, adaptive thresholds, template matching, stretching-open-active-contour methods such as SOAX, JFilament, FIESTA, MTrack, DeFiNe, FiberApp, BundleTrac, and graph-cut or conditional-random-field approaches. [SRC-0004]
 - Threshold masks can be adequate for simpler high signal-to-noise images, but they can fail when filaments are blurred, discontinuous, overlapping, below the optical resolution limit, or distorted by skeletonization artifacts. [SRC-0004]
 - Tracing and tracking are important because cytoskeletal analysis often depends on filament centrelines, endpoints, junctions, curvature, length, connectivity, and temporal growth or shrinkage rather than only on pixel-level foreground masks. [SRC-0004]
+- SOAX uses Stretching Open Active Contours to extract 2D/3D biopolymer centerlines and junctions, but its performance depends on signal-to-noise ratio, filament separation, and parameter tuning. [SRC-0035]
+- Deep-learning pipelines can move from semantic masks to instance or measurement outputs by adding orientation-aware decomposition, terminus pairing, keypoint detection, or fast marching. [SRC-0029] [SRC-0030] [SRC-0031]
+- ToFiE extends topology-aware reconstruction to dense heterogeneous 3D collagen-like networks using Discrete Morse theory, persistent homology, and graph-oriented post-processing. [SRC-0034]
 
 ## Evidence
 
@@ -45,6 +56,9 @@ Cytoskeleton segmentation and tracing converts microscopy images of filament net
 - [[sources/SRC-0004-automated-cytoskeletal-network-segmentation]]
 - [[concepts/cytoskeletal-network-image-analysis]]
 - [[concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[concepts/filament-instance-and-semantic-segmentation]]
+- [[concepts/stretching-open-active-contours]]
+- [[concepts/topology-aware-fiber-network-reconstruction]]
 
 ## Open Questions
 

@@ -28,6 +28,17 @@ WIKILINK_RE = re.compile(r"!?\[\[([^\]]+)\]\]")
 SOURCE_QA_SECTION = "## Ingestion QA"
 EQUATION_INVENTORY_SECTION = "## Equation inventory"
 OBSIDIAN_DISCOURAGED_MATH_RE = re.compile(r"\\\[|\\\]")
+VALID_PAGE_TYPES = {
+    "answer",
+    "category",
+    "claim",
+    "concept",
+    "entity",
+    "overview",
+    "question",
+    "source",
+    "tension",
+}
 
 
 def has_frontmatter(path: Path) -> bool:
@@ -35,6 +46,19 @@ def has_frontmatter(path: Path) -> bool:
     if not lines or lines[0].strip() != "---":
         return False
     return any(line.strip() == "---" for line in lines[1:])
+
+
+def frontmatter_value(path: Path, key: str) -> str | None:
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0].strip() != "---":
+        return None
+
+    for line in lines[1:]:
+        if line.strip() == "---":
+            return None
+        if line.startswith(f"{key}:"):
+            return line.split(":", 1)[1].strip()
+    return None
 
 
 def wiki_markdown_pages() -> list[Path]:
@@ -88,6 +112,11 @@ def main() -> int:
     for path in wiki_pages:
         if path not in FRONTMATTER_EXEMPT and not has_frontmatter(path):
             errors.append(f"Missing YAML frontmatter: {path.relative_to(ROOT)}")
+            continue
+
+        page_type = frontmatter_value(path, "type")
+        if page_type and page_type not in VALID_PAGE_TYPES:
+            errors.append(f"Unknown page type in {path.relative_to(ROOT)}: {page_type}")
 
     for path in wiki_pages:
         text = path.read_text(encoding="utf-8")
