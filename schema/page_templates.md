@@ -30,9 +30,17 @@ ingestion_status: complete | partial | needs-review
 coverage_profile: minimal | standard | deep | math-standard | math-deep
 source_bundle: optional-bundle-slug
 bundle_role: main | supplement
+authors: []
+author_entities: []
+year:
+venue:
+doi:
+arxiv:
 ```
 
 For source pages, `coverage_profile` defaults to `standard` unless there is a reason to choose `minimal`, `deep`, `math-standard`, or `math-deep`.
+
+Use `authors` for literal author names from the source. Use `author_entities` only for optional durable author entity pages. Do not store author names only as ordinary tags.
 
 ## Concept Page
 
@@ -110,6 +118,12 @@ imported_path: raw/sources/SRC-0000-example.md
 original_filename: "SRC-0000-example.md"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: optional-sha256-when-available
+authors: []
+author_entities: []
+year:
+venue:
+doi:
+arxiv:
 areas: []
 categories: []
 tags: []
@@ -118,6 +132,8 @@ related:
   - "[[wiki/sources/SRC-0000-example]]"
 sources:
   - SRC-0000
+cites_sources: []
+citation_match_status: unchecked | partial | reviewed
 sensitivity: public
 encryption: none
 ingestion_status: complete
@@ -144,6 +160,13 @@ Source ID: `SRC-0000`
 ## Open Questions
 
 ## Metadata notes
+
+## Citation links
+
+- Confirmed cited ingested sources belong in frontmatter `cites_sources`.
+- Use `citation_match_status: partial` when some references were inspected and accepted citation links were added.
+- Use `citation_match_status: reviewed` only when the source's references were inspected thoroughly.
+- Do not add `cited_by_sources`; reverse citation links are generated information.
 
 ## Mathematical structure
 
@@ -208,4 +231,212 @@ wiki_pages_updated: []
 ## Wiki updates made
 
 ## Remaining gaps
+```
+
+## Claim Page
+
+Name claim pages with stable IDs:
+
+```text
+wiki/claims/CLM-XXXX-short-slug.md
+```
+
+Create dedicated claim pages only when a claim is central, reusable, debatable, comparative, validation-relevant, connected to multiple sources, or important for future reasoning. Keep ordinary source-local statements on the source or concept page.
+
+```md
+---
+type: claim
+status: active
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+claim_status: supported | contested | limited | needs-review
+claim_scope: local | cross-source
+areas: []
+categories: []
+tags:
+  - claim
+related: []
+sources:
+  - SRC-0000
+sensitivity: public
+encryption: none
+---
+
+# Claim Short Title
+
+## Claim
+
+State the claim in one concise sentence. [SRC-0000]
+
+## Scope
+
+State whether this is local to one source or cross-source, and what conditions limit the claim.
+
+## Evidence
+
+- Supporting evidence with local citations. [SRC-0000]
+
+## Caveats
+
+- Validation boundaries, assumptions, or reasons not to overgeneralize. [SRC-0000]
+
+## Links
+
+```
+
+## Question Page
+
+Name new question pages with stable IDs:
+
+```text
+wiki/questions/QST-XXXX-short-slug.md
+```
+
+Do not rename existing question pages solely to match this convention; use stable IDs for new question pages.
+
+```md
+---
+type: question
+status: active
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+question_status: open | partially-answered | answered | needs-review
+areas: []
+categories: []
+tags:
+  - question
+related: []
+sources:
+  - SRC-0000
+sensitivity: public
+encryption: none
+---
+
+# Question Short Title
+
+## Question
+
+State the open question or validation boundary. [SRC-0000]
+
+## Context
+
+Explain why the question remains open and what source evidence motivates it. [SRC-0000]
+
+## Current Position
+
+Summarize what the wiki can currently say without resolving beyond the sources.
+
+## Links
+
+```
+
+## Tension Page
+
+Name tension pages with stable IDs:
+
+```text
+wiki/tensions/TEN-XXXX-short-slug.md
+```
+
+Create tension pages only for real contradictions, limitations, unresolved conflicts, incompatible assumptions, or important validation tradeoffs.
+
+```md
+---
+type: tension
+status: active
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tension_status: active | resolved | needs-review
+areas: []
+categories: []
+tags:
+  - tension
+related: []
+related_claims: []
+related_questions: []
+sources:
+  - SRC-0000
+sensitivity: public
+encryption: none
+---
+
+# Tension Short Title
+
+## Tension
+
+State the conflict, limitation, or unresolved tradeoff. [SRC-0000]
+
+## Positions
+
+- Source or page position with citation. [SRC-0000]
+- Competing source or limiting position with citation. [SRC-0000]
+
+## Why it matters
+
+Explain why future retrieval or reasoning should preserve this tension.
+
+## Resolution status
+
+State whether the tension is active, resolved, or needs review.
+
+## Links
+
+```
+
+## Source Page Claim / Question / Tension Links
+
+Source pages may include compact link sections when dedicated pages exist:
+
+```md
+## Claims
+
+- [[wiki/claims/CLM-0001-example-claim]]
+
+## Questions
+
+- [[wiki/questions/QST-0001-example-question]]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0001-example-tension]]
+```
+
+## Author Entity Convention
+
+Author entity pages are optional. Create them when an author appears in multiple ingested sources or is especially relevant to the wiki. Do not create an author page for every one-off author by default. Source pages may list authors in frontmatter without corresponding author entity pages.
+
+Author entity pages live under:
+
+```text
+wiki/entities/authors/author-name.md
+```
+
+Use this frontmatter:
+
+```md
+---
+type: entity
+status: active
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+entity_type: author
+aliases: []
+areas: []
+categories: []
+tags:
+  - author
+related: []
+sources: []
+sensitivity: public
+encryption: none
+graph_exclude: false
+---
+
+# Author Name
+
+## Summary
+
+## Sources
+
+## Links
 ```

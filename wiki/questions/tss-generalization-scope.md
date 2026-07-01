@@ -2,7 +2,8 @@
 type: question
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-01
+question_status: partially-answered
 areas:
   - research
 categories:
@@ -18,6 +19,8 @@ related:
   - "[[wiki/concepts/times-square-sampling]]"
   - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
   - "[[wiki/concepts/tss-implementation-patterns]]"
+  - "[[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]"
+  - "[[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]"
 sources:
   - SRC-0005
   - SRC-0006
@@ -55,3 +58,5 @@ Treat Times Square Sampling as a theoretically motivated adaptive free energy es
 - [[wiki/concepts/times-square-sampling]]
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 - [[wiki/concepts/tss-implementation-patterns]]
+- [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]
+- [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]

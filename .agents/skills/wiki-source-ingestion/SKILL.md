@@ -80,6 +80,93 @@ For simple imports, use `python3 tools/import_source.py /path/to/source.ext`, pa
 
 Do not perform a broad refactor during ingestion unless requested.
 
+## Structured bibliographic metadata
+
+During future source ingestion, extract structured bibliographic metadata when it is available from document metadata, the first page, or obvious citation information:
+
+```yaml
+authors: []
+author_entities: []
+year:
+venue:
+doi:
+arxiv:
+cites_sources: []
+citation_match_status: unchecked | partial | reviewed
+```
+
+Use `authors` for literal author names from the source. Extract author names, year, venue, DOI, and arXiv ID only when they are visible or reliably present in source metadata. Do not guess author names. If a field is uncertain, leave it empty or record the uncertainty under `## Metadata notes`.
+
+Use `author_entities` only when an optional durable author entity page exists under `wiki/entities/authors/`. Create author entity pages when an author appears in multiple ingested sources or is especially relevant; do not create one author page for every one-off paper author by default. Do not use ordinary `tags` for author names unless the tag already has a non-person semantic meaning.
+
+## Citation matching
+
+During future ingestion, inspect the bibliography or references section enough to identify whether the source cites already-ingested sources. This is a conservative review aid, not a mandate to fully extract every reference.
+
+Use source-page metadata from existing ingested sources when matching:
+
+- DOI or arXiv exact match: strong.
+- Exact title match: strong.
+- Title plus first author plus year: strong.
+- Fuzzy title only: candidate, not confirmed.
+- Author/year only: candidate, not confirmed.
+
+Do not invent citation links. When a match is manually accepted, add it to the citing source:
+
+```yaml
+cites_sources:
+  - SRC-XXXX
+citation_match_status: partial
+```
+
+Use `citation_match_status: reviewed` only when the source's references were inspected thoroughly. Leave `citation_match_status: unchecked` or absent when references have not been inspected. Do not add `cited_by_sources` to source frontmatter; reverse citation links are generated information.
+
+The helper `python3 tools/match_cited_sources.py` reports conservative candidate matches from explicit source-page reference sections and never modifies source pages automatically.
+
+## Claim, question, and tension extraction
+
+During future source ingestion, extract first-class claim, question, and tension pages only when they improve durable retrieval.
+
+For sources with reusable claims, create about 3-7 central claim pages when appropriate. Do not create claim pages for every source-page bullet point. Use dedicated claim pages when the claim is:
+
+- central to the source;
+- likely to be reused;
+- debatable;
+- comparative;
+- validation-relevant;
+- connected to multiple sources;
+- important for future reasoning.
+
+Otherwise keep the claim local to the source page.
+
+Create about 1-3 question pages when the source raises open questions, validation boundaries, unresolved assumptions, or future-work questions that should be reusable. Existing question pages may be updated and linked instead of creating duplicates.
+
+Create tension pages only when there is a real contradiction, limitation, unresolved conflict, incompatible assumption, or disagreement with existing wiki content. Do not turn every caveat into a tension page.
+
+Use stable IDs for new pages:
+
+```text
+wiki/claims/CLM-XXXX-short-slug.md
+wiki/questions/QST-XXXX-short-slug.md
+wiki/tensions/TEN-XXXX-short-slug.md
+```
+
+Source pages may include compact link sections when dedicated pages exist:
+
+```md
+## Claims
+
+- [[wiki/claims/CLM-0001-example-claim]]
+
+## Questions
+
+- [[wiki/questions/QST-0001-example-question]]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0001-example-tension]]
+```
+
 ## Source bundles
 
 A source bundle is allowed when the user provides a main document plus supplementary material, appendices, data, code, notes, or a folder of related files that must be understood together. The user does not need to provide detailed bundle metadata; infer bundle membership and roles where practical.

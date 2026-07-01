@@ -40,6 +40,11 @@ sources:
   - SRC-0009
   - SRC-0007
   - SRC-0008
+cites_sources:
+  - SRC-0007
+  - SRC-0008
+  - SRC-0023
+citation_match_status: partial
 sensitivity: public
 encryption: none
 source_bundle: accelerated-weight-histogram
@@ -189,6 +194,12 @@ Testosterone: after 4000 ns total AWH simulation time, AWH outputs were in the r
 
 - How much improvement does automatic target-distribution optimization provide in realistic alchemical calculations with slow hidden degrees of freedom? [SRC-0009]
 - How should practitioners choose independent versus bias-sharing walkers when both wall-clock efficiency and uncertainty estimation matter? [SRC-0009]
+
+## Citation links
+
+- `SRC-0023`: The references list M. R. Shirts and J. D. Chodera, "Statistically optimal analysis of samples from multiple equilibrium states," Journal of Chemical Physics 129, 124105-124110. This is an exact title match to the ingested MBAR source. [SRC-0009]
+- `SRC-0007`: The references list J. Lidmar, "Improving the efficiency of extended ensemble simulations: The accelerated weight histogram method," Physical Review E 85, 056708. This is an exact title match to the ingested original AWH source. [SRC-0009]
+- `SRC-0008`: The references list V. Lindahl, J. Lidmar, and B. Hess, "Accelerated weight histogram method for exploring free energy landscapes," Journal of Chemical Physics 141, 044110. This is an exact title match to the ingested AWH free-energy-landscapes source. [SRC-0009]
 
 ## Metadata notes
 

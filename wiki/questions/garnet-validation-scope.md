@@ -2,7 +2,8 @@
 type: question
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-01
+question_status: partially-answered
 areas:
   - research
 categories:
@@ -11,7 +12,11 @@ tags:
   - validation
   - garnet
 related:
+  - "[[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]"
   - "[[wiki/concepts/garnet-force-field]]"
+  - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/claims/CLM-0002-garnet-automates-parameter-assignment]]"
+  - "[[wiki/tensions/TEN-0002-garnet-broad-coverage-vs-validation-gaps]]"
 sources:
   - SRC-0003
 sensitivity: public
@@ -37,3 +42,5 @@ Treat Garnet as a promising automated force-field discovery platform, not as ful
 - [[wiki/sources/SRC-0003-training-a-force-field-from-scratch]]
 - [[wiki/concepts/garnet-force-field]]
 - [[wiki/concepts/automated-force-field-training]]
+- [[wiki/claims/CLM-0002-garnet-automates-parameter-assignment]]
+- [[wiki/tensions/TEN-0002-garnet-broad-coverage-vs-validation-gaps]]

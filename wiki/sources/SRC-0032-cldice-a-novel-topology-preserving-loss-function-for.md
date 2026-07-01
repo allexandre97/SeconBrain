@@ -18,6 +18,21 @@ additional_filenames:
   - "2003.07311v7.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 2e952692e01cb534b8851712e27846ab5d0dc06dfd170c9c64daf4e70d7f3170
+authors:
+  - "Suprosanna Shit"
+  - "Johannes C. Paetzold"
+  - "Anjany Sekuboyina"
+  - "Ivan Ezhov"
+  - "Alexander Unger"
+  - "Andrey Zhylka"
+  - "Josien P. W. Pluim"
+  - "Ulrich Bauer"
+  - "Bjoern H. Menze"
+author_entities: []
+year: 2022
+venue: "arXiv"
+doi:
+arxiv: "2003.07311v7"
 areas:
   - research
 categories:
@@ -32,6 +47,9 @@ tags:
 related:
   - "[[wiki/concepts/topology-aware-tubular-structure-segmentation]]"
   - "[[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]"
+  - "[[wiki/claims/CLM-0003-cldice-connectivity-aware-tubular-segmentation]]"
+  - "[[wiki/questions/QST-0001-cldice-biological-transfer-scope]]"
+  - "[[wiki/tensions/TEN-0003-cldice-topology-guarantee-vs-practical-transfer]]"
 sources:
   - SRC-0032
 sensitivity: public
@@ -112,6 +130,18 @@ $$
 - The wiki does not reproduce the full soft-skeletonization algorithm line by line.
 - The supplementary digital-topology explanation is not ingested in detail.
 
+## Claims
+
+- [[wiki/claims/CLM-0003-cldice-connectivity-aware-tubular-segmentation]] - clDice evaluates skeleton-mask agreement and is more sensitive than ordinary overlap metrics to missing or spurious centerline branches. [SRC-0032, section 2]
+
+## Questions
+
+- [[wiki/questions/QST-0001-cldice-biological-transfer-scope]] - How well do clDice and soft-clDice transfer to real biological fiber reconstruction tasks when labels are incomplete and topology is uncertain? [SRC-0032]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0003-cldice-topology-guarantee-vs-practical-transfer]] - The topology-preserving design has formal assumptions and does not by itself settle practical biological transfer. [SRC-0032, section 3]
+
 ## Metadata notes
 
 - The requested file `2003.07311v7.pdf` is byte-identical to the already imported raw source for `SRC-0032`; no duplicate source ID was created. [SRC-0032]
@@ -121,6 +151,9 @@ $$
 
 - [[wiki/concepts/topology-aware-tubular-structure-segmentation]]
 - [[wiki/concepts/deep-learning-cytoskeleton-image-analysis]]
+- [[wiki/claims/CLM-0003-cldice-connectivity-aware-tubular-segmentation]]
+- [[wiki/questions/QST-0001-cldice-biological-transfer-scope]]
+- [[wiki/tensions/TEN-0003-cldice-topology-guarantee-vs-practical-transfer]]
 
 ## Ingestion QA
 

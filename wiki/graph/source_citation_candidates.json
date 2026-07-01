@@ -1,0 +1,67 @@
+{
+  "matches": [
+    {
+      "cited_source_id": "SRC-0007",
+      "cited_source_page": "wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh.md",
+      "citing_source_id": "SRC-0005",
+      "citing_source_page": "wiki/sources/SRC-0005-times-square-sampling-free-energy.md",
+      "confidence": "strong",
+      "evidence": "energy-landscapes source. [SRC-0005] - `SRC-0007`: The references list Lidmar, \"Improving the Efficiency of Extended Ensemble Simulations: the Accelerated Weight Histogram Method,\" Physical Review E 85, 056708. This is an exact title match to the ingested original AWH source. [SRC-0005]",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0008",
+      "cited_source_page": "wiki/sources/SRC-0008-awh-free-energy-landscapes.md",
+      "citing_source_id": "SRC-0005",
+      "citing_source_page": "wiki/sources/SRC-0005-times-square-sampling-free-energy.md",
+      "confidence": "strong",
+      "evidence": "ource. [SRC-0005] - `SRC-0008`: The references list Lindahl, Lidmar, and Hess, \"Accelerated Weight Histogram Method for Exploring Free Energy Landscapes,\" Journal of Chemical Physics 141, 044110. This is an exact title match to the ingested AWH free-energy-landscapes source. [SRC-0005] - `SRC-0007`: The referen",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0023",
+      "cited_source_page": "wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.md",
+      "citing_source_id": "SRC-0005",
+      "citing_source_page": "wiki/sources/SRC-0005-times-square-sampling-free-energy.md",
+      "confidence": "strong",
+      "evidence": "- `SRC-0023`: The references list Shirts and Chodera, \"Statistically Optimal Analysis of Samples from Multiple Equilibrium States,\" Journal of Chemical Physics 129, 124105. This is an exact title match to the ingested MBAR source. [SRC-0005] - `SRC-0008`: The references list Lindahl, Lidm",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0023",
+      "cited_source_page": "wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.md",
+      "citing_source_id": "SRC-0006",
+      "citing_source_page": "wiki/sources/SRC-0006-times-square-sampling-supplement.md",
+      "confidence": "strong",
+      "evidence": "- `SRC-0023`: The supplement references Michael Shirts and John Chodera, \"Statistically optimal analysis of samples from multiple equilibrium states,\" Journal of Chemical Physics 129. This is an exact title match to the ingested MBAR source. [SRC-0006]",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0007",
+      "cited_source_page": "wiki/sources/SRC-0007-improving-efficiency-extended-ensemble-awh.md",
+      "citing_source_id": "SRC-0009",
+      "citing_source_page": "wiki/sources/SRC-0009-awh-alchemical-free-energy.md",
+      "confidence": "strong",
+      "evidence": "ingested MBAR source. [SRC-0009] - `SRC-0007`: The references list J. Lidmar, \"Improving the efficiency of extended ensemble simulations: The accelerated weight histogram method,\" Physical Review E 85, 056708. This is an exact title match to the ingested original AWH source. [SRC-0009] - `SRC-00",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0008",
+      "cited_source_page": "wiki/sources/SRC-0008-awh-free-energy-landscapes.md",
+      "citing_source_id": "SRC-0009",
+      "citing_source_page": "wiki/sources/SRC-0009-awh-alchemical-free-energy.md",
+      "confidence": "strong",
+      "evidence": "RC-0009] - `SRC-0008`: The references list V. Lindahl, J. Lidmar, and B. Hess, \"Accelerated weight histogram method for exploring free energy landscapes,\" Journal of Chemical Physics 141, 044110. This is an exact title match to the ingested AWH free-energy-landscapes source. [SRC-0009]",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0023",
+      "cited_source_page": "wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.md",
+      "citing_source_id": "SRC-0009",
+      "citing_source_page": "wiki/sources/SRC-0009-awh-alchemical-free-energy.md",
+      "confidence": "strong",
+      "evidence": "- `SRC-0023`: The references list M. R. Shirts and J. D. Chodera, \"Statistically optimal analysis of samples from multiple equilibrium states,\" Journal of Chemical Physics 129, 124105-124110. This is an exact title match to the ingested MBAR source. [SRC-0009] - `SRC-0007`: The references list J. Lid",
+      "match_type": "title-exact"
+    }
+  ]
+}

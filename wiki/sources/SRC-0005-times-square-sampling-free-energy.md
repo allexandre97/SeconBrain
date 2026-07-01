@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0005
 display_title: "Times Square Sampling: An Adaptive Algorithm for Free Energy Estimation"
 short_title: "Times Square Sampling"
@@ -15,6 +15,18 @@ imported_path: raw/sources/SRC-0005-times-square-sampling-free-energy.pdf
 original_filename: "Times Square Sampling An Adaptive Algorithm for Free Energy Estimation.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: c833172f2f852948c578d6209e881babb7023fa7893c1835fdccb64743e60dd5
+authors:
+  - "Cristian Predescu"
+  - "Michael Snarski"
+  - "Avi Robinson-Mosher"
+  - "Duluxan Sritharan"
+  - "Tamas Szalay"
+  - "David E. Shaw"
+author_entities: []
+year: 2024
+venue: "Journal of Computational and Graphical Statistics"
+doi: "10.1080/10618600.2023.2291108"
+arxiv:
 areas:
   - research
 categories:
@@ -37,9 +49,16 @@ related:
   - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
   - "[[wiki/concepts/tss-implementation-patterns]]"
   - "[[wiki/questions/tss-generalization-scope]]"
+  - "[[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]"
+  - "[[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]"
 sources:
   - SRC-0005
   - SRC-0006
+cites_sources:
+  - SRC-0007
+  - SRC-0008
+  - SRC-0023
+citation_match_status: partial
 sensitivity: public
 encryption: none
 source_bundle: times-square-sampling-2024
@@ -252,10 +271,30 @@ For the windowed implementation, the supplement converts these recursions into e
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 - [[wiki/concepts/tss-implementation-patterns]]
 - [[wiki/questions/tss-generalization-scope]]
+- [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]
+- [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]
+
+## Claims
+
+- [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]] - TSS can lower asymptotic variance relative to MBAR in the analyzed adaptive on-the-fly setting, under the paper's assumptions. [SRC-0005, proposition 3] [SRC-0006, section 4.5]
+
+## Questions
+
+- [[wiki/questions/tss-generalization-scope]] - How broadly should the lower-variance and resource-allocation claims be expected to transfer beyond the analyzed settings? [SRC-0005] [SRC-0006]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]] - The lower-variance comparison is useful but should not be generalized to every MBAR use case or practical molecular-dynamics regime. [SRC-0005] [SRC-0006]
 
 ## Open Questions
 
 - [[wiki/questions/tss-generalization-scope]] - How broadly should the lower-variance and resource-allocation claims be expected to transfer beyond the paper's analyzed settings? [SRC-0005] [SRC-0006]
+
+## Citation links
+
+- `SRC-0023`: The references list Shirts and Chodera, "Statistically Optimal Analysis of Samples from Multiple Equilibrium States," Journal of Chemical Physics 129, 124105. This is an exact title match to the ingested MBAR source. [SRC-0005]
+- `SRC-0008`: The references list Lindahl, Lidmar, and Hess, "Accelerated Weight Histogram Method for Exploring Free Energy Landscapes," Journal of Chemical Physics 141, 044110. This is an exact title match to the ingested AWH free-energy-landscapes source. [SRC-0005]
+- `SRC-0007`: The references list Lidmar, "Improving the Efficiency of Extended Ensemble Simulations: the Accelerated Weight Histogram Method," Physical Review E 85, 056708. This is an exact title match to the ingested original AWH source. [SRC-0005]
 
 ## Metadata notes
 

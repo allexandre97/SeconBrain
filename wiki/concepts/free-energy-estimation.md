@@ -2,7 +2,7 @@
 type: concept
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 areas:
   - research
 categories:
@@ -81,6 +81,21 @@ Free energy estimation computes differences between free energies, often by esti
 - Protein-ligand RBFE benchmark accuracy should be interpreted against experimental reproducibility, because assay-derived relative affinities have their own error floor. [SRC-0046]
 - OpenFE's journal benchmark reinforces that all-to-all pairwise metrics are more representative than edgewise metrics for arbitrary ligand comparisons, and that private active-project data can be substantially harder than curated public data. [SRC-0061, sections 3.1.1 and 3.2]
 - LAMMPS solvation free-energy decoupling can be implemented by adding an overlay correction that preserves intramolecular Coulomb energy while solute charges are scaled for solute-solvent electrostatic staging. [SRC-0047]
+
+## Sample, biasing, and reweighting patterns
+
+Free-energy methods differ as much in when they use sample information as in what estimator they solve. TSS, AWH, OPES, and LaDyBUGS are adaptive methods: samples gathered during the run change later sampling. MBAR is primarily an offline reweighting estimator for a fixed set of samples. Boltzmann generators learn an exact-density proposal distribution and then reweight generated proposals to the target equilibrium distribution. [SRC-0005] [SRC-0007] [SRC-0010] [SRC-0013] [SRC-0023] [SRC-0041]
+
+| Method | Sample use | Biasing role | Reweighting role |
+| --- | --- | --- | --- |
+| TSS | Uses simulated-tempering samples and conditional rung probabilities to update free-energy estimates during sampling. [SRC-0005, sections 2.1-2.2] | Current estimates, visit-control tilts, and windowed local estimates steer future rung allocation. [SRC-0005, section 3.1] [SRC-0006, sections 6-7] | Conditional probabilities enter the stochastic estimator, but the distinctive feature is on-the-fly self-adjustment rather than post hoc analysis. [SRC-0005, section 2.2.3] |
+| AWH | Each configuration contributes fractional conditional weights to many $\lambda$ values. [SRC-0007, eq. 5] [SRC-0009, eq. 3] | The adaptive free-energy bias is updated so the sampled parameter marginal approaches a target distribution. [SRC-0008, section II.A] [SRC-0009, eq. 5] | Conditional weights and histograms provide the reweighting-like information used to refine free energies. [SRC-0007, section II] |
+| OPES | Collective-variable samples build a weighted kernel estimate of the unbiased CV probability density. [SRC-0010, eq. 5] | The bias is derived from the ratio between the estimated probability and a target CV distribution, with regularization to bound the bias. [SRC-0010, eqs. 4 and 8] | Weighted probability reconstruction links biased CV exploration back to the underlying distribution, subject to CV and target-choice limits. [SRC-0010] [SRC-0011] |
+| MBAR | Takes samples already collected from multiple equilibrium states and cross-evaluates their reduced potentials. [SRC-0023] | MBAR itself does not adaptively bias sampling; the simulation protocol supplies any bias. [SRC-0023] | Reweighting is the main estimator, solving coupled normalizing-constant equations for free energies, expectations, and uncertainties. [SRC-0023] |
+| LaDyBUGS | Alternates short conditional MD sampling with Gibbs updates over many discrete ligand alchemical states. [SRC-0013] | Dynamic biases keep the discrete alchemical states sampled during one production simulation. [SRC-0013, eqs. 1 and 4] | FastMBAR periodically estimates free energies and feeds those estimates into later bias updates. [SRC-0013] |
+| Boltzmann generators | Generate proposal samples from an exact-density learned model. [SRC-0041] | Training makes the proposal resemble the target through energy, entropy/Jacobian, and sometimes example-based objectives. [SRC-0041] | Importance reweighting corrects generated proposals to equilibrium estimates when overlap and effective sample size are adequate. [SRC-0041] [SRC-0037] [SRC-0039] |
+
+MBAR with configuration mapping is a useful boundary case: it remains an MBAR-style reweighting estimator, but first applies invertible maps and Jacobian corrections to improve overlap between states before solving the MBAR equations. [SRC-0012]
 
 ## Core equations
 

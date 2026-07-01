@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0045
 display_title: "Large-scale Collaborative Assessment of Binding Free Energy Calculations for Drug Discovery Using OpenFE"
 short_title: "OpenFE RBFE Benchmark"
@@ -14,6 +14,55 @@ source_path: raw/sources/SRC-0045-large-scale-collaborative-assessment-of-bindin
 original_filename: "chemrxiv-2025-7sthd_v2.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 13b864deeb88b30b8c9fd482b7640bb7b6fdf8fa6977a3d79af034a8feb48563
+authors:
+  - "Hannah M. Baumann"
+  - "Joshua T. Horton"
+  - "Michael M. Henry"
+  - "Alyssa Travitz"
+  - "Benjamin Ries"
+  - "Richard J. Gowers"
+  - "David W. H. Swenson"
+  - "Iván Pulido"
+  - "Dominic Rufa"
+  - "David L. Dotson"
+  - "Nupur Bansal"
+  - "Joseph P. Bluck"
+  - "Howard Broughton"
+  - "Kira Campbell"
+  - "Lili Cao"
+  - "Sirish Kaushik Lakkaraju"
+  - "Benedikt Frieg"
+  - "Vytautas Gapsys"
+  - "Hendrik Göddeke"
+  - "Marco Klähn"
+  - "Stephanie M. Linker"
+  - "Thomas Löhr"
+  - "Aniket Magarkar"
+  - "Sergio Pérez-Conesa"
+  - "Hans E. Purkey"
+  - "Hayk Saribekyan"
+  - "Jenke Scheen"
+  - "Christina E. M. Schindler"
+  - "Thomas Steinbrecher"
+  - "Chaya D. Stern"
+  - "Patricia Suriana"
+  - "William C. Swope"
+  - "Gary Tresadern"
+  - "Lev Tsidilkovski"
+  - "Binqing Wei"
+  - "Alexander H. Williams"
+  - "Yao Wu"
+  - "Ivy Zhang"
+  - "John D. Chodera"
+  - "James R. B. Eastwood"
+  - "David L. Mobley"
+  - "Irfan Alibay"
+author_entities:
+  - "[[wiki/entities/authors/john-d-chodera]]"
+year: 2026
+venue: "ChemRxiv"
+doi: "10.26434/chemrxiv-2025-7sthd/v2"
+arxiv:
 areas:
   - research
 categories:

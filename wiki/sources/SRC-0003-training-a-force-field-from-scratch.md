@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0003
 display_title: "Training a Force Field for Proteins and Small Molecules from Scratch"
 short_title: "Garnet Force Field"
@@ -14,6 +14,16 @@ source_path: raw/sources/SRC-0003-training-a-force-field-from-scratch.pdf
 original_filename: "2603.16770v1.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: d84bc9589f33dc1c4c7011240b8bdb5d394154e2fa254857dc6dec461ca74262
+authors:
+  - "Alexandre Blanco-González"
+  - "Thea K Schulze"
+  - "Evianne Rovers"
+  - "Joe G Greener"
+author_entities: []
+year: 2026
+venue: "arXiv"
+doi:
+arxiv: "2603.16770v1"
 areas:
   - research
 categories:
@@ -29,6 +39,9 @@ tags:
 related:
   - "[[wiki/concepts/garnet-force-field]]"
   - "[[wiki/concepts/automated-force-field-training]]"
+  - "[[wiki/questions/garnet-validation-scope]]"
+  - "[[wiki/claims/CLM-0002-garnet-automates-parameter-assignment]]"
+  - "[[wiki/tensions/TEN-0002-garnet-broad-coverage-vs-validation-gaps]]"
 sources:
   - SRC-0003
 sensitivity: public
@@ -68,6 +81,20 @@ This arXiv paper introduces Garnet, a graph-neural-network system that predicts 
 - [[wiki/concepts/double-exponential-potential]]
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]]
 - [[wiki/questions/garnet-validation-scope]]
+- [[wiki/claims/CLM-0002-garnet-automates-parameter-assignment]]
+- [[wiki/tensions/TEN-0002-garnet-broad-coverage-vs-validation-gaps]]
+
+## Claims
+
+- [[wiki/claims/CLM-0002-garnet-automates-parameter-assignment]] - Garnet predicts force-field parameters from topology using continuous atom typing rather than fixed manually assigned atom types. [SRC-0003]
+
+## Questions
+
+- [[wiki/questions/garnet-validation-scope]] - Which molecule classes and simulation tasks still need validation before treating Garnet as broadly transferable? [SRC-0003]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0002-garnet-broad-coverage-vs-validation-gaps]] - Garnet's broad automated-force-field framing coexists with validation gaps and reported failure modes. [SRC-0003]
 
 ## Open Questions
 

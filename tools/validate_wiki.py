@@ -190,6 +190,10 @@ def main() -> int:
             if frontmatter_value(path, "graph_exclude") != "true":
                 errors.append(f"Generated dashboard missing graph_exclude: true: {path.relative_to(ROOT)}")
 
+    for path in sorted((ROOT / "wiki" / "graph").rglob("*.md")):
+        if frontmatter_value(path, "graph_exclude") != "true":
+            errors.append(f"Generated graph Markdown missing graph_exclude: true: {path.relative_to(ROOT)}")
+
     link_index = build_link_index(wiki_pages)
     for path in wiki_pages:
         text = path.read_text(encoding="utf-8")

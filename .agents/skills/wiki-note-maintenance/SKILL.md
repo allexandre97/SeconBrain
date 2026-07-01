@@ -74,6 +74,16 @@ When splitting or merging concept pages:
 - Update backlinks, related frontmatter, `wiki/index.md`, and `wiki/log.md`.
 - Run validation.
 
+## Concept organization
+
+When asked to organize concept pages:
+
+- Prefer metadata improvements and generated dashboards before changing file paths.
+- Keep concept files flat under `wiki/concepts/` unless the user explicitly requests a physical migration.
+- Treat moving or renaming concept files as a separate explicit migration with backlink updates, link-churn review, `wiki/index.md` updates, and validation.
+- Use `python3 tools/build_concept_indexes.py` for semantic browsing dashboards when the task is about browsing or grouping concepts.
+- Do not infer new categories silently; use existing frontmatter and the category registry, and report uncertain candidates instead of rewriting taxonomy during unrelated maintenance.
+
 ## Index and log consistency
 
 When changing wiki content:

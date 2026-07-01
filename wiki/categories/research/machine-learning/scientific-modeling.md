@@ -55,6 +55,7 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/concepts/boltzmann-generators-equilibrium-sampling|Boltzmann Generators for Equilibrium Sampling]]
 - [[wiki/concepts/conflict-free-pinn-training|Conflict-Free PINN Training]]
 - [[wiki/concepts/deep-learning-cytoskeleton-image-analysis|Deep Learning for Cytoskeleton Image Analysis]]
+- [[wiki/concepts/garnet-functional-form-search|Garnet Functional-Form Search]]
 - [[wiki/concepts/gnn-to-symbolic-regression-potentials|GNN to Symbolic Regression Potentials]]
 - [[wiki/concepts/machine-learning-potential-datasets|Machine Learning Potential Datasets]]
 - [[wiki/concepts/machine-learned-interatomic-potential-foundation-models|Machine-Learned Interatomic Potential Foundation Models]]
@@ -65,3 +66,15 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/concepts/symbolic-regression-interatomic-potentials|Symbolic Regression Interatomic Potentials]]
 - [[wiki/concepts/topology-aware-tubular-structure-segmentation|Topology-Aware Tubular Structure Segmentation]]
 - [[wiki/concepts/transferable-and-scalable-boltzmann-generators|Transferable and Scalable Boltzmann Generators]]
+
+### Answers
+
+- [[wiki/answers/garnet-symbolic-regression-functional-search|Symbolic Regression for Garnet Functional-Form Search]]
+
+### Tensions
+
+- [[wiki/tensions/TEN-0003-cldice-topology-guarantee-vs-practical-transfer|clDice Topology Guarantee Versus Practical Transfer]]
+
+### Claims
+
+- [[wiki/claims/CLM-0003-cldice-connectivity-aware-tubular-segmentation|clDice Captures Tubular Connectivity Better Than Overlap Alone]]

@@ -41,6 +41,9 @@ related:
 sources:
   - SRC-0006
   - SRC-0005
+cites_sources:
+  - SRC-0023
+citation_match_status: partial
 sensitivity: public
 encryption: none
 source_bundle: times-square-sampling-2024
@@ -223,6 +226,10 @@ The self-adjustment experiments compare different rung-update and estimator-upda
 
 - How should practitioners tune window size, $\eta$, $\nu$, history forgetting, and regularizers for systems that differ substantially from the supplement's aqueous-solution example? [SRC-0006]
 - How much of the TSS variance advantage persists in practical simulations where samples are correlated rather than independent as assumed in the strongest variance theorem? [SRC-0005] [SRC-0006]
+
+## Citation links
+
+- `SRC-0023`: The supplement references Michael Shirts and John Chodera, "Statistically optimal analysis of samples from multiple equilibrium states," Journal of Chemical Physics 129. This is an exact title match to the ingested MBAR source. [SRC-0006]
 
 ## Metadata notes
 

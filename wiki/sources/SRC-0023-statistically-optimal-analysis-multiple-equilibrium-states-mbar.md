@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0023
 display_title: "Statistically Optimal Analysis of Samples from Multiple Equilibrium States"
 short_title: "Original MBAR Paper"
@@ -15,6 +15,15 @@ imported_path: raw/sources/SRC-0023-statistically-optimal-analysis-multiple-equi
 original_filename: "124105_1_online.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 6bea1d3c790a388b5ab728175fb6914d4e1fd64a4258983cad84a26531a18214
+authors:
+  - "Michael R. Shirts"
+  - "John D. Chodera"
+author_entities:
+  - "[[wiki/entities/authors/john-d-chodera]]"
+year: 2008
+venue: "Journal of Chemical Physics"
+doi: "10.1063/1.2978177"
+arxiv:
 areas:
   - research
 categories:

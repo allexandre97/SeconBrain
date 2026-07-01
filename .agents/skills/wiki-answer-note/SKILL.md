@@ -19,18 +19,22 @@ Use this skill for prompts such as `Answer in the wiki: <question>` or `Write a 
 
 1. Start from `wiki/index.md`.
 2. Search relevant wiki pages.
-3. Identify whether the wiki already answers the question.
-4. If the wiki is sufficient, write the answer note using wiki pages only.
-5. If the wiki is insufficient, consult original sources using targeted source lookup.
-6. Use source summaries, source outlines, equation inventories, proof maps, headings, local text search, and relevant sections before reading an entire source.
-7. Read the whole source only when the query is broad, the source is short, or targeted lookup fails.
-8. If raw-source lookup reveals reusable knowledge, update the relevant durable wiki pages before or alongside the answer note.
-9. Preserve citations and provenance.
-10. Record which wiki pages and raw sources were used.
-11. Record which wiki pages were updated.
-12. Mark remaining gaps clearly.
-13. Run `python3 tools/validate_wiki.py`.
-14. Report the answer note path and any durable pages updated.
+3. Identify likely starting pages from search results, index entries, categories, and source IDs.
+4. For non-trivial questions, run or consult graph-neighborhood information where useful, for example `python3 tools/query_graph.py --start <page> --depth 1` or `python3 tools/query_graph.py --source-id <SRC-XXXX>`.
+5. Use the graph neighborhood to choose which related sources, concepts, claims, questions, tensions, categories, authors, and source bundles to read before asking the LLM to synthesize.
+6. Do not require graph traversal for trivial questions where the starting page and answer are already obvious.
+7. Identify whether the wiki already answers the question.
+8. If the wiki is sufficient, write the answer note using wiki pages only.
+9. If the wiki is insufficient, consult original sources using targeted source lookup.
+10. Use source summaries, source outlines, equation inventories, proof maps, headings, local text search, and relevant sections before reading an entire source.
+11. Read the whole source only when the query is broad, the source is short, or targeted lookup fails.
+12. If raw-source lookup reveals reusable knowledge, update the relevant durable wiki pages before or alongside the answer note.
+13. Preserve citations and provenance.
+14. Record which wiki pages and raw sources were used.
+15. Record which wiki pages were updated.
+16. Mark remaining gaps clearly.
+17. Run `python3 tools/validate_wiki.py`.
+18. Report the answer note path and any durable pages updated.
 
 Answer notes belong under `wiki/answers/` and should use the answer-page template in `schema/page_templates.md`. They are readable generated responses, not replacements for durable source, concept, question, claim, or tension pages.
 

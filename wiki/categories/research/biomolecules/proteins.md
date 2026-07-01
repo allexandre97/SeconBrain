@@ -60,4 +60,8 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ### Answers
 
-- [[wiki/answers/sted-tau-filament-topology-model-architecture|What model architecture should analyze STED tau filament topology?]]
+- [[wiki/answers/sted-tau-filament-topology-model-architecture|How should STED tau filament morphology be quantified?]]
+
+### Claims
+
+- [[wiki/claims/CLM-0002-garnet-automates-parameter-assignment|Garnet Automates Force-Field Parameter Assignment]]

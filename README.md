@@ -70,6 +70,18 @@ Suggest missing categories without applying changes with:
 python3 tools/suggest_categories.py
 ```
 
+## Concept Browsing
+
+Concept pages stay flat under `wiki/concepts/` to keep Obsidian wikilinks stable and avoid link churn. Semantic browsing is provided by generated dashboards built from concept frontmatter instead of by moving files into nested folders.
+
+Regenerate concept dashboards with:
+
+```sh
+python3 tools/build_concept_indexes.py
+```
+
+This writes concept views under `wiki/dashboards/`, including category, method, biomolecule, source-cluster, and high-connectivity concept dashboards.
+
 ## Search
 
 Use the local plain-text search helper to find compact snippets from Markdown files under `wiki/`:
@@ -80,6 +92,24 @@ python3 tools/search_wiki.py source ingestion
 ```
 
 The search is case-insensitive, recursive, and uses only the Python standard library.
+
+## Knowledge Graph
+
+Build a deterministic graph of wiki pages, source IDs, categories, source bundles, citations, authors, and wikilinks:
+
+```sh
+python3 tools/build_knowledge_graph.py
+```
+
+This writes `wiki/graph/knowledge_graph.json` and `wiki/graph/knowledge_graph_summary.md`. Query graph neighborhoods before deeper answer-note work when useful:
+
+```sh
+python3 tools/query_graph.py --start wiki/concepts/free-energy-estimation --depth 2
+python3 tools/query_graph.py --category research/molecular-simulation/free-energy
+python3 tools/query_graph.py --source-id SRC-0005
+```
+
+The graph tooling uses only the Python standard library and is intended for deterministic traversal, not embeddings or vector search.
 
 ## Source Import
 

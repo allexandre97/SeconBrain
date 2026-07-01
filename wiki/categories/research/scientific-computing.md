@@ -32,4 +32,9 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 
 ### Concepts
 
+- [[wiki/concepts/garnet-functional-form-search|Garnet Functional-Form Search]]
 - [[wiki/concepts/tss-implementation-patterns|Times Square Sampling Implementation Patterns]]
+
+### Answers
+
+- [[wiki/answers/garnet-symbolic-regression-functional-search|Symbolic Regression for Garnet Functional-Form Search]]

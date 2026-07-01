@@ -23,9 +23,11 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[overview]] - Project overview.
 - [[log]] - Chronological wiki activity log.
 - [[wiki/categories/README]] - Category navigation guidance.
+- [[wiki/graph/knowledge_graph_summary]] - Generated deterministic knowledge-graph summary.
 - [[wiki/answers/README]] - Guidance for persistent answer notes.
 - [[wiki/claims/README]] - Guidance for durable claim pages.
 - [[wiki/entities/README]] - Guidance for durable entity pages.
+- [[wiki/entities/authors/README]] - Guidance for optional author entity pages.
 - [[wiki/tensions/README]] - Guidance for durable tension pages.
 
 ## Dashboards
@@ -33,14 +35,26 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/dashboards/sources-by-category]] - Source pages grouped by exact category.
 - [[wiki/dashboards/sources-by-biomolecule]] - Source pages grouped by biomolecule facets.
 - [[wiki/dashboards/sources-by-method]] - Source pages grouped by method-oriented categories.
+- [[wiki/dashboards/source-citation-links]] - Confirmed and candidate citation links between ingested source pages.
+- [[wiki/dashboards/concepts-by-category]] - Concept pages grouped by exact category.
+- [[wiki/dashboards/concepts-by-biomolecule]] - Concept pages grouped by biomolecule facets.
+- [[wiki/dashboards/concepts-by-method]] - Concept pages grouped by method-oriented categories.
+- [[wiki/dashboards/concepts-by-source-cluster]] - Concept pages grouped by dominant source category and shared source IDs.
+- [[wiki/dashboards/high-connectivity-concepts]] - Hub concept pages ranked by related-link and source-ID counts.
 - [[wiki/dashboards/math-heavy-sources]] - Source pages marked with math-heavy coverage profiles.
 - [[wiki/dashboards/open-questions]] - Current question pages.
+- [[wiki/dashboards/claims]] - Durable claim pages.
+- [[wiki/dashboards/questions]] - Question pages.
+- [[wiki/dashboards/tensions]] - Durable tension pages.
 
 ## Answers
 
 - [[wiki/answers/tss-window-free-energy-surface-stitching]] - Mathematical explanation of how TSS stitches per-window free-energy estimates into a global surface.
 - [[wiki/answers/tss-awh-opes-adaptive-free-energy-comparison]] - Comparison of TSS with AWH and OPES as adaptive free-energy methods.
+- [[wiki/answers/sample-bias-reweighting-method-comparison]] - Comparison of TSS, AWH, OPES, MBAR, LaDyBUGS, and Boltzmann generators by sample use, biasing, and reweighting.
 - [[wiki/answers/sted-tau-filament-topology-model-architecture]] - Quantification and model-architecture recommendation for topology-aware STED tau morphology comparisons across tauopathy seeds and DIV.
+- [[wiki/answers/garnet-symbolic-regression-functional-search]] - Assessment of symbolic regression, pipeline placement, and differentiable functional-form search for a future Garnet force field.
+- [[wiki/answers/recurring-validation-problems-force-fields-ml-potentials-free-energy]] - Synthesis of recurring validation problems across force-field fitting, machine-learning potentials, and free-energy estimators.
 
 ## Sources
 
@@ -129,6 +143,7 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/concepts/garnet-force-field]] - GNN-based force field for proteins and small molecules.
 - [[wiki/concepts/automated-force-field-training]] - Data-driven training of molecular mechanics force fields.
 - [[wiki/concepts/double-exponential-potential]] - Non-bonded potential used by Garnet instead of Lennard-Jones.
+- [[wiki/concepts/garnet-functional-form-search]] - Bilevel and differentiable strategies for choosing interaction functionals in Garnet.
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]] - Benchmarking ligand binding predictions against experimental data.
 - [[wiki/concepts/cytoskeletal-network-image-analysis]] - Microscopy-based analysis of cytoskeletal filament network geometry, topology, and dynamics.
 - [[wiki/concepts/cytoskeleton-segmentation-and-tracing]] - Methods for extracting masks, centrelines, graphs, and tracked filament instances from cytoskeleton images.
@@ -179,6 +194,7 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/concepts/molecular-response-property-foundation-models]] - Foundation-style models for molecular dipoles, polarizabilities, and spectroscopy-relevant response properties.
 - [[wiki/concepts/mlp-driven-bespoke-smirnoff-force-field-fitting]] - Fitting molecule-specific SMIRNOFF valence parameters using MLP reference energies and forces.
 - [[wiki/concepts/protein-energy-landscape-profiling]] - Large-scale measurement and analysis of protein conformational fluctuation energy landscapes.
+- [[wiki/concepts/cross-domain-validation-problems-in-molecular-simulation]] - Recurring validation failure modes across force-field fitting, machine-learning potentials, and free-energy estimators.
 
 ## Questions
 
@@ -187,3 +203,4 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/questions/tss-generalization-scope]] - Validation boundaries for Times Square Sampling claims beyond analyzed settings.
 - [[wiki/questions/awh-validation-scope]] - Validation boundaries for AWH efficiency and robustness claims.
 - [[wiki/questions/force-field-training-validation-scope]] - Validation boundaries for force-field training and fine-tuning transferability claims.
+- [[wiki/questions/QST-0001-cldice-biological-transfer-scope]] - Validation boundary for clDice transfer to biological fiber reconstruction tasks.

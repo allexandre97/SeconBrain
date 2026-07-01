@@ -60,3 +60,13 @@ graph_exclude: true
 - 2026-07-01: Checked requested clDice PDF `2003.07311v7.pdf` and confirmed it is byte-identical to already ingested SRC-0032; updated SRC-0032 metadata rather than creating a duplicate source.
 - 2026-07-01: Imported and ingested SRC-0069, the Segment Anything arXiv paper introducing promptable segmentation, SAM, and the SA-1B dataset, adding concept coverage for promptable segmentation foundation models.
 - 2026-07-01: Revised the STED tau topology answer note to focus on the unfinished SRC-0064 morphology quantification problem, adding nnU-Net/SAM context, a graph-and-object feature table, validation plan, and replicate-aware statistical design.
+- 2026-07-01: Added an answer note on symbolic regression and differentiable functional-form search for a future Garnet force field, plus a reusable Garnet functional-form search concept.
+- 2026-07-01: Added a deeper follow-up answer on where symbolic regression would fit in the Garnet pipeline, including residual distillation, parameter-count mismatch, multi-fidelity scoring, and per-epoch SR caveats.
+- 2026-07-01: Merged the two Garnet symbolic-regression answer notes into one canonical answer page and updated navigation links.
+- 2026-07-01: Added deterministic knowledge-graph build and query tooling, generated graph outputs, and updated answer-note workflow guidance to use graph neighborhoods where useful.
+- 2026-07-01: Added first-class claim, question, and tension templates, future-ingestion guidance, audit tooling, dashboards, and a three-source pilot for TSS, Garnet, and clDice.
+- 2026-07-01: Added structured author metadata guidance and audit tooling, plus a five-source author metadata pilot with one repeated-author entity page.
+- 2026-07-01: Added generated concept dashboards for semantic browsing while keeping concept file paths flat and stable.
+- 2026-07-01: Added an answer note on recurring validation problems across force-field fitting, machine-learning potentials, and free-energy estimators, plus a durable cross-domain validation concept.
+- 2026-07-01: Added conservative citation-matching tooling, source citation metadata conventions, a generated citation-link dashboard, and pilot citation links for the TSS/AWH/MBAR cluster.
+- 2026-07-01: Added an answer note comparing TSS, AWH, OPES, MBAR, LaDyBUGS, and Boltzmann generators by sample use, adaptive biasing, and reweighting, plus a reusable free-energy-estimation comparison section.
