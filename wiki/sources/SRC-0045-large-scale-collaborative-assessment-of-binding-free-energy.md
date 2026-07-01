@@ -82,6 +82,10 @@ related:
   - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0045
+cites_sources:
+  - SRC-0023
+  - SRC-0046
+citation_match_status: partial
 sensitivity: public
 encryption: none
 ingestion_status: complete
@@ -153,6 +157,11 @@ Here $w_i$ is the number of ligands in system $i$ for the all-to-all pairwise be
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version]]
 - [[wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information]]
+
+## Citation Links
+
+- `SRC-0046`: The references list Ross, Lu, Scarabelli, Albanese, Houang, Abel, Harder, and Wang, "The maximal and current accuracy of rigorous protein-ligand binding free energy calculations," Communications Chemistry 2023, 6, 222. This is an exact title, first-author, and year match to the ingested FEP+ accuracy source. [SRC-0045, reference 42]
+- `SRC-0023`: The references list Shirts and Chodera, "Statistically optimal analysis of samples from multiple equilibrium states," Journal of Chemical Physics 2008, 129, 124105. This is an exact title, first-author, and year match to the ingested original MBAR source. [SRC-0045, reference 89]
 
 ## Ingestion QA
 

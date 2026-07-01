@@ -70,3 +70,7 @@ graph_exclude: true
 - 2026-07-01: Added an answer note on recurring validation problems across force-field fitting, machine-learning potentials, and free-energy estimators, plus a durable cross-domain validation concept.
 - 2026-07-01: Added conservative citation-matching tooling, source citation metadata conventions, a generated citation-link dashboard, and pilot citation links for the TSS/AWH/MBAR cluster.
 - 2026-07-01: Added an answer note comparing TSS, AWH, OPES, MBAR, LaDyBUGS, and Boltzmann generators by sample use, adaptive biasing, and reweighting, plus a reusable free-energy-estimation comparison section.
+- 2026-07-01: Added source migration audit tooling and a generated dashboard for older source-page semantic backfill planning without re-ingesting sources.
+- 2026-07-01: Backfilled first-class claims, questions, and tensions for the free-energy/adaptive-sampling source cluster without re-ingesting sources.
+- 2026-07-01: Backfilled confirmed citation links for the OpenFE/FEP+/RBFE benchmark cluster using targeted reference checks without re-ingesting sources.
+- 2026-07-01: Backfilled author metadata for the free-energy/adaptive-sampling source cluster and added repeated-author entities for Jack Lidmar and Michael R. Shirts without re-ingesting sources.

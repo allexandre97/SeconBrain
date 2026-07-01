@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0010
 display_title: "Rethinking Metadynamics"
 short_title: "Rethinking Metadynamics"
@@ -14,6 +14,14 @@ imported_path: raw/sources/SRC-0010-rethinking-metadynamics-from-bias-potentials
 original_filename: "rethinking-metadynamics-from-bias-potentials-to-probability-distributions.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 5b9e25b1e7e852d7a5ead4a6454b25c80b509f70b30c1b48d975447196b85062
+authors:
+  - "Michele Invernizzi"
+  - "Michele Parrinello"
+author_entities: []
+year: 2020
+venue: "Journal of Physical Chemistry Letters"
+doi: "10.1021/acs.jpclett.0c00497"
+arxiv:
 areas:
   - research
 categories:
@@ -144,6 +152,18 @@ The paper reports faster convergence and reduced bias oscillations relative to s
 - [[wiki/concepts/on-the-fly-probability-enhanced-sampling]]
 - [[wiki/concepts/adaptive-enhanced-sampling]]
 - [[wiki/concepts/free-energy-estimation]]
+
+## Claims
+
+- [[wiki/claims/CLM-0006-opes-reconstructs-probability-to-derive-bias]] - OPES derives an adaptive bias from an on-the-fly collective-variable probability estimate and an explicit target distribution. [SRC-0010]
+
+## Questions
+
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - How should OPES-style adaptive biasing be compared against fixed-sample postprocessing estimators? [SRC-0010]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - OPES changes sampling during the run, but final free-energy use still depends on reweighting and diagnostics. [SRC-0010]
 
 ## Open Questions
 

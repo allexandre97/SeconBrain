@@ -281,10 +281,13 @@ For the windowed implementation, the supplement converts these recursions into e
 ## Questions
 
 - [[wiki/questions/tss-generalization-scope]] - How broadly should the lower-variance and resource-allocation claims be expected to transfer beyond the analyzed settings? [SRC-0005] [SRC-0006]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - When is an adaptive sampling-time estimator comparison against fixed-sample MBAR scientifically fair? [SRC-0005] [SRC-0006]
+- [[wiki/questions/windowed-local-free-energy-global-profile-reliability]] - When do overlapping local estimates stitch into a reliable global free-energy profile? [SRC-0005] [SRC-0006]
 
 ## Tensions
 
 - [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]] - The lower-variance comparison is useful but should not be generalized to every MBAR use case or practical molecular-dynamics regime. [SRC-0005] [SRC-0006]
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - Adaptive sampling can improve sample generation while still requiring reproducible estimator diagnostics. [SRC-0005] [SRC-0023]
 
 ## Open Questions
 

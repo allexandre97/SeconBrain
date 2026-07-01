@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0008
 display_title: "Accelerated Weight Histogram Method for Exploring Free Energy Landscapes"
 short_title: "AWH Free Energy Landscapes"
@@ -15,6 +15,16 @@ imported_path: raw/sources/SRC-0008-accelerated-weight-histogram-method-for-expl
 original_filename: "044110_1_online.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: e3abfb199c09cb7f0763550a29490c3594607a05a5c4596dbbe6c54ff5c3931a
+authors:
+  - "V. Lindahl"
+  - "Jack Lidmar"
+  - "B. Hess"
+author_entities:
+  - "[[wiki/entities/authors/jack-lidmar]]"
+year: 2014
+venue: "Journal of Chemical Physics"
+doi: "10.1063/1.4890371"
+arxiv:
 areas:
   - research
 categories:
@@ -190,6 +200,20 @@ For chignolin, the paper used a two-dimensional reaction coordinate for native a
 - [[wiki/concepts/adaptive-enhanced-sampling]]
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/questions/awh-validation-scope]]
+
+## Claims
+
+- [[wiki/claims/CLM-0007-awh-updates-bias-from-conditional-histograms]] - The molecular AWH extension uses conditional weights and target distributions to adapt free-energy biasing. [SRC-0008]
+
+## Questions
+
+- [[wiki/questions/awh-validation-scope]] - How robust are AWH target-distribution and reaction-coordinate guidelines beyond the tested atomistic examples? [SRC-0008]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - When should adaptive free-energy-landscape exploration be expected to outperform fixed-sample postprocessing? [SRC-0008]
+- [[wiki/questions/windowed-local-free-energy-global-profile-reliability]] - What makes a locally sampled or umbrella-smoothed free-energy representation reliable as a global profile? [SRC-0008]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - Adaptive free-energy-landscape exploration improves sampling only if final profile diagnostics support the result. [SRC-0008]
 
 ## Open Questions
 

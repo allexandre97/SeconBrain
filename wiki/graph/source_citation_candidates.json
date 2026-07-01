@@ -62,6 +62,60 @@
       "confidence": "strong",
       "evidence": "- `SRC-0023`: The references list M. R. Shirts and J. D. Chodera, \"Statistically optimal analysis of samples from multiple equilibrium states,\" Journal of Chemical Physics 129, 124105-124110. This is an exact title match to the ingested MBAR source. [SRC-0009] - `SRC-0007`: The references list J. Lid",
       "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0023",
+      "cited_source_page": "wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.md",
+      "citing_source_id": "SRC-0045",
+      "citing_source_page": "wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.md",
+      "confidence": "strong",
+      "evidence": "[SRC-0045, reference 42] - `SRC-0023`: The references list Shirts and Chodera, \"Statistically optimal analysis of samples from multiple equilibrium states,\" Journal of Chemical Physics 2008, 129, 124105. This is an exact title, first-author, and year match to the ingested original MBAR source. [SRC-0045, referenc",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0046",
+      "cited_source_page": "wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.md",
+      "citing_source_id": "SRC-0045",
+      "citing_source_page": "wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.md",
+      "confidence": "strong",
+      "evidence": "eferences list Ross, Lu, Scarabelli, Albanese, Houang, Abel, Harder, and Wang, \"The maximal and current accuracy of rigorous protein-ligand binding free energy calculations,\" Communications Chemistry 2023, 6, 222. This is an exact title, first-author, and year match to the ingested FEP+ accuracy source. [SRC-0045, reference 42] -",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0045",
+      "cited_source_page": "wiki/sources/SRC-0045-large-scale-collaborative-assessment-of-binding-free-energy.md",
+      "citing_source_id": "SRC-0046",
+      "citing_source_page": "wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.md",
+      "confidence": "candidate",
+      "evidence": "- No confirmed links to already ingested wiki sources were added in this targeted pass. The checked reference candidates included the article's early best-practices and FEP-method references plus benchmark-related entries; none matched the scoped OpenFE source",
+      "match_type": "title-fuzzy"
+    },
+    {
+      "cited_source_id": "SRC-0023",
+      "cited_source_page": "wiki/sources/SRC-0023-statistically-optimal-analysis-multiple-equilibrium-states-mbar.md",
+      "citing_source_id": "SRC-0061",
+      "citing_source_page": "wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version.md",
+      "confidence": "strong",
+      "evidence": "[SRC-0061, reference 42] - `SRC-0023`: The references list Shirts and Chodera, \"Statistically optimal analysis of samples from multiple equilibrium states,\" Journal of Chemical Physics 2008, 129, 124105. This is an exact title, first-author, and year match to the ingested original MBAR source. [SRC-0061, referenc",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0046",
+      "cited_source_page": "wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.md",
+      "citing_source_id": "SRC-0061",
+      "citing_source_page": "wiki/sources/SRC-0061-openfe-rbfe-benchmark-journal-version.md",
+      "confidence": "strong",
+      "evidence": "eferences list Ross, Lu, Scarabelli, Albanese, Houang, Abel, Harder, and Wang, \"The maximal and current accuracy of rigorous protein-ligand binding free energy calculations,\" Communications Chemistry 2023, 6, 222. This is an exact title, first-author, and year match to the ingested FEP+ accuracy source. [SRC-0061, reference 42] -",
+      "match_type": "title-exact"
+    },
+    {
+      "cited_source_id": "SRC-0046",
+      "cited_source_page": "wiki/sources/SRC-0046-the-maximal-and-current-accuracy-of-rigorous-protein.md",
+      "citing_source_id": "SRC-0062",
+      "citing_source_page": "wiki/sources/SRC-0062-openfe-rbfe-benchmark-supporting-information.md",
+      "confidence": "strong",
+      "evidence": "ins one entry: Ross, Lu, Scarabelli, Albanese, Houang, Abel, Harder, and Wang, \"The maximal and current accuracy of rigorous protein-ligand binding free energy calculations,\" Communications Chemistry 2023, 6, 222. This is an exact title, first-author, and year match to the ingested FEP+ accuracy source. [SRC-0062, reference 1]",
+      "match_type": "title-exact"
     }
   ]
 }

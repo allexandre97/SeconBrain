@@ -19,11 +19,15 @@ related:
   - "[[wiki/concepts/free-energy-estimation]]"
 related_claims:
   - "[[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]"
+  - "[[wiki/claims/CLM-0004-mbar-is-optimal-but-overlap-limited]]"
 related_questions:
   - "[[wiki/questions/tss-generalization-scope]]"
+  - "[[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]"
+  - "[[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]]"
 sources:
   - SRC-0005
   - SRC-0006
+  - SRC-0023
 sensitivity: public
 encryption: none
 ---
@@ -37,7 +41,7 @@ TSS has a formal lower-variance comparison against MBAR in the analyzed adaptive
 ## Positions
 
 - The TSS source bundle supports a variance advantage when the sampler can self-adjust using current estimates and the theorem's assumptions apply. [SRC-0005, proposition 3] [SRC-0006, section 4.5]
-- The same source bundle leaves practical transfer bounded by assumptions about sampling, overlap, correlation, and broader molecular validation. [SRC-0006, sections 4.5 and 10]
+- The same source bundle leaves practical transfer bounded by assumptions about sampling, overlap, correlation, and broader molecular validation. MBAR remains a fixed-sample estimator whose reliability also depends on overlap and sampling quality. [SRC-0006, sections 4.5 and 10] [SRC-0023]
 
 ## Why it matters
 
@@ -50,5 +54,8 @@ Active. Broader empirical benchmarking and careful matching of estimator assumpt
 ## Links
 
 - [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]
+- [[wiki/claims/CLM-0004-mbar-is-optimal-but-overlap-limited]]
 - [[wiki/questions/tss-generalization-scope]]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]]
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]

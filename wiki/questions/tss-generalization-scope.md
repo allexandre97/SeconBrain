@@ -20,6 +20,9 @@ related:
   - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
   - "[[wiki/concepts/tss-implementation-patterns]]"
   - "[[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]"
+  - "[[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]"
+  - "[[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]]"
+  - "[[wiki/questions/windowed-local-free-energy-global-profile-reliability]]"
   - "[[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]"
 sources:
   - SRC-0005
@@ -59,4 +62,7 @@ Treat Times Square Sampling as a theoretically motivated adaptive free energy es
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 - [[wiki/concepts/tss-implementation-patterns]]
 - [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]]
+- [[wiki/questions/windowed-local-free-energy-global-profile-reliability]]
 - [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]

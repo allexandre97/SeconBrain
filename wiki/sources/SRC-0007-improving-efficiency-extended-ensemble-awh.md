@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0007
 display_title: "Improving the Efficiency of Extended Ensemble Simulations"
 short_title: "Extended-Ensemble AWH"
@@ -15,6 +15,14 @@ imported_path: raw/sources/SRC-0007-improving-the-efficiency-of-extended-ensembl
 original_filename: "PhysRevE.85.056708.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: bdef5a9d053652b3a13957e3c911390ae3f5f8ea761ae16054b173769a285e3e
+authors:
+  - "Jack Lidmar"
+author_entities:
+  - "[[wiki/entities/authors/jack-lidmar]]"
+year: 2012
+venue: "Physical Review E"
+doi: "10.1103/PhysRevE.85.056708"
+arxiv:
 areas:
   - research
 categories:
@@ -162,6 +170,19 @@ On an $8 \times 8 \times 8$ three-dimensional Ising spin glass, AWH improved acc
 - [[wiki/concepts/adaptive-enhanced-sampling]]
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/questions/awh-validation-scope]]
+
+## Claims
+
+- [[wiki/claims/CLM-0007-awh-updates-bias-from-conditional-histograms]] - AWH updates free-energy weights from conditional probability histograms in an extended ensemble. [SRC-0007]
+
+## Questions
+
+- [[wiki/questions/awh-validation-scope]] - How far should model-system AWH efficiency claims transfer to atomistic molecular free-energy workflows? [SRC-0007]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - When does adaptive biasing produce better samples than a fixed-sample estimator can recover after the fact? [SRC-0007]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - AWH adapts during sampling, so final comparisons still need diagnostics for sampling quality and uncertainty. [SRC-0007]
 
 ## Open Questions
 

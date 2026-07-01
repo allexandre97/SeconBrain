@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0006
 display_title: "Supplemental Materials for Times Square Sampling"
 short_title: "Times Square Sampling Supplement"
@@ -15,6 +15,18 @@ imported_path: raw/sources/SRC-0006-times-square-sampling-supplement.pdf
 original_filename: "ucgs_a_2291108_sm6913.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: a0fb7d3c50d92ff03cc4b3a92968a389113d4e9ad1826dcb5c5c37ddb364fd4c
+authors:
+  - "Cristian Predescu"
+  - "Michael Snarski"
+  - "Avi Robinson-Mosher"
+  - "Duluxan Sritharan"
+  - "Tamas Szalay"
+  - "David E. Shaw"
+author_entities: []
+year: 2024
+venue: "Journal of Computational and Graphical Statistics"
+doi: "10.1080/10618600.2023.2291108"
+arxiv:
 areas:
   - research
 categories:
@@ -221,6 +233,22 @@ The self-adjustment experiments compare different rung-update and estimator-upda
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 - [[wiki/concepts/tss-implementation-patterns]]
 - [[wiki/questions/tss-generalization-scope]]
+
+## Claims
+
+- [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]] - The supplement derives the covariance comparison supporting TSS self-adjustment under stated assumptions. [SRC-0006, section 4.5]
+
+## Questions
+
+- [[wiki/questions/tss-generalization-scope]] - How broadly should the TSS theory and aqueous-solution evidence transfer? [SRC-0006]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - How should adaptive estimator advantages be compared with fixed-sample estimators under matched assumptions? [SRC-0006]
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]] - How should overlap-matrix and support assumptions be checked in practical adaptive simulations? [SRC-0006, section 4.5]
+- [[wiki/questions/windowed-local-free-energy-global-profile-reliability]] - When do local TSS windows stitch into a reliable global profile? [SRC-0006, sections 6-10]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]] - The variance advantage is formal but assumption-bound. [SRC-0006, section 4.5]
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - Sampling-time adaptation needs diagnostics that account for adaptation history and correlated samples. [SRC-0006]
 
 ## Open Questions
 

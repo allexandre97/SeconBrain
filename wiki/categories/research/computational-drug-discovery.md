@@ -50,3 +50,7 @@ This page is generated from wiki page frontmatter. Edit page categories at the s
 - [[wiki/concepts/lambda-dynamics-with-bias-updated-gibbs-sampling|Lambda-Dynamics with Bias-Updated Gibbs Sampling]]
 - [[wiki/concepts/mlp-driven-bespoke-smirnoff-force-field-fitting|MLP-Driven Bespoke SMIRNOFF Force-Field Fitting]]
 - [[wiki/concepts/relative-binding-free-energy-benchmarking|Relative Binding Free Energy Benchmarking]]
+
+### Claims
+
+- [[wiki/claims/CLM-0008-ladybugs-couples-gibbs-sampling-with-fastmbar-bias-updates|LaDyBUGS Couples Gibbs Sampling With FastMBAR Bias Updates]]

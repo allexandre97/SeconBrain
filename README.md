@@ -38,6 +38,8 @@ Do not ingest multiple sources at once unless the review scope is intentionally 
 
 Source pages should keep stable `SRC-XXXX` IDs while using human-readable `display_title`, `short_title`, aliases, and H1 titles. When a source file is present in `raw/sources/`, include a visible raw-source link on the source page. Do not expose machine-specific absolute original paths in public wiki metadata; keep only the original filename and an omission note when useful.
 
+Older ingested sources should be migrated with source-migration audits and focused cluster backfills, not blindly re-ingested. Use `python3 tools/audit_source_migration.py` to inventory missing authors, citation links, claims, questions, tensions, graph links, and raw-source metadata before planning those backfills.
+
 ## Validation
 
 Run the local smoke check from the repository root:

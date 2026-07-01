@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0046
 display_title: "The Maximal and Current Accuracy of Rigorous Protein-ligand Binding Free Energy Calculations"
 short_title: "FEP+ Binding Free-Energy Accuracy"
@@ -31,6 +31,8 @@ related:
   - "[[wiki/concepts/free-energy-estimation]]"
 sources:
   - SRC-0046
+cites_sources: []
+citation_match_status: partial
 sensitivity: public
 encryption: none
 ingestion_status: complete
@@ -118,6 +120,10 @@ The paper uses edge counts for edgewise RMSE weights and compound counts for pai
 
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]]
 - [[wiki/concepts/free-energy-estimation]]
+
+## Citation Links
+
+- No confirmed links to already ingested wiki sources were added in this targeted pass. The checked reference candidates included the article's early best-practices and FEP-method references plus benchmark-related entries; none matched the scoped OpenFE source pages or another already ingested RBFE benchmark source by DOI, exact title, or title plus first author and year. [SRC-0046, references]
 
 ## Ingestion QA
 

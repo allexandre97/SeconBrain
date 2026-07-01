@@ -19,6 +19,7 @@ authors:
   - "Michael R. Shirts"
   - "John D. Chodera"
 author_entities:
+  - "[[wiki/entities/authors/michael-r-shirts]]"
   - "[[wiki/entities/authors/john-d-chodera]]"
 year: 2008
 venue: "Journal of Chemical Physics"
@@ -174,6 +175,21 @@ The paper demonstrates MBAR on DNA hairpin optical-tweezer data by combining con
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/concepts/mbar-with-configuration-mapping]]
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
+
+## Claims
+
+- [[wiki/claims/CLM-0004-mbar-is-optimal-but-overlap-limited]] - MBAR is a statistically efficient fixed-sample estimator, but it remains limited by overlap, support, and reduced-potential availability. [SRC-0023]
+
+## Questions
+
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]] - Which overlap and support diagnostics should be mandatory before accepting MBAR estimates? [SRC-0023]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - How should MBAR be compared to adaptive estimators that can change future samples? [SRC-0023] [SRC-0005]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]] - TSS's variance comparison should be interpreted as an adaptive sampling-time claim, not a blanket rejection of MBAR. [SRC-0005] [SRC-0023]
+- [[wiki/tensions/TEN-0004-configuration-mapping-overlap-gain-vs-support-risk]] - Mapping can extend MBAR, but support requirements remain. [SRC-0012] [SRC-0023]
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - MBAR offers fixed-sample diagnostics, while adaptive methods change the sampling process those diagnostics must evaluate. [SRC-0023]
 
 ## Open Questions
 

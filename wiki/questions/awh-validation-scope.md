@@ -2,7 +2,8 @@
 type: question
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
+question_status: open
 areas:
   - research
 categories:
@@ -17,6 +18,9 @@ related:
   - "[[wiki/sources/SRC-0008-awh-free-energy-landscapes]]"
   - "[[wiki/sources/SRC-0009-awh-alchemical-free-energy]]"
   - "[[wiki/concepts/accelerated-weight-histogram-method]]"
+  - "[[wiki/claims/CLM-0007-awh-updates-bias-from-conditional-histograms]]"
+  - "[[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]"
+  - "[[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]]"
 sources:
   - SRC-0007
   - SRC-0008
@@ -52,3 +56,6 @@ Treat AWH as a mature adaptive enhanced-sampling framework with targeted validat
 - [[wiki/concepts/accelerated-weight-histogram-method]]
 - [[wiki/concepts/adaptive-enhanced-sampling]]
 - [[wiki/concepts/free-energy-estimation]]
+- [[wiki/claims/CLM-0007-awh-updates-bias-from-conditional-histograms]]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]]

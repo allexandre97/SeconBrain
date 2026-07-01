@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0011
 display_title: "Supporting Information for Rethinking Metadynamics"
 short_title: "OPES Supporting Information"
@@ -15,6 +15,14 @@ imported_path: raw/sources/SRC-0011-supporting-information-for-rethinking-metady
 original_filename: "jz0c00497_si_001.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 84c972bea49a526039f324e7b7da438cae152e0b05f0698f0c142cb7c4d6c052
+authors:
+  - "Michele Invernizzi"
+  - "Michele Parrinello"
+author_entities: []
+year: 2020
+venue: "Journal of Physical Chemistry Letters"
+doi: "10.1021/acs.jpclett.0c00497"
+arxiv:
 areas:
   - research
 categories:
@@ -129,6 +137,18 @@ The supplement reports extended model-system and alanine-peptide results, includ
 
 - [[wiki/sources/SRC-0010-rethinking-metadynamics-opes]]
 - [[wiki/concepts/on-the-fly-probability-enhanced-sampling]]
+
+## Claims
+
+- [[wiki/claims/CLM-0006-opes-reconstructs-probability-to-derive-bias]] - The supplement supports the OPES probability-reconstruction claim with kernel compression, bandwidth, normalization, and barrier-parameter details. [SRC-0011]
+
+## Questions
+
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - How should compressed-kernel adaptive bias histories be compared with fixed-sample estimator diagnostics? [SRC-0011]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - Kernel compression makes online adaptation practical but introduces coarsening and parameter choices that diagnostics must account for. [SRC-0011]
 
 ## Open Questions
 

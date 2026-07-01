@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0009
 display_title: "The Accelerated Weight Histogram Method for Alchemical Free Energy Calculations"
 short_title: "AWH Alchemical Free Energies"
@@ -15,6 +15,16 @@ imported_path: raw/sources/SRC-0009-the-accelerated-weight-histogram-method-for-
 original_filename: "204103_1_online.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 640355f685a36a26aa57ed273f2bf857afc8ace468d42d3a735b93f2e4ad8709
+authors:
+  - "M. Lundborg"
+  - "Jack Lidmar"
+  - "B. Hess"
+author_entities:
+  - "[[wiki/entities/authors/jack-lidmar]]"
+year: 2021
+venue: "Journal of Chemical Physics"
+doi: "10.1063/5.0044352"
+arxiv:
 areas:
   - research
 categories:
@@ -189,6 +199,21 @@ Testosterone: after 4000 ns total AWH simulation time, AWH outputs were in the r
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]]
 - [[wiki/questions/awh-validation-scope]]
+
+## Claims
+
+- [[wiki/claims/CLM-0007-awh-updates-bias-from-conditional-histograms]] - Alchemical AWH uses conditional weights to update free-energy hyperparameters for sampled alchemical states. [SRC-0009]
+- [[wiki/claims/CLM-0004-mbar-is-optimal-but-overlap-limited]] - BAR/MBAR remain strong fixed-sample comparators, but SRC-0009 preserves the point that their performance depends on adequate intermediate-state sampling. [SRC-0009] [SRC-0023]
+
+## Questions
+
+- [[wiki/questions/awh-validation-scope]] - When should alchemical AWH be expected to outperform equilibrium BAR/MBAR workflows? [SRC-0009]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - How should adaptive alchemical sampling be compared to fixed-sample BAR/MBAR under matched sampling budgets? [SRC-0009]
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]] - Which overlap and uncertainty diagnostics should accompany AWH versus BAR/MBAR comparisons? [SRC-0009] [SRC-0023]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - AWH can adapt sampling online, but uncertainty estimates and BAR/MBAR comparisons still require reproducible diagnostics. [SRC-0009]
 
 ## Open Questions
 

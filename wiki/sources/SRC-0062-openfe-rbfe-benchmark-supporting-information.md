@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0062
 display_title: "Supporting Information: Large-Scale Collaborative Assessment of Binding Free Energy Calculations for Drug Discovery Using OpenFE"
 short_title: "OpenFE RBFE Benchmark Supporting Information"
@@ -34,6 +34,9 @@ related:
 sources:
   - SRC-0061
   - SRC-0062
+cites_sources:
+  - SRC-0046
+citation_match_status: reviewed
 sensitivity: public
 encryption: none
 ingestion_status: complete
@@ -84,6 +87,10 @@ This supporting information is the supplement to [[wiki/sources/SRC-0061-openfe-
 - Which convergence or edge-difficulty metrics can be turned into reliable prospective network-planning rules? [SRC-0062, sections S6-S7]
 - When should a user remove, rerun, remap, or keep an unconverged edge in an RBFE network? [SRC-0062, section S6.1]
 - Which diagnostic figures should become automated OpenFE quality-control reports? [SRC-0062]
+
+## Citation Links
+
+- `SRC-0046`: The supporting information reference list contains one entry: Ross, Lu, Scarabelli, Albanese, Houang, Abel, Harder, and Wang, "The maximal and current accuracy of rigorous protein-ligand binding free energy calculations," Communications Chemistry 2023, 6, 222. This is an exact title, first-author, and year match to the ingested FEP+ accuracy source. [SRC-0062, reference 1]
 
 ## Metadata notes
 

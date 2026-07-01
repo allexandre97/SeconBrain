@@ -35,6 +35,7 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/dashboards/sources-by-category]] - Source pages grouped by exact category.
 - [[wiki/dashboards/sources-by-biomolecule]] - Source pages grouped by biomolecule facets.
 - [[wiki/dashboards/sources-by-method]] - Source pages grouped by method-oriented categories.
+- [[wiki/dashboards/source-migration-status]] - Source-page semantic migration inventory for metadata, citation, claims/questions/tensions, graph-link, and raw-source backfill.
 - [[wiki/dashboards/source-citation-links]] - Confirmed and candidate citation links between ingested source pages.
 - [[wiki/dashboards/concepts-by-category]] - Concept pages grouped by exact category.
 - [[wiki/dashboards/concepts-by-biomolecule]] - Concept pages grouped by biomolecule facets.
@@ -55,6 +56,11 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/answers/sted-tau-filament-topology-model-architecture]] - Quantification and model-architecture recommendation for topology-aware STED tau morphology comparisons across tauopathy seeds and DIV.
 - [[wiki/answers/garnet-symbolic-regression-functional-search]] - Assessment of symbolic regression, pipeline placement, and differentiable functional-form search for a future Garnet force field.
 - [[wiki/answers/recurring-validation-problems-force-fields-ml-potentials-free-energy]] - Synthesis of recurring validation problems across force-field fitting, machine-learning potentials, and free-energy estimators.
+
+## Author Entities
+
+- [[wiki/entities/authors/jack-lidmar]] - Repeated author entity for the accelerated-weight-histogram source cluster.
+- [[wiki/entities/authors/michael-r-shirts]] - Repeated author entity for MBAR and configuration-mapping free-energy sources.
 
 ## Sources
 
@@ -202,5 +208,23 @@ Use this page as the main navigation point for reviewed wiki content.
 - [[wiki/questions/garnet-validation-scope]] - Validation gaps before treating Garnet as broadly transferable.
 - [[wiki/questions/tss-generalization-scope]] - Validation boundaries for Times Square Sampling claims beyond analyzed settings.
 - [[wiki/questions/awh-validation-scope]] - Validation boundaries for AWH efficiency and robustness claims.
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - Validation boundary for adaptive sampling-time estimators versus fixed-sample estimators.
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]] - Cross-method overlap and support diagnostics for free-energy estimates.
+- [[wiki/questions/windowed-local-free-energy-global-profile-reliability]] - Reliability of stitched global profiles from local/windowed free-energy estimates.
 - [[wiki/questions/force-field-training-validation-scope]] - Validation boundaries for force-field training and fine-tuning transferability claims.
 - [[wiki/questions/QST-0001-cldice-biological-transfer-scope]] - Validation boundary for clDice transfer to biological fiber reconstruction tasks.
+
+## Claims
+
+- [[wiki/claims/CLM-0001-tss-self-adjustment-can-lower-variance]] - TSS self-adjustment variance claim under stated assumptions.
+- [[wiki/claims/CLM-0004-mbar-is-optimal-but-overlap-limited]] - MBAR statistical efficiency with overlap/support limits.
+- [[wiki/claims/CLM-0005-configuration-mapping-extends-mbar]] - Configuration mapping extends MBAR through warped reduced potentials.
+- [[wiki/claims/CLM-0006-opes-reconstructs-probability-to-derive-bias]] - OPES derives bias from probability reconstruction.
+- [[wiki/claims/CLM-0007-awh-updates-bias-from-conditional-histograms]] - AWH updates bias from conditional weight histograms.
+- [[wiki/claims/CLM-0008-ladybugs-couples-gibbs-sampling-with-fastmbar-bias-updates]] - LaDyBUGS couples Gibbs lambda sampling with FastMBAR bias updates.
+
+## Tensions
+
+- [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]] - TSS adaptive variance advantage versus broad MBAR generalization.
+- [[wiki/tensions/TEN-0004-configuration-mapping-overlap-gain-vs-support-risk]] - Mapped-overlap gains versus mapped-support risk.
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - On-the-fly adaptation versus reproducible postprocessing diagnostics.

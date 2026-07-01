@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0012
 display_title: "Multistate Reweighting and Configuration Mapping"
 short_title: "MBAR with Configuration Mapping"
@@ -15,6 +15,15 @@ imported_path: raw/sources/SRC-0012-multistate-reweighting-and-configuration-map
 original_filename: "154108_1_online.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: 03ec626dc3dc092e1e7c155f69e36e10691ca8f9cc06ea8426ef86491a1b85e2
+authors:
+  - "Himanshu Paliwal"
+  - "Michael R. Shirts"
+author_entities:
+  - "[[wiki/entities/authors/michael-r-shirts]]"
+year: 2013
+venue: "Journal of Chemical Physics"
+doi: "10.1063/1.4801332"
+arxiv:
 areas:
   - research
 categories:
@@ -127,6 +136,19 @@ For solvated dipoles with different equilibrium bond lengths, MBAR with mapping 
 - [[wiki/concepts/mbar-with-configuration-mapping]]
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]]
+
+## Claims
+
+- [[wiki/claims/CLM-0005-configuration-mapping-extends-mbar]] - Invertible mappings can extend MBAR by transforming samples and including Jacobian-corrected warped reduced energies. [SRC-0012]
+- [[wiki/claims/CLM-0004-mbar-is-optimal-but-overlap-limited]] - Mapped MBAR keeps MBAR's fixed-sample estimator structure while addressing raw-overlap failure modes. [SRC-0012] [SRC-0023]
+
+## Questions
+
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]] - How should raw and mapped overlap be diagnosed before trusting a mapped MBAR estimate? [SRC-0012]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0004-configuration-mapping-overlap-gain-vs-support-risk]] - Mapping can create useful warped overlap, but a map still needs support and observable-specific validation. [SRC-0012]
 
 ## Open Questions
 

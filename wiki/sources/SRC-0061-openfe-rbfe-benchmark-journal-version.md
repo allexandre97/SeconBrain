@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0061
 display_title: "Large-Scale Collaborative Assessment of Binding Free Energy Calculations for Drug Discovery Using OpenFE"
 short_title: "OpenFE RBFE Benchmark Journal Version"
@@ -35,6 +35,10 @@ related:
 sources:
   - SRC-0061
   - SRC-0062
+cites_sources:
+  - SRC-0023
+  - SRC-0046
+citation_match_status: partial
 sensitivity: public
 encryption: none
 ingestion_status: complete
@@ -165,6 +169,11 @@ The paper does not contain theorem proofs. Its argument is empirical: define a d
 - Which proposed OpenFE improvements will most improve accuracy versus cost: adaptive lambda schedules, shorter/adaptive simulations, atom mapping, force-field changes, enhanced water sampling, or REST2-like sampling? [SRC-0061, section 4.3]
 - How predictive are curated public RBFE benchmarks for prospective active-project performance once input preparation is automated? [SRC-0061, sections 3.2 and 4.2]
 - What benchmark sets best isolate specific transformation classes such as charge changes, buried waters, partial fused rings, macrocycles, and metal-containing binding sites? [SRC-0061, section 4.2]
+
+## Citation Links
+
+- `SRC-0046`: The references list Ross, Lu, Scarabelli, Albanese, Houang, Abel, Harder, and Wang, "The maximal and current accuracy of rigorous protein-ligand binding free energy calculations," Communications Chemistry 2023, 6, 222. This is an exact title, first-author, and year match to the ingested FEP+ accuracy source. [SRC-0061, reference 42]
+- `SRC-0023`: The references list Shirts and Chodera, "Statistically optimal analysis of samples from multiple equilibrium states," Journal of Chemical Physics 2008, 129, 124105. This is an exact title, first-author, and year match to the ingested original MBAR source. [SRC-0061, reference 89]
 
 ## Mathematical gaps
 

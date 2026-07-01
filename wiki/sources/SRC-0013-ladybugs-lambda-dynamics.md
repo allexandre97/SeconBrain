@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 source_id: SRC-0013
 display_title: "Fast Free Energy Estimates from Lambda-Dynamics with Bias-Updated Gibbs Sampling"
 short_title: "LaDyBUGS Lambda-Dynamics"
@@ -15,6 +15,17 @@ imported_path: raw/sources/SRC-0013-fast-free-energy-estimates-from-lambda-dynam
 original_filename: "s41467-023-44208-9-1.pdf"
 original_path_note: "Original local path omitted from wiki metadata."
 sha256: af91ee22aada070287484dd19c2e890d799e68bc16aee3dcf8bb831dac1bc8c3
+authors:
+  - "Michael T. Robo"
+  - "Ryan L. Hayes"
+  - "Xinqiang Ding"
+  - "Brian Pulawski"
+  - "Jonah Z. Vilseck"
+author_entities: []
+year: 2023
+venue: "Nature Communications"
+doi: "10.1038/s41467-023-44208-9"
+arxiv:
 areas:
   - research
 categories:
@@ -138,6 +149,19 @@ The paper reports that λD required 609 ns of bias-identification sampling befor
 - [[wiki/concepts/relative-binding-free-energy-benchmarking]]
 - [[wiki/concepts/free-energy-estimation]]
 - [[wiki/concepts/adaptive-enhanced-sampling]]
+
+## Claims
+
+- [[wiki/claims/CLM-0008-ladybugs-couples-gibbs-sampling-with-fastmbar-bias-updates]] - LaDyBUGS couples Gibbs sampling over discrete lambda states with periodic FastMBAR bias updates. [SRC-0013]
+
+## Questions
+
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]] - When do bias-updated lambda-dynamics workflows outperform conventional TI/MBAR schedules under matched validation? [SRC-0013]
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]] - How should support and overlap be diagnosed when FastMBAR estimates are fed back into adaptive biases? [SRC-0013]
+
+## Tensions
+
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]] - FastMBAR updates improve online biasing, but final estimates still need support and uncertainty diagnostics. [SRC-0013]
 
 ## Open Questions
 

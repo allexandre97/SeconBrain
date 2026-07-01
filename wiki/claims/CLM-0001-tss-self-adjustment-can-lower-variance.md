@@ -19,7 +19,10 @@ related:
   - "[[wiki/concepts/times-square-sampling]]"
   - "[[wiki/concepts/on-the-fly-estimation-versus-mbar]]"
   - "[[wiki/questions/tss-generalization-scope]]"
+  - "[[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]"
+  - "[[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]]"
   - "[[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]"
+  - "[[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]]"
 sources:
   - SRC-0005
   - SRC-0006
@@ -53,4 +56,7 @@ This is a local, limited claim for the `times-square-sampling-2024` bundle. It s
 - [[wiki/sources/SRC-0006-times-square-sampling-supplement]]
 - [[wiki/concepts/on-the-fly-estimation-versus-mbar]]
 - [[wiki/questions/tss-generalization-scope]]
+- [[wiki/questions/adaptive-estimators-vs-fixed-sample-estimators]]
+- [[wiki/questions/overlap-support-diagnostics-for-free-energy-estimators]]
 - [[wiki/tensions/TEN-0001-tss-variance-advantage-vs-mbar-generalization]]
+- [[wiki/tensions/TEN-0005-on-the-fly-bias-adaptation-vs-postprocessing-diagnostics]]
